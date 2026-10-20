@@ -1,1427 +1,1725 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <meta
-    name="description"
-    content="Newson Sportec performance dirt bike handlebars for motocross and off-road riders."
-  >
-
-  <title>Newson Sportec | Performance Dirt Bike Handlebars</title>
-
-  <style>
-
-    /* ================================
-       GLOBAL
-    ================================= */
-
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
-    html {
-      scroll-behavior: smooth;
-    }
-
-    body {
-      font-family: Arial, Helvetica, sans-serif;
-      background: #0a0a0a;
-      color: #ffffff;
-      line-height: 1.6;
-    }
-
-    img {
-      max-width: 100%;
-      display: block;
-    }
-
-    a {
-      text-decoration: none;
-      color: inherit;
-    }
-
-    .container {
-      width: min(1200px, 92%);
-      margin: auto;
-    }
-
-    .section-title {
-      font-size: clamp(2rem, 5vw, 3.8rem);
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: -2px;
-      margin-bottom: 15px;
-    }
-
-    .section-subtitle {
-      color: #aaa;
-      max-width: 700px;
-      font-size: 1.05rem;
-      margin-bottom: 45px;
-    }
-
-    .red {
-      color: #ed1c24;
-    }
-
-
-    /* ================================
-       NAVIGATION
-    ================================= */
-
-    header {
-      position: sticky;
-      top: 0;
-      z-index: 999;
-      background: rgba(0,0,0,.94);
-      border-bottom: 1px solid #222;
-      backdrop-filter: blur(10px);
-    }
-
-    nav {
-      min-height: 82px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      gap: 30px;
-    }
-
-    .brand {
-      display: flex;
-      flex-direction: column;
-      line-height: .85;
-    }
-
-    .brand-main {
-      font-size: 2rem;
-      font-weight: 900;
-      font-style: italic;
-      letter-spacing: -2px;
-    }
-
-    .brand-sub {
-      font-size: 1.1rem;
-      font-weight: 800;
-      font-style: italic;
-      letter-spacing: 1px;
-    }
-
-    .brand-main::first-letter {
-      color: #ed1c24;
-    }
-
-    .nav-links {
-      display: flex;
-      align-items: center;
-      gap: 30px;
-      list-style: none;
-      font-weight: 700;
-      text-transform: uppercase;
-      font-size: .9rem;
-    }
-
-    .nav-links a {
-      transition: .2s;
-    }
-
-    .nav-links a:hover {
-      color: #ed1c24;
-    }
-
-    .nav-button {
-      background: #ed1c24;
-      padding: 11px 20px;
-      border-radius: 4px;
-    }
-
-    .nav-button:hover {
-      color: #fff !important;
-      background: #ff343c;
-    }
-
-
-    /* ================================
-       HERO
-    ================================= */
-
-    .hero {
-      min-height: 760px;
-      display: flex;
-      align-items: center;
-      position: relative;
-      overflow: hidden;
-
-      background:
-        linear-gradient(
-          90deg,
-          rgba(0,0,0,.92) 0%,
-          rgba(0,0,0,.72) 35%,
-          rgba(0,0,0,.20) 75%,
-          rgba(0,0,0,.15) 100%
-        ),
-        url("images/hero-rider.png");
-
-      background-size: cover;
-      background-position: center;
-    }
-
-    .hero-content {
-      max-width: 700px;
-      position: relative;
-      z-index: 2;
-    }
-
-    .eyebrow {
-      color: #ed1c24;
-      text-transform: uppercase;
-      font-weight: 900;
-      letter-spacing: 5px;
-      margin-bottom: 15px;
-    }
-
-    .hero h1 {
-      font-size: clamp(3.6rem, 9vw, 7.5rem);
-      line-height: .84;
-      text-transform: uppercase;
-      font-weight: 900;
-      font-style: italic;
-      letter-spacing: -5px;
-      margin-bottom: 25px;
-    }
-
-    .hero h1 span {
-      display: block;
-      color: #ed1c24;
-    }
-
-    .hero-description {
-      font-size: 1.18rem;
-      color: #ddd;
-      max-width: 600px;
-      margin-bottom: 35px;
-    }
-
-    .hero-buttons {
-      display: flex;
-      gap: 15px;
-      flex-wrap: wrap;
-    }
-
-    .btn {
-      display: inline-block;
-      padding: 15px 28px;
-      font-weight: 900;
-      text-transform: uppercase;
-      letter-spacing: 1px;
-      transition: .25s;
-      border: 2px solid #fff;
-    }
-
-    .btn-primary {
-      background: #ed1c24;
-      border-color: #ed1c24;
-    }
-
-    .btn-primary:hover {
-      background: #fff;
-      border-color: #fff;
-      color: #000;
-    }
-
-    .btn-secondary:hover {
-      background: #fff;
-      color: #000;
-    }
-
-
-    /* ================================
-       FEATURE BAR
-    ================================= */
-
-    .features {
-      background: #111;
-      border-top: 1px solid #222;
-      border-bottom: 1px solid #222;
-    }
-
-    .feature-grid {
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-    }
-
-    .feature {
-      padding: 35px 20px;
-      text-align: center;
-      border-right: 1px solid #292929;
-    }
-
-    .feature:last-child {
-      border-right: 0;
-    }
-
-    .feature-icon {
-      font-size: 2.3rem;
-      margin-bottom: 10px;
-    }
-
-    .feature h3 {
-      text-transform: uppercase;
-      font-size: 1rem;
-      margin-bottom: 4px;
-    }
-
-    .feature p {
-      color: #888;
-      font-size: .85rem;
-    }
-
-
-    /* ================================
-       PRODUCT
-    ================================= */
-
-    .product-section {
-      padding: 100px 0;
-      background: #f6f6f6;
-      color: #111;
-    }
-
-    .product-layout {
-      display: grid;
-      grid-template-columns: 1.4fr .8fr;
-      gap: 65px;
-      align-items: center;
-    }
-
-    .product-stage {
-      min-height: 480px;
-      background: white;
-      border-radius: 16px;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      padding: 40px;
-      box-shadow: 0 25px 60px rgba(0,0,0,.10);
-    }
-
-    .product-stage img {
-      width: 100%;
-      transition: opacity .25s ease;
-    }
-
-    .product-info h2 {
-      font-size: clamp(2.8rem, 6vw, 5rem);
-      line-height: .9;
-      text-transform: uppercase;
-      font-style: italic;
-      font-weight: 900;
-      letter-spacing: -3px;
-      margin-bottom: 20px;
-    }
-
-    .product-info > p {
-      color: #555;
-      margin-bottom: 30px;
-      font-size: 1.05rem;
-    }
-
-    .color-title {
-      font-weight: 900;
-      text-transform: uppercase;
-      margin-bottom: 12px;
-      font-size: .9rem;
-      letter-spacing: 1px;
-    }
-
-    .colors {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 12px;
-      margin-bottom: 35px;
-    }
-
-    .color-btn {
-      width: 42px;
-      height: 42px;
-      border-radius: 50%;
-      border: 3px solid transparent;
-      cursor: pointer;
-      transition: .2s;
-    }
-
-    .color-btn:hover,
-    .color-btn.active {
-      transform: scale(1.12);
-      border-color: #111;
-    }
-
-    .black {
-      background: #111;
-    }
-
-    .blue {
-      background: #075ed1;
-    }
-
-    .red-color {
-      background: #e00815;
-    }
-
-    .orange {
-      background: #ef5900;
-    }
-
-    .titanium {
-      background: #686868;
-    }
-
-    .selected-color {
-      font-weight: 800;
-      margin-bottom: 25px;
-    }
-
-    .product-specs {
-      display: grid;
-      gap: 0;
-      border-top: 1px solid #ddd;
-    }
-
-    .spec {
-      display: flex;
-      justify-content: space-between;
-      gap: 20px;
-      padding: 14px 0;
-      border-bottom: 1px solid #ddd;
-    }
-
-    .spec-name {
-      color: #777;
-    }
-
-    .spec-value {
-      font-weight: 800;
-      text-align: right;
-    }
-
-
-    /* ================================
-       COLORS
-    ================================= */
-
-    .color-showcase {
-      padding: 100px 0;
-      background: #0b0b0b;
-    }
-
-    .handlebar-grid {
-      display: grid;
-      grid-template-columns: repeat(2, 1fr);
-      gap: 25px;
-    }
-
-    .handlebar-card {
-      background: #fff;
-      border-radius: 10px;
-      overflow: hidden;
-      color: #111;
-      transition: .25s;
-    }
-
-    .handlebar-card:hover {
-      transform: translateY(-6px);
-    }
-
-    .handlebar-card img {
-      width: 100%;
-      aspect-ratio: 16 / 9;
-      object-fit: cover;
-    }
-
-    .handlebar-card-info {
-      display: flex;
-      justify-content: space-between;
-      padding: 20px 22px;
-      align-items: center;
-    }
-
-    .handlebar-card h3 {
-      text-transform: uppercase;
-      font-size: 1.25rem;
-    }
-
-    .color-dot {
-      width: 20px;
-      height: 20px;
-      border-radius: 50%;
-    }
-
-
-    /* ================================
-       PERFORMANCE
-    ================================= */
-
-    .performance {
-      padding: 110px 0;
-      background:
-        linear-gradient(
-          rgba(0,0,0,.72),
-          rgba(0,0,0,.88)
-        ),
-        url("images/hero-rider.png");
-
-      background-size: cover;
-      background-position: center;
-      background-attachment: fixed;
-    }
-
-    .performance-box {
-      max-width: 700px;
-    }
-
-    .performance h2 {
-      font-size: clamp(3rem, 7vw, 6rem);
-      line-height: .88;
-      text-transform: uppercase;
-      font-style: italic;
-      font-weight: 900;
-      letter-spacing: -4px;
-      margin-bottom: 25px;
-    }
-
-    .performance h2 span {
-      color: #ed1c24;
-    }
-
-    .performance p {
-      max-width: 600px;
-      color: #ccc;
-      font-size: 1.1rem;
-    }
-
-
-    /* ================================
-       ABOUT
-    ================================= */
-
-    .about {
-      padding: 100px 0;
-      background: #fff;
-      color: #111;
-    }
-
-    .about-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 70px;
-      align-items: center;
-    }
-
-    .about-visual {
-      background: #111;
-      color: white;
-      padding: 70px 50px;
-      min-height: 420px;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-    }
-
-    .about-logo {
-      font-size: clamp(3rem, 7vw, 6rem);
-      line-height: .8;
-      font-weight: 900;
-      font-style: italic;
-      letter-spacing: -4px;
-    }
-
-    .about-logo span {
-      display: block;
-      color: #ed1c24;
-      font-size: .55em;
-      letter-spacing: 0;
-      margin-top: 14px;
-    }
-
-    .about-copy h2 {
-      font-size: clamp(2.5rem, 5vw, 4.5rem);
-      text-transform: uppercase;
-      line-height: .9;
-      margin-bottom: 25px;
-      font-weight: 900;
-    }
-
-    .about-copy p {
-      color: #555;
-      margin-bottom: 18px;
-    }
-
-
-    /* ================================
-       CTA
-    ================================= */
-
-    .cta {
-      padding: 80px 0;
-      background: #ed1c24;
-      text-align: center;
-    }
-
-    .cta h2 {
-      font-size: clamp(2.4rem, 6vw, 4.5rem);
-      line-height: 1;
-      text-transform: uppercase;
-      font-weight: 900;
-      margin-bottom: 15px;
-    }
-
-    .cta p {
-      margin-bottom: 28px;
-      font-size: 1.05rem;
-    }
-
-    .cta .btn {
-      background: #000;
-      border-color: #000;
-    }
-
-    .cta .btn:hover {
-      background: #fff;
-      color: #000;
-      border-color: #fff;
-    }
-
-
-    /* ================================
-       FOOTER
-    ================================= */
-
-    footer {
-      padding: 55px 0 25px;
-      background: #050505;
-    }
-
-    .footer-grid {
-      display: grid;
-      grid-template-columns: 2fr 1fr 1fr;
-      gap: 50px;
-      padding-bottom: 40px;
-    }
-
-    .footer-brand {
-      font-size: 2rem;
-      font-weight: 900;
-      font-style: italic;
-      margin-bottom: 15px;
-    }
-
-    footer p {
-      color: #777;
-      max-width: 450px;
-    }
-
-    footer h4 {
-      text-transform: uppercase;
-      margin-bottom: 15px;
-    }
-
-    footer ul {
-      list-style: none;
-    }
-
-    footer li {
-      margin-bottom: 9px;
-    }
-
-    footer a {
-      color: #888;
-    }
-
-    footer a:hover {
-      color: #ed1c24;
-    }
-
-    .copyright {
-      padding-top: 25px;
-      border-top: 1px solid #222;
-      color: #555;
-      text-align: center;
-      font-size: .85rem;
-    }
-
-
-    /* ================================
-       RESPONSIVE
-    ================================= */
-
-    @media(max-width: 900px) {
-
-      .nav-links {
-        display: none;
-      }
-
-      .hero {
-        min-height: 650px;
-        background-position: 55% center;
-      }
-
-      .hero h1 {
-        letter-spacing: -3px;
-      }
-
-      .feature-grid {
-        grid-template-columns: repeat(2, 1fr);
-      }
-
-      .feature:nth-child(2) {
-        border-right: 0;
-      }
-
-      .product-layout {
-        grid-template-columns: 1fr;
-      }
-
-      .handlebar-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .about-grid {
-        grid-template-columns: 1fr;
-      }
-
-      .footer-grid {
-        grid-template-columns: 1fr;
-      }
-    }
-
-
-    @media(max-width: 600px) {
-
-      nav {
-        min-height: 70px;
-      }
-
-      .brand-main {
-        font-size: 1.55rem;
-      }
-
-      .brand-sub {
-        font-size: .85rem;
-      }
-
-      .hero {
-        min-height: 620px;
-      }
-
-      .hero h1 {
-        letter-spacing: -2px;
-      }
-
-      .feature-grid {
-        grid-template-columns: 1fr 1fr;
-      }
-
-      .product-stage {
-        min-height: 280px;
-        padding: 15px;
-      }
-
-      .product-info h2 {
-        letter-spacing: -2px;
-      }
-
-      .performance {
-        background-attachment: scroll;
-      }
-
-      .performance h2 {
-        letter-spacing: -2px;
-      }
-
-    }
-
-  </style>
+
+<meta charset="UTF-8">
+
+<meta
+  name="viewport"
+  content="width=device-width, initial-scale=1.0"
+>
+
+<meta
+  name="description"
+  content="Newson Sportec performance dirt bike handlebars for motocross, enduro and off-road riders."
+>
+
+<title>Newson Sportec | Dirt Bike Performance Handlebars</title>
+
+
+<style>
+
+/* ==================================================
+   RESET
+================================================== */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background: #080808;
+  color: #ffffff;
+  line-height: 1.6;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+button {
+  font: inherit;
+}
+
+.container {
+  width: min(1240px, 92%);
+  margin: auto;
+}
+
+.red {
+  color: #ef1b26;
+}
+
+
+/* ==================================================
+   HEADER
+================================================== */
+
+header {
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  background: rgba(5,5,5,.96);
+  border-bottom: 1px solid rgba(255,255,255,.08);
+  backdrop-filter: blur(12px);
+}
+
+nav {
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 30px;
+}
+
+
+/* ==================================================
+   LOGO
+================================================== */
+
+.brand {
+  display: flex;
+  flex-direction: column;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  line-height: .78;
+}
+
+.brand-main {
+  font-size: 2rem;
+  letter-spacing: -2px;
+}
+
+.brand-main span {
+  color: #ef1b26;
+}
+
+.brand-sub {
+  margin-top: 8px;
+  font-size: .94rem;
+  letter-spacing: 3px;
+  color: #ccc;
+}
+
+
+/* ==================================================
+   NAVIGATION
+================================================== */
+
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 30px;
+  list-style: none;
+  font-size: .87rem;
+  font-weight: 800;
+  text-transform: uppercase;
+  letter-spacing: .6px;
+}
+
+.nav-links a {
+  transition: .2s;
+}
+
+.nav-links a:hover {
+  color: #ef1b26;
+}
+
+.nav-contact {
+  background: #ef1b26;
+  padding: 11px 20px;
+  border-radius: 4px;
+}
+
+.nav-contact:hover {
+  color: white !important;
+  background: #ff313c;
+}
+
+
+/* ==================================================
+   HERO
+================================================== */
+
+.hero {
+  position: relative;
+  min-height: 760px;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  background: #111;
+}
+
+.hero-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center 35%;
+}
+
+.hero-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.93) 0%,
+      rgba(0,0,0,.82) 31%,
+      rgba(0,0,0,.44) 56%,
+      rgba(0,0,0,.10) 100%
+    );
+}
+
+.hero-content {
+  position: relative;
+  z-index: 5;
+  max-width: 690px;
+}
+
+.eyebrow {
+  color: #ef1b26;
+  text-transform: uppercase;
+  font-size: .82rem;
+  font-weight: 900;
+  letter-spacing: 5px;
+  margin-bottom: 18px;
+}
+
+.hero h1 {
+  font-size: clamp(4.2rem, 9vw, 8rem);
+  text-transform: uppercase;
+  font-style: italic;
+  font-weight: 900;
+  letter-spacing: -6px;
+  line-height: .78;
+  margin-bottom: 30px;
+}
+
+.hero h1 span {
+  display: block;
+  color: #ef1b26;
+}
+
+.hero-copy {
+  max-width: 570px;
+  color: #ddd;
+  font-size: 1.13rem;
+  margin-bottom: 35px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+}
+
+
+/* ==================================================
+   BUTTONS
+================================================== */
+
+.btn {
+  display: inline-block;
+  padding: 15px 27px;
+  border: 2px solid #fff;
+  text-transform: uppercase;
+  font-size: .85rem;
+  font-weight: 900;
+  letter-spacing: 1px;
+  transition: .25s;
+}
+
+.btn-red {
+  background: #ef1b26;
+  border-color: #ef1b26;
+}
+
+.btn-red:hover {
+  background: #fff;
+  border-color: #fff;
+  color: #111;
+}
+
+.btn-outline:hover {
+  background: #fff;
+  color: #111;
+}
+
+
+/* ==================================================
+   FEATURE STRIP
+================================================== */
+
+.feature-strip {
+  background: #0d0d0d;
+  border-top: 1px solid #222;
+  border-bottom: 1px solid #222;
+}
+
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.feature {
+  min-height: 150px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 25px;
+  border-right: 1px solid #292929;
+}
+
+.feature:last-child {
+  border-right: none;
+}
+
+.feature-icon {
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  margin-bottom: 13px;
+  font-size: 1.3rem;
+}
+
+.feature h3 {
+  text-transform: uppercase;
+  font-size: .92rem;
+  letter-spacing: .7px;
+}
+
+.feature p {
+  margin-top: 4px;
+  color: #777;
+  font-size: .82rem;
+}
+
+
+/* ==================================================
+   PRODUCT
+================================================== */
+
+.product {
+  padding: 105px 0;
+  background: #f4f4f4;
+  color: #111;
+}
+
+.product-grid {
+  display: grid;
+  grid-template-columns: 1.45fr .8fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.product-photo {
+  min-height: 490px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #fff;
+  border-radius: 16px;
+  box-shadow: 0 25px 65px rgba(0,0,0,.11);
+}
+
+.product-photo img {
+  width: 100%;
+  transition: opacity .18s ease, transform .25s ease;
+}
+
+.product-photo:hover img {
+  transform: scale(1.02);
+}
+
+.product-info h2 {
+  font-size: clamp(3rem, 5vw, 5rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -4px;
+  line-height: .86;
+  margin-bottom: 24px;
+}
+
+.product-description {
+  color: #555;
+  margin-bottom: 32px;
+  font-size: 1.04rem;
+}
+
+
+/* ==================================================
+   COLOR SELECTOR
+================================================== */
+
+.color-label {
+  text-transform: uppercase;
+  font-size: .8rem;
+  font-weight: 900;
+  letter-spacing: 1.5px;
+  margin-bottom: 13px;
+}
+
+.colors {
+  display: flex;
+  gap: 13px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.color-button {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+  border: 4px solid transparent;
+  cursor: pointer;
+  transition: .2s;
+  box-shadow: 0 0 0 1px rgba(0,0,0,.18);
+}
+
+.color-button:hover {
+  transform: scale(1.12);
+}
+
+.color-button.active {
+  border-color: #fff;
+  box-shadow: 0 0 0 3px #111;
+}
+
+.black-button {
+  background: #111;
+}
+
+.blue-button {
+  background: #005ccf;
+}
+
+.red-button {
+  background: #d90017;
+}
+
+.orange-button {
+  background: #ed5800;
+}
+
+.titanium-button {
+  background: linear-gradient(135deg, #444, #999);
+}
+
+.selected-color {
+  margin-bottom: 30px;
+  font-size: .92rem;
+  font-weight: 800;
+}
+
+
+/* ==================================================
+   SPECIFICATIONS
+================================================== */
+
+.spec-table {
+  border-top: 1px solid #ddd;
+}
+
+.spec {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px;
+  padding: 14px 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.spec-name {
+  color: #777;
+}
+
+.spec-value {
+  text-align: right;
+  font-weight: 800;
+}
+
+
+/* ==================================================
+   COLLECTION
+================================================== */
+
+.collection {
+  padding: 105px 0;
+  background: #080808;
+}
+
+.section-title {
+  font-size: clamp(2.8rem, 6vw, 5.3rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -4px;
+  line-height: .9;
+  margin-bottom: 20px;
+}
+
+.section-description {
+  max-width: 660px;
+  color: #888;
+  margin-bottom: 50px;
+  font-size: 1.03rem;
+}
+
+.product-cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.product-card {
+  overflow: hidden;
+  background: #fff;
+  color: #111;
+  border-radius: 10px;
+  transition: .25s;
+}
+
+.product-card:hover {
+  transform: translateY(-6px);
+}
+
+.product-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+}
+
+.card-bottom {
+  padding: 20px 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card-bottom h3 {
+  text-transform: uppercase;
+  font-size: 1.2rem;
+}
+
+.color-dot {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+
+
+/* ==================================================
+   ACTION SECTION
+================================================== */
+
+.action {
+  position: relative;
+  min-height: 720px;
+  display: flex;
+  align-items: center;
+  overflow: hidden;
+  background: #111;
+}
+
+.action-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+}
+
+.action-overlay {
+  position: absolute;
+  inset: 0;
+  background:
+    linear-gradient(
+      90deg,
+      rgba(0,0,0,.90),
+      rgba(0,0,0,.62),
+      rgba(0,0,0,.18)
+    );
+}
+
+.action-copy {
+  position: relative;
+  z-index: 3;
+  max-width: 660px;
+}
+
+.action h2 {
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  letter-spacing: -5px;
+  line-height: .83;
+  margin-bottom: 25px;
+}
+
+.action h2 span {
+  display: block;
+  color: #ef1b26;
+}
+
+.action-copy > p {
+  color: #ddd;
+  max-width: 580px;
+  font-size: 1.08rem;
+}
+
+
+/* ==================================================
+   BRAND
+================================================== */
+
+.brand-section {
+  padding: 105px 0;
+  background: #fff;
+  color: #111;
+}
+
+.brand-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 70px;
+  align-items: center;
+}
+
+.brand-box {
+  min-height: 430px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 55px;
+  background: #080808;
+  color: white;
+}
+
+.brand-box-main {
+  font-size: clamp(3.2rem, 7vw, 6.5rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  font-style: italic;
+  line-height: .75;
+  letter-spacing: -5px;
+}
+
+.brand-box-sub {
+  margin-top: 24px;
+  color: #ef1b26;
+  font-size: 1.1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  letter-spacing: 5px;
+}
+
+.brand-copy h2 {
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
+  text-transform: uppercase;
+  line-height: .88;
+  letter-spacing: -3px;
+  margin-bottom: 25px;
+}
+
+.brand-copy p {
+  color: #555;
+  margin-bottom: 18px;
+}
+
+
+/* ==================================================
+   CTA
+================================================== */
+
+.cta {
+  padding: 85px 0;
+  text-align: center;
+  background: #ef1b26;
+}
+
+.cta h2 {
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
+  text-transform: uppercase;
+  font-weight: 900;
+  line-height: .9;
+  letter-spacing: -3px;
+  margin-bottom: 18px;
+}
+
+.cta p {
+  margin-bottom: 30px;
+}
+
+.cta .btn {
+  background: #080808;
+  border-color: #080808;
+}
+
+.cta .btn:hover {
+  color: #111;
+  background: #fff;
+  border-color: #fff;
+}
+
+
+/* ==================================================
+   FOOTER
+================================================== */
+
+footer {
+  background: #050505;
+  padding: 60px 0 25px;
+}
+
+.footer-grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  gap: 50px;
+  padding-bottom: 45px;
+}
+
+.footer-logo {
+  text-transform: uppercase;
+  font-size: 1.8rem;
+  font-weight: 900;
+  font-style: italic;
+  margin-bottom: 15px;
+}
+
+.footer-description {
+  color: #777;
+  max-width: 430px;
+}
+
+footer h4 {
+  text-transform: uppercase;
+  margin-bottom: 14px;
+}
+
+footer ul {
+  list-style: none;
+}
+
+footer li {
+  margin-bottom: 8px;
+}
+
+footer a {
+  color: #888;
+  transition: .2s;
+}
+
+footer a:hover {
+  color: #ef1b26;
+}
+
+.copyright {
+  padding-top: 25px;
+  border-top: 1px solid #222;
+  text-align: center;
+  color: #555;
+  font-size: .83rem;
+}
+
+
+/* ==================================================
+   MOBILE
+================================================== */
+
+@media(max-width: 900px) {
+
+  .nav-links {
+    display: none;
+  }
+
+  .hero {
+    min-height: 690px;
+  }
+
+  .hero-overlay {
+    background: rgba(0,0,0,.65);
+  }
+
+  .feature-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .product-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .product-cards {
+    grid-template-columns: 1fr;
+  }
+
+  .brand-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+  }
+
+}
+
+@media(max-width: 600px) {
+
+  nav {
+    height: 70px;
+  }
+
+  .brand-main {
+    font-size: 1.55rem;
+  }
+
+  .brand-sub {
+    font-size: .72rem;
+  }
+
+  .hero {
+    min-height: 650px;
+  }
+
+  .hero h1 {
+    letter-spacing: -3px;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .feature {
+    padding: 18px 10px;
+  }
+
+  .product {
+    padding: 70px 0;
+  }
+
+  .product-photo {
+    min-height: 280px;
+    padding: 15px;
+  }
+
+  .product-info h2 {
+    letter-spacing: -2px;
+  }
+
+  .collection {
+    padding: 75px 0;
+  }
+
+  .section-title {
+    letter-spacing: -2px;
+  }
+
+  .action {
+    min-height: 620px;
+  }
+
+  .action h2 {
+    letter-spacing: -3px;
+  }
+
+  .brand-section {
+    padding: 75px 0;
+  }
+
+}
+
+</style>
+
 </head>
-
 
 
 <body>
 
 
-<!-- =================================
-     NAVIGATION
-================================= -->
+<!-- ==================================================
+     HEADER
+================================================== -->
 
 <header>
 
-  <nav class="container">
+<nav class="container">
 
-    <a href="#home" class="brand">
-      <span class="brand-main">NEWSON</span>
-      <span class="brand-sub">SPORTEC</span>
-    </a>
+<a class="brand" href="#home">
 
-    <ul class="nav-links">
-      <li><a href="#home">Home</a></li>
-      <li><a href="#handlebar">Handlebar</a></li>
-      <li><a href="#colors">Colors</a></li>
-      <li><a href="#performance">Performance</a></li>
-      <li><a href="#about">About</a></li>
+<div class="brand-main">
+<span>N</span>EWSON SPORTEC
+</div>
 
-      <li>
-        <a class="nav-button" href="#contact">
-          Contact
-        </a>
-      </li>
-    </ul>
+<div class="brand-sub">
+Motorcycle Performance
+</div>
 
-  </nav>
+</a>
+
+
+<ul class="nav-links">
+
+<li><a href="#home">Home</a></li>
+
+<li><a href="#handlebar">Handlebar</a></li>
+
+<li><a href="#colors">Colors</a></li>
+
+<li><a href="#performance">Performance</a></li>
+
+<li><a href="#about">About</a></li>
+
+<li>
+<a href="#contact" class="nav-contact">
+Contact
+</a>
+</li>
+
+</ul>
+
+</nav>
 
 </header>
 
 
-
-<!-- =================================
+<!-- ==================================================
      HERO
-================================= -->
+================================================== -->
 
 <section class="hero" id="home">
 
-  <div class="container">
+<img
+  class="hero-bg"
+  src="images/hero-action.png"
+  onerror="
+    this.onerror=null;
+    this.src='hero-action.png';
+  "
+  alt="Newson Sportec motocross rider performing an aerial dirt bike maneuver"
+>
 
-    <div class="hero-content">
+<div class="hero-overlay"></div>
 
-      <div class="eyebrow">
-        Motorcycle Performance Parts
-      </div>
+<div class="container">
 
-      <h1>
-        Ride
-        <span>Stronger.</span>
-      </h1>
+<div class="hero-content">
 
-      <p class="hero-description">
-        Newson Sportec performance handlebars combine
-        aggressive motocross styling, precise rider control
-        and a design built for dirt bike enthusiasts.
-      </p>
+<div class="eyebrow">
+Newson Sportec
+</div>
 
-      <div class="hero-buttons">
+<h1>
+Ride
+<span>Further.</span>
+</h1>
 
-        <a href="#handlebar" class="btn btn-primary">
-          Explore Handlebar
-        </a>
+<p class="hero-copy">
+Performance-inspired dirt bike handlebars
+designed around motocross style,
+rider control and off-road identity.
+</p>
 
-        <a href="#colors" class="btn btn-secondary">
-          View Colors
-        </a>
+<div class="hero-buttons">
 
-      </div>
+<a
+  href="#handlebar"
+  class="btn btn-red"
+>
+Explore Handlebar
+</a>
 
-    </div>
+<a
+  href="#colors"
+  class="btn btn-outline"
+>
+Choose A Color
+</a>
 
-  </div>
+</div>
+
+</div>
+
+</div>
 
 </section>
 
 
-
-<!-- =================================
+<!-- ==================================================
      FEATURES
-================================= -->
+================================================== -->
 
-<section class="features">
+<section class="feature-strip">
 
-  <div class="container feature-grid">
+<div class="container feature-grid">
 
-    <div class="feature">
-      <div class="feature-icon">◈</div>
-      <h3>Lightweight</h3>
-      <p>Performance-focused construction</p>
-    </div>
+<div class="feature">
 
-    <div class="feature">
-      <div class="feature-icon">◆</div>
-      <h3>Strong</h3>
-      <p>Designed for demanding riding</p>
-    </div>
+<div class="feature-icon">◇</div>
 
-    <div class="feature">
-      <div class="feature-icon">◎</div>
-      <h3>Control</h3>
-      <p>Rider-focused bend profile</p>
-    </div>
+<h3>Lightweight Design</h3>
 
-    <div class="feature">
-      <div class="feature-icon">▲</div>
-      <h3>Off-Road</h3>
-      <p>Motocross and trail styling</p>
-    </div>
+<p>Built with performance in mind</p>
 
-  </div>
-
-</section>
+</div>
 
 
+<div class="feature">
 
-<!-- =================================
-     MAIN PRODUCT
-================================= -->
+<div class="feature-icon">◆</div>
 
-<section class="product-section" id="handlebar">
+<h3>Rider Control</h3>
 
-  <div class="container product-layout">
+<p>Designed for confident handling</p>
 
-
-    <div class="product-stage">
-
-      <img
-        id="mainHandlebar"
-        src="images/handlebar-black.png"
-        alt="Newson Sportec black dirt bike handlebar"
-      >
-
-    </div>
+</div>
 
 
-    <div class="product-info">
+<div class="feature">
 
-      <p class="eyebrow">
-        Newson Sportec
-      </p>
+<div class="feature-icon">◎</div>
 
-      <h2>
-        Performance
-        <span class="red">Handlebar</span>
-      </h2>
+<h3>Performance Bend</h3>
 
-      <p>
-        A clean, aggressive handlebar design developed around
-        Newson Sportec's motocross identity. Choose your preferred
-        finish below to preview the collection.
-      </p>
+<p>Off-road focused geometry</p>
+
+</div>
 
 
-      <div class="color-title">
-        Select Color
-      </div>
+<div class="feature">
 
+<div class="feature-icon">▲</div>
 
-      <div class="colors">
+<h3>MX / Enduro</h3>
 
-        <button
-          class="color-btn black active"
-          aria-label="Black handlebar"
-          onclick="changeHandlebar(
-            'images/handlebar-black.png',
-            'Black',
-            this
-          )">
-        </button>
+<p>Built for dirt bike style</p>
 
-        <button
-          class="color-btn blue"
-          aria-label="Blue handlebar"
-          onclick="changeHandlebar(
-            'images/handlebar-blue.png',
-            'Blue',
-            this
-          )">
-        </button>
+</div>
 
-        <button
-          class="color-btn red-color"
-          aria-label="Red handlebar"
-          onclick="changeHandlebar(
-            'images/handlebar-red.png',
-            'Red',
-            this
-          )">
-        </button>
-
-        <button
-          class="color-btn orange"
-          aria-label="Orange handlebar"
-          onclick="changeHandlebar(
-            'images/handlebar-orange.png',
-            'Orange',
-            this
-          )">
-        </button>
-
-        <button
-          class="color-btn titanium"
-          aria-label="Titanium handlebar"
-          onclick="changeHandlebar(
-            'images/handlebar-titanium.png',
-            'Titanium',
-            this
-          )">
-        </button>
-
-      </div>
-
-
-      <div class="selected-color">
-        Selected:
-        <span id="selectedColor">Black</span>
-      </div>
-
-
-      <div class="product-specs">
-
-        <div class="spec">
-          <span class="spec-name">Brand</span>
-          <span class="spec-value">Newson Sportec</span>
-        </div>
-
-        <div class="spec">
-          <span class="spec-name">Application</span>
-          <span class="spec-value">Dirt Bike / Off-Road</span>
-        </div>
-
-        <div class="spec">
-          <span class="spec-name">Finish</span>
-          <span class="spec-value">Multiple Colors</span>
-        </div>
-
-        <div class="spec">
-          <span class="spec-name">Design</span>
-          <span class="spec-value">Performance Bend</span>
-        </div>
-
-      </div>
-
-    </div>
-
-  </div>
+</div>
 
 </section>
 
 
+<!-- ==================================================
+     PRODUCT SECTION
+================================================== -->
 
-<!-- =================================
+<section class="product" id="handlebar">
+
+<div class="container product-grid">
+
+
+<div class="product-photo">
+
+<img
+  id="mainHandlebar"
+  src="images/handlebar-black.png"
+  onerror="
+    this.onerror=null;
+    this.src='handlebar-black.png';
+  "
+  alt="Black Newson Sportec dirt bike handlebar"
+>
+
+</div>
+
+
+<div class="product-info">
+
+<div class="eyebrow">
+Newson Sportec Handlebar
+</div>
+
+<h2>
+Built For
+<span class="red">Dirt.</span>
+</h2>
+
+<p class="product-description">
+A clean and aggressive dirt bike handlebar
+concept featuring Newson Sportec branding,
+a performance-inspired bend profile and
+multiple color finishes.
+</p>
+
+
+<div class="color-label">
+Select Handlebar Color
+</div>
+
+
+<div class="colors">
+
+
+<button
+  class="color-button black-button active"
+  aria-label="Black"
+  onclick="
+    selectHandlebar(
+      'handlebar-black.png',
+      'Black',
+      this
+    )
+  "
+>
+</button>
+
+
+<button
+  class="color-button blue-button"
+  aria-label="Blue"
+  onclick="
+    selectHandlebar(
+      'handlebar-blue.png',
+      'Blue',
+      this
+    )
+  "
+>
+</button>
+
+
+<button
+  class="color-button red-button"
+  aria-label="Red"
+  onclick="
+    selectHandlebar(
+      'handlebar-red.png',
+      'Red',
+      this
+    )
+  "
+>
+</button>
+
+
+<button
+  class="color-button orange-button"
+  aria-label="Orange"
+  onclick="
+    selectHandlebar(
+      'handlebar-orange.png',
+      'Orange',
+      this
+    )
+  "
+>
+</button>
+
+
+<button
+  class="color-button titanium-button"
+  aria-label="Titanium"
+  onclick="
+    selectHandlebar(
+      'handlebar-titanium.png',
+      'Titanium',
+      this
+    )
+  "
+>
+</button>
+
+
+</div>
+
+
+<div class="selected-color">
+
+Selected color:
+
+<strong id="selectedColor">
+Black
+</strong>
+
+</div>
+
+
+<div class="spec-table">
+
+<div class="spec">
+
+<span class="spec-name">Brand</span>
+
+<span class="spec-value">
+Newson Sportec
+</span>
+
+</div>
+
+
+<div class="spec">
+
+<span class="spec-name">Product</span>
+
+<span class="spec-value">
+Dirt Bike Handlebar
+</span>
+
+</div>
+
+
+<div class="spec">
+
+<span class="spec-name">Application</span>
+
+<span class="spec-value">
+Motocross / Off-Road
+</span>
+
+</div>
+
+
+<div class="spec">
+
+<span class="spec-name">Color Options</span>
+
+<span class="spec-value">
+5 Finishes
+</span>
+
+</div>
+
+
+<div class="spec">
+
+<span class="spec-name">Style</span>
+
+<span class="spec-value">
+Performance Bend
+</span>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- ==================================================
      COLOR COLLECTION
-================================= -->
+================================================== -->
 
-<section class="color-showcase" id="colors">
+<section class="collection" id="colors">
 
-  <div class="container">
+<div class="container">
 
-    <h2 class="section-title">
-      Choose Your
-      <span class="red">Race Style</span>
-    </h2>
+<div class="eyebrow">
+Handlebar Collection
+</div>
 
-    <p class="section-subtitle">
-      Five Newson Sportec finishes give riders the option
-      to coordinate their handlebar with their bike and
-      personal race style.
-    </p>
+<h2 class="section-title">
+Choose Your
+<span class="red">Race Style.</span>
+</h2>
 
-
-    <div class="handlebar-grid">
-
-
-      <!-- BLACK -->
-
-      <div class="handlebar-card">
-
-        <img
-          src="images/handlebar-black.png"
-          alt="Black Newson Sportec handlebar"
-          loading="lazy"
-        >
-
-        <div class="handlebar-card-info">
-
-          <h3>Black</h3>
-
-          <div
-            class="color-dot"
-            style="background:#111;">
-          </div>
-
-        </div>
-
-      </div>
+<p class="section-description">
+Choose from five Newson Sportec
+handlebar finishes designed to complement
+different dirt bike color schemes.
+</p>
 
 
-
-      <!-- BLUE -->
-
-      <div class="handlebar-card">
-
-        <img
-          src="images/handlebar-blue.png"
-          alt="Blue Newson Sportec handlebar"
-          loading="lazy"
-        >
-
-        <div class="handlebar-card-info">
-
-          <h3>Blue</h3>
-
-          <div
-            class="color-dot"
-            style="background:#075ed1;">
-          </div>
-
-        </div>
-
-      </div>
+<div class="product-cards">
 
 
+<!-- BLACK -->
 
-      <!-- RED -->
+<article class="product-card">
 
-      <div class="handlebar-card">
+<img
+  src="images/handlebar-black.png"
+  onerror="
+    this.onerror=null;
+    this.src='handlebar-black.png';
+  "
+  alt="Black Newson Sportec handlebar"
+  loading="lazy"
+>
 
-        <img
-          src="images/handlebar-red.png"
-          alt="Red Newson Sportec handlebar"
-          loading="lazy"
-        >
+<div class="card-bottom">
 
-        <div class="handlebar-card-info">
+<h3>Black</h3>
 
-          <h3>Red</h3>
+<div
+  class="color-dot"
+  style="background:#111;"
+></div>
 
-          <div
-            class="color-dot"
-            style="background:#e00815;">
-          </div>
+</div>
 
-        </div>
-
-      </div>
-
-
-
-      <!-- ORANGE -->
-
-      <div class="handlebar-card">
-
-        <img
-          src="images/handlebar-orange.png"
-          alt="Orange Newson Sportec handlebar"
-          loading="lazy"
-        >
-
-        <div class="handlebar-card-info">
-
-          <h3>Orange</h3>
-
-          <div
-            class="color-dot"
-            style="background:#ef5900;">
-          </div>
-
-        </div>
-
-      </div>
+</article>
 
 
+<!-- BLUE -->
 
-      <!-- TITANIUM -->
+<article class="product-card">
 
-      <div class="handlebar-card">
+<img
+  src="images/handlebar-blue.png"
+  onerror="
+    this.onerror=null;
+    this.src='handlebar-blue.png';
+  "
+  alt="Blue Newson Sportec handlebar"
+  loading="lazy"
+>
 
-        <img
-          src="images/handlebar-titanium.png"
-          alt="Titanium Newson Sportec handlebar"
-          loading="lazy"
-        >
+<div class="card-bottom">
 
-        <div class="handlebar-card-info">
+<h3>Blue</h3>
 
-          <h3>Titanium</h3>
+<div
+  class="color-dot"
+  style="background:#005ccf;"
+></div>
 
-          <div
-            class="color-dot"
-            style="background:#686868;">
-          </div>
+</div>
 
-        </div>
-
-      </div>
+</article>
 
 
-    </div>
+<!-- RED -->
 
-  </div>
+<article class="product-card">
+
+<img
+  src="images/handlebar-red.png"
+  onerror="
+    this.onerror=null;
+    this.src='handlebar-red.png';
+  "
+  alt="Red Newson Sportec handlebar"
+  loading="lazy"
+>
+
+<div class="card-bottom">
+
+<h3>Red</h3>
+
+<div
+  class="color-dot"
+  style="background:#d90017;"
+></div>
+
+</div>
+
+</article>
+
+
+<!-- ORANGE -->
+
+<article class="product-card">
+
+<img
+  src="images/handlebar-orange.png"
+  onerror="
+    this.onerror=null;
+    this.src='handlebar-orange.png';
+  "
+  alt="Orange Newson Sportec handlebar"
+  loading="lazy"
+>
+
+<div class="card-bottom">
+
+<h3>Orange</h3>
+
+<div
+  class="color-dot"
+  style="background:#ed5800;"
+></div>
+
+</div>
+
+</article>
+
+
+<!-- TITANIUM -->
+
+<article class="product-card">
+
+<img
+  src="images/handlebar-titanium.png"
+  onerror="
+    this.onerror=null;
+    this.src='handlebar-titanium.png';
+  "
+  alt="Titanium Newson Sportec handlebar"
+  loading="lazy"
+>
+
+<div class="card-bottom">
+
+<h3>Titanium</h3>
+
+<div
+  class="color-dot"
+  style="
+    background:
+    linear-gradient(
+      135deg,
+      #444,
+      #999
+    );
+  "
+></div>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
 
 </section>
 
 
+<!-- ==================================================
+     PERFORMANCE ACTION
+================================================== -->
 
-<!-- =================================
-     PERFORMANCE
-================================= -->
+<section class="action" id="performance">
 
-<section class="performance" id="performance">
+<img
+  class="action-bg"
+  src="images/hero-action.png"
+  onerror="
+    this.onerror=null;
+    this.src='hero-action.png';
+  "
+  alt="Newson Sportec motocross rider"
+>
 
-  <div class="container">
+<div class="action-overlay"></div>
 
-    <div class="performance-box">
+<div class="container">
 
-      <p class="eyebrow">
-        Designed For Dirt
-      </p>
+<div class="action-copy">
 
-      <h2>
-        Ride With
-        <span>Control.</span>
-      </h2>
+<div class="eyebrow">
+Performance On Dirt
+</div>
 
-      <p>
-        From motocross tracks to technical trails,
-        Newson Sportec is developing performance parts
-        around the connection between rider, motorcycle
-        and terrain.
-      </p>
+<h2>
+Control The
+<span>Ride.</span>
+</h2>
 
-    </div>
+<p>
+Newson Sportec is built around the
+connection between rider, motorcycle and
+terrain. The handlebar is one of the most
+important contact points between the rider
+and the bike.
+</p>
 
-  </div>
+</div>
+
+</div>
 
 </section>
 
 
-
-<!-- =================================
+<!-- ==================================================
      ABOUT
-================================= -->
+================================================== -->
 
-<section class="about" id="about">
+<section class="brand-section" id="about">
 
-  <div class="container about-grid">
-
-
-    <div class="about-visual">
-
-      <div class="about-logo">
-        NEWSON
-
-        <span>
-          SPORTEC
-        </span>
-      </div>
-
-    </div>
+<div class="container brand-grid">
 
 
-    <div class="about-copy">
+<div class="brand-box">
 
-      <p class="eyebrow">
-        The Brand
-      </p>
+<div class="brand-box-main">
+NEWSON
+</div>
 
-      <h2>
-        Performance
-        Without Compromise
-      </h2>
+<div class="brand-box-sub">
+Sportec
+</div>
 
-      <p>
-        Newson Sportec is a motorcycle performance
-        brand focused on dirt bike components,
-        motorsport design and off-road products.
-      </p>
+</div>
 
-      <p>
-        Our goal is to combine distinctive styling
-        with practical components for riders who
-        expect their motorcycle to look as serious
-        as it performs.
-      </p>
 
-    </div>
+<div class="brand-copy">
 
-  </div>
+<div class="eyebrow">
+Our Brand
+</div>
+
+<h2>
+Designed Around
+Dirt Bike
+Performance.
+</h2>
+
+<p>
+Newson Sportec is focused on motorcycle
+performance products and off-road design.
+</p>
+
+<p>
+The goal is to create products with
+distinctive styling, clean branding and
+a motorsport identity that connects with
+motocross and dirt bike riders.
+</p>
+
+<p>
+The handlebar collection is the beginning
+of a broader Newson Sportec product line.
+</p>
+
+</div>
+
+</div>
 
 </section>
 
 
-
-<!-- =================================
-     CONTACT CTA
-================================= -->
+<!-- ==================================================
+     CONTACT
+================================================== -->
 
 <section class="cta" id="contact">
 
-  <div class="container">
+<div class="container">
 
-    <h2>
-      Ride Further.
-      Ride Newson Sportec.
-    </h2>
+<h2>
+Ride Further.
+Ride Newson Sportec.
+</h2>
 
-    <p>
-      Product information and availability coming soon.
-    </p>
+<p>
+Product specifications,
+availability and ordering information
+coming soon.
+</p>
 
-    <!--
-      CHANGE THIS EMAIL ADDRESS
-      TO YOUR BUSINESS EMAIL.
-    -->
+<a
+  class="btn"
+  href="mailto:your-email@example.com"
+>
+Contact Newson Sportec
+</a>
 
-    <a
-      href="mailto:your-email@example.com"
-      class="btn"
-    >
-      Contact Newson Sportec
-    </a>
-
-  </div>
+</div>
 
 </section>
 
 
-
-<!-- =================================
+<!-- ==================================================
      FOOTER
-================================= -->
+================================================== -->
 
 <footer>
 
-  <div class="container footer-grid">
+<div class="container footer-grid">
 
 
-    <div>
+<div>
 
-      <div class="footer-brand">
-        NEWSON SPORTEC
-      </div>
+<div class="footer-logo">
+NEWSON SPORTEC
+</div>
 
-      <p>
-        Motorcycle performance parts designed
-        for the dirt, track and trail.
-      </p>
+<p class="footer-description">
+Motorcycle performance products
+for motocross, dirt bike and
+off-road riders.
+</p>
 
-    </div>
-
-
-    <div>
-
-      <h4>Products</h4>
-
-      <ul>
-        <li>
-          <a href="#handlebar">Handlebars</a>
-        </li>
-
-        <li>
-          <a href="#colors">Colors</a>
-        </li>
-
-        <li>
-          <a href="#performance">Performance</a>
-        </li>
-      </ul>
-
-    </div>
+</div>
 
 
-    <div>
+<div>
 
-      <h4>Company</h4>
+<h4>Products</h4>
 
-      <ul>
-        <li>
-          <a href="#about">About</a>
-        </li>
+<ul>
 
-        <li>
-          <a href="#contact">Contact</a>
-        </li>
+<li>
+<a href="#handlebar">
+Handlebar
+</a>
+</li>
 
-        <li>
-          <a
-            href="https://github.com/newsonsportec"
-            target="_blank"
-            rel="noopener"
-          >
-            GitHub
-          </a>
-        </li>
-      </ul>
+<li>
+<a href="#colors">
+Color Collection
+</a>
+</li>
 
-    </div>
+<li>
+<a href="#performance">
+Performance
+</a>
+</li>
+
+</ul>
+
+</div>
 
 
-  </div>
+<div>
+
+<h4>Newson Sportec</h4>
+
+<ul>
+
+<li>
+<a href="#about">
+About
+</a>
+</li>
+
+<li>
+<a href="#contact">
+Contact
+</a>
+</li>
+
+<li>
+
+<a
+  href="https://github.com/newsonsportec"
+  target="_blank"
+  rel="noopener"
+>
+GitHub
+</a>
+
+</li>
+
+</ul>
+
+</div>
+
+</div>
 
 
-  <div class="container copyright">
+<div class="container copyright">
 
-    © <span id="year"></span>
-    Newson Sportec.
-    All rights reserved.
+© <span id="year"></span>
+Newson Sportec.
+All rights reserved.
 
-  </div>
+</div>
 
 </footer>
 
 
-
-<!-- =================================
+<!-- ==================================================
      JAVASCRIPT
-================================= -->
+================================================== -->
 
 <script>
 
-  function changeHandlebar(image, color, button) {
+function selectHandlebar(
+  fileName,
+  colorName,
+  button
+) {
 
-    const productImage =
-      document.getElementById("mainHandlebar");
+  const image =
+    document.getElementById(
+      "mainHandlebar"
+    );
 
-    const selectedColor =
-      document.getElementById("selectedColor");
+  const label =
+    document.getElementById(
+      "selectedColor"
+    );
+
+  image.style.opacity = "0";
+
+  setTimeout(function() {
+
+    image.onerror = function() {
+
+      image.onerror = null;
+
+      image.src =
+        fileName;
+
+    };
+
+    image.src =
+      "images/" + fileName;
+
+    image.alt =
+      colorName +
+      " Newson Sportec dirt bike handlebar";
+
+    label.textContent =
+      colorName;
+
+    image.style.opacity = "1";
+
+  }, 160);
 
 
-    productImage.style.opacity = "0";
+  document
+    .querySelectorAll(
+      ".color-button"
+    )
+    .forEach(function(btn) {
+
+      btn.classList.remove(
+        "active"
+      );
+
+    });
 
 
-    setTimeout(function() {
+  button.classList.add(
+    "active"
+  );
 
-      productImage.src = image;
-
-      productImage.alt =
-        color + " Newson Sportec dirt bike handlebar";
-
-      selectedColor.textContent = color;
-
-      productImage.style.opacity = "1";
-
-    }, 180);
+}
 
 
-    document
-      .querySelectorAll(".color-btn")
-      .forEach(function(btn) {
-
-        btn.classList.remove("active");
-
-      });
-
-
-    button.classList.add("active");
-
-  }
-
-
-  document.getElementById("year").textContent =
-    new Date().getFullYear();
+document
+  .getElementById("year")
+  .textContent =
+  new Date().getFullYear();
 
 </script>
 
 
 </body>
+
 </html>

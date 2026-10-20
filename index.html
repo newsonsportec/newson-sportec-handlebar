@@ -75,22 +75,16 @@ header {
   position: sticky;
   top: 0;
   z-index: 1000;
-
   background: rgba(5,5,5,.96);
-
-  border-bottom:
-  1px solid rgba(255,255,255,.08);
-
+  border-bottom: 1px solid rgba(255,255,255,.08);
   backdrop-filter: blur(12px);
 }
 
 nav {
   min-height: 82px;
-
   display: flex;
   align-items: center;
   justify-content: space-between;
-
   gap: 30px;
 }
 
@@ -102,12 +96,9 @@ nav {
 .brand {
   display: flex;
   flex-direction: column;
-
   text-transform: uppercase;
-
   font-weight: 900;
   font-style: italic;
-
   line-height: .8;
 }
 
@@ -122,13 +113,9 @@ nav {
 
 .brand-sub {
   margin-top: 8px;
-
   font-size: .7rem;
-
   letter-spacing: 3px;
-
   color: #aaa;
-
   font-style: normal;
 }
 
@@ -140,16 +127,11 @@ nav {
 .nav-links {
   display: flex;
   align-items: center;
-
   gap: 28px;
-
   list-style: none;
-
   font-size: .85rem;
   font-weight: 800;
-
   text-transform: uppercase;
-
   letter-spacing: .5px;
 }
 
@@ -163,11 +145,8 @@ nav {
 
 .nav-contact {
   background: #ef1b26;
-
   padding: 11px 20px;
-
   border-radius: 4px;
-
   color: white;
 }
 
@@ -183,35 +162,25 @@ nav {
 
 .hero {
   position: relative;
-
   min-height: 760px;
-
   overflow: hidden;
-
   display: flex;
   align-items: center;
-
   background: #111;
 }
 
 .hero-bg {
   position: absolute;
-
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
   object-position: center 35%;
 }
 
 .hero-overlay {
   position: absolute;
-
   inset: 0;
-
   background:
   linear-gradient(
     90deg,
@@ -224,42 +193,26 @@ nav {
 
 .hero-content {
   position: relative;
-
   z-index: 3;
-
   max-width: 690px;
 }
 
 .eyebrow {
   color: #ef1b26;
-
   text-transform: uppercase;
-
   font-size: .8rem;
   font-weight: 900;
-
   letter-spacing: 5px;
-
   margin-bottom: 18px;
 }
 
 .hero h1 {
-  font-size:
-  clamp(
-    4.2rem,
-    9vw,
-    8rem
-  );
-
+  font-size: clamp(4.2rem, 9vw, 8rem);
   text-transform: uppercase;
-
   font-style: italic;
   font-weight: 900;
-
   letter-spacing: -6px;
-
   line-height: .8;
-
   margin-bottom: 30px;
 }
 
@@ -270,19 +223,14 @@ nav {
 
 .hero-copy {
   max-width: 570px;
-
   color: #ddd;
-
   font-size: 1.12rem;
-
   margin-bottom: 35px;
 }
 
 .hero-buttons {
   display: flex;
-
   gap: 14px;
-
   flex-wrap: wrap;
 }
 
@@ -293,18 +241,12 @@ nav {
 
 .btn {
   display: inline-block;
-
   padding: 15px 28px;
-
   border: 2px solid white;
-
   text-transform: uppercase;
-
   font-size: .84rem;
   font-weight: 900;
-
   letter-spacing: 1px;
-
   transition: .25s;
 }
 
@@ -331,50 +273,33 @@ nav {
 
 .feature-section {
   background: #f5f5f5;
-
   padding: 28px 0;
-
   border-bottom: 1px solid #ddd;
 }
 
 .feature-image-grid {
   display: grid;
-
-  grid-template-columns:
-  repeat(4, 1fr);
-
+  grid-template-columns: repeat(4, 1fr);
   gap: 18px;
 }
 
 .feature-image-card {
   overflow: hidden;
-
   background: white;
-
   border-radius: 10px;
-
   border: 1px solid #e3e3e3;
-
-  box-shadow:
-  0 6px 22px rgba(0,0,0,.08);
-
-  transition:
-  transform .25s ease,
-  box-shadow .25s ease;
+  box-shadow: 0 6px 22px rgba(0,0,0,.08);
+  transition: transform .25s ease, box-shadow .25s ease;
 }
 
 .feature-image-card:hover {
   transform: translateY(-5px);
-
-  box-shadow:
-  0 14px 30px rgba(0,0,0,.13);
+  box-shadow: 0 14px 30px rgba(0,0,0,.13);
 }
 
 .feature-image-card img {
   width: 100%;
-
   aspect-ratio: 1 / 1;
-
   object-fit: cover;
 }
 
@@ -385,46 +310,31 @@ nav {
 
 .product {
   padding: 105px 0;
-
   background: #f4f4f4;
-
   color: #111;
 }
 
 .product-grid {
   display: grid;
-
-  grid-template-columns:
-  1.45fr .8fr;
-
+  grid-template-columns: 1.45fr .8fr;
   gap: 70px;
-
   align-items: center;
 }
 
 .product-photo {
   min-height: 490px;
-
   display: flex;
   align-items: center;
   justify-content: center;
-
   padding: 40px;
-
   background: white;
-
   border-radius: 16px;
-
-  box-shadow:
-  0 25px 65px rgba(0,0,0,.11);
+  box-shadow: 0 25px 65px rgba(0,0,0,.11);
 }
 
 .product-photo img {
   width: 100%;
-
-  transition:
-  opacity .2s ease,
-  transform .25s ease;
+  transition: opacity .2s ease, transform .25s ease;
 }
 
 .product-photo:hover img {
@@ -432,30 +342,18 @@ nav {
 }
 
 .product-info h2 {
-  font-size:
-  clamp(
-    3rem,
-    5vw,
-    5rem
-  );
-
+  font-size: clamp(3rem, 5vw, 5rem);
   text-transform: uppercase;
-
   font-weight: 900;
   font-style: italic;
-
   letter-spacing: -4px;
-
   line-height: .87;
-
   margin-bottom: 24px;
 }
 
 .product-description {
   color: #555;
-
   margin-bottom: 32px;
-
   font-size: 1.04rem;
 }
 
@@ -466,39 +364,27 @@ nav {
 
 .color-label {
   text-transform: uppercase;
-
   font-size: .8rem;
   font-weight: 900;
-
   letter-spacing: 1.5px;
-
   margin-bottom: 14px;
 }
 
 .colors {
   display: flex;
-
   gap: 13px;
-
   flex-wrap: wrap;
-
   margin-bottom: 20px;
 }
 
 .color-button {
   width: 46px;
   height: 46px;
-
   border-radius: 50%;
-
   border: 4px solid transparent;
-
   cursor: pointer;
-
   transition: .2s;
-
-  box-shadow:
-  0 0 0 1px rgba(0,0,0,.18);
+  box-shadow: 0 0 0 1px rgba(0,0,0,.18);
 }
 
 .color-button:hover {
@@ -507,9 +393,7 @@ nav {
 
 .color-button.active {
   border-color: white;
-
-  box-shadow:
-  0 0 0 3px #111;
+  box-shadow: 0 0 0 3px #111;
 }
 
 .black-button {
@@ -539,9 +423,7 @@ nav {
 
 .selected-color {
   margin-bottom: 30px;
-
   font-size: .92rem;
-
   font-weight: 800;
 }
 
@@ -556,13 +438,9 @@ nav {
 
 .spec {
   display: flex;
-
   justify-content: space-between;
-
   gap: 20px;
-
   padding: 14px 0;
-
   border-bottom: 1px solid #ddd;
 }
 
@@ -572,7 +450,6 @@ nav {
 
 .spec-value {
   text-align: right;
-
   font-weight: 800;
 }
 
@@ -583,58 +460,37 @@ nav {
 
 .collection {
   padding: 105px 0;
-
   background: #080808;
 }
 
 .section-title {
-  font-size:
-  clamp(
-    2.8rem,
-    6vw,
-    5.3rem
-  );
-
+  font-size: clamp(2.8rem, 6vw, 5.3rem);
   text-transform: uppercase;
-
   font-weight: 900;
   font-style: italic;
-
   letter-spacing: -4px;
-
   line-height: .9;
-
   margin-bottom: 20px;
 }
 
 .section-description {
   max-width: 680px;
-
   color: #888;
-
   margin-bottom: 50px;
-
   font-size: 1.03rem;
 }
 
 .product-cards {
   display: grid;
-
-  grid-template-columns:
-  repeat(2, 1fr);
-
+  grid-template-columns: repeat(2, 1fr);
   gap: 24px;
 }
 
 .product-card {
   overflow: hidden;
-
   background: white;
-
   color: #111;
-
   border-radius: 10px;
-
   transition: .25s;
 }
 
@@ -644,32 +500,25 @@ nav {
 
 .product-card img {
   width: 100%;
-
   aspect-ratio: 16 / 9;
-
   object-fit: cover;
 }
 
 .card-bottom {
   padding: 20px 24px;
-
   display: flex;
-
   align-items: center;
-
   justify-content: space-between;
 }
 
 .card-bottom h3 {
   text-transform: uppercase;
-
   font-size: 1.2rem;
 }
 
 .color-dot {
   width: 20px;
   height: 20px;
-
   border-radius: 50%;
 }
 
@@ -680,35 +529,25 @@ nav {
 
 .action {
   position: relative;
-
   min-height: 720px;
-
   display: flex;
   align-items: center;
-
   overflow: hidden;
-
   background: #111;
 }
 
 .action-bg {
   position: absolute;
-
   inset: 0;
-
   width: 100%;
   height: 100%;
-
   object-fit: cover;
-
   object-position: center;
 }
 
 .action-overlay {
   position: absolute;
-
   inset: 0;
-
   background:
   linear-gradient(
     90deg,
@@ -720,43 +559,28 @@ nav {
 
 .action-copy {
   position: relative;
-
   z-index: 3;
-
   max-width: 650px;
 }
 
 .action h2 {
-  font-size:
-  clamp(
-    3.5rem,
-    7vw,
-    6.5rem
-  );
-
+  font-size: clamp(3.5rem, 7vw, 6.5rem);
   text-transform: uppercase;
-
   font-weight: 900;
   font-style: italic;
-
   letter-spacing: -5px;
-
   line-height: .83;
-
   margin-bottom: 25px;
 }
 
 .action h2 span {
   display: block;
-
   color: #ef1b26;
 }
 
 .action-copy p {
   max-width: 580px;
-
   color: #ddd;
-
   font-size: 1.08rem;
 }
 
@@ -767,68 +591,43 @@ nav {
 
 .brand-section {
   padding: 105px 0;
-
   background: white;
-
   color: #111;
 }
 
 .brand-grid {
   display: grid;
-
-  grid-template-columns:
-  1fr 1fr;
-
+  grid-template-columns: 1fr 1fr;
   gap: 70px;
-
   align-items: center;
 }
 
-
-/* FIXED RIDER IMAGE AREA */
-
 .about-rider-box {
   position: relative;
-
   min-height: 720px;
-
   overflow: hidden;
-
   background: #111;
-
   border-radius: 12px;
-
-  box-shadow:
-  0 25px 60px rgba(0,0,0,.16);
-
+  box-shadow: 0 25px 60px rgba(0,0,0,.16);
   display: flex;
-
   align-items: center;
   justify-content: center;
-
   padding: 0;
 }
 
 .about-rider-box img {
   width: 100%;
   height: 100%;
-
   position: absolute;
-
   inset: 0;
-
   object-fit: contain;
-
   object-position: center top;
-
   background: #111;
 }
 
 .about-rider-overlay {
   position: absolute;
-
   inset: 0;
-
   background:
   linear-gradient(
     180deg,
@@ -840,62 +639,39 @@ nav {
 
 .about-rider-label {
   position: absolute;
-
   left: 30px;
   bottom: 28px;
-
   z-index: 2;
-
   color: white;
 }
 
 .about-rider-label strong {
   display: block;
-
   font-size: 2rem;
-
   font-weight: 900;
-
   font-style: italic;
-
   text-transform: uppercase;
-
   letter-spacing: -1px;
 }
 
 .about-rider-label span {
   color: #ff5a1f;
-
   font-size: .85rem;
-
   font-weight: 900;
-
   text-transform: uppercase;
-
   letter-spacing: 3px;
 }
 
-
 .brand-copy h2 {
-  font-size:
-  clamp(
-    2.8rem,
-    5vw,
-    4.5rem
-  );
-
+  font-size: clamp(2.8rem, 5vw, 4.5rem);
   text-transform: uppercase;
-
   line-height: .88;
-
   letter-spacing: -3px;
-
   margin-bottom: 25px;
 }
 
 .brand-copy p {
   color: #555;
-
   margin-bottom: 18px;
 }
 
@@ -906,28 +682,16 @@ nav {
 
 .cta {
   padding: 85px 0;
-
   text-align: center;
-
   background: #ef1b26;
 }
 
 .cta h2 {
-  font-size:
-  clamp(
-    2.5rem,
-    6vw,
-    4.8rem
-  );
-
+  font-size: clamp(2.5rem, 6vw, 4.8rem);
   text-transform: uppercase;
-
   font-weight: 900;
-
   line-height: .9;
-
   letter-spacing: -3px;
-
   margin-bottom: 18px;
 }
 
@@ -937,15 +701,12 @@ nav {
 
 .cta .btn {
   background: #080808;
-
   border-color: #080808;
 }
 
 .cta .btn:hover {
   background: white;
-
   border-color: white;
-
   color: #111;
 }
 
@@ -956,41 +717,31 @@ nav {
 
 footer {
   background: #050505;
-
   padding: 60px 0 25px;
 }
 
 .footer-grid {
   display: grid;
-
-  grid-template-columns:
-  2fr 1fr 1fr;
-
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 50px;
-
   padding-bottom: 45px;
 }
 
 .footer-logo {
   text-transform: uppercase;
-
   font-size: 1.8rem;
-
   font-weight: 900;
   font-style: italic;
-
   margin-bottom: 15px;
 }
 
 .footer-description {
   max-width: 430px;
-
   color: #777;
 }
 
 footer h4 {
   text-transform: uppercase;
-
   margin-bottom: 14px;
 }
 
@@ -1004,7 +755,6 @@ footer li {
 
 footer a {
   color: #888;
-
   transition: .2s;
 }
 
@@ -1014,13 +764,9 @@ footer a:hover {
 
 .copyright {
   padding-top: 25px;
-
   border-top: 1px solid #222;
-
   text-align: center;
-
   color: #555;
-
   font-size: .83rem;
 }
 
@@ -1032,12 +778,10 @@ footer a:hover {
 @media(max-width: 1000px) {
 
   .feature-image-grid {
-    grid-template-columns:
-    repeat(2, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
 }
-
 
 @media(max-width: 900px) {
 
@@ -1050,8 +794,7 @@ footer a:hover {
   }
 
   .hero-overlay {
-    background:
-    rgba(0,0,0,.66);
+    background: rgba(0,0,0,.66);
   }
 
   .product-grid {
@@ -1076,7 +819,6 @@ footer a:hover {
 
 }
 
-
 @media(max-width: 600px) {
 
   nav {
@@ -1100,9 +842,7 @@ footer a:hover {
   }
 
   .feature-image-grid {
-    grid-template-columns:
-    repeat(2, 1fr);
-
+    grid-template-columns: repeat(2, 1fr);
     gap: 8px;
   }
 
@@ -1116,7 +856,6 @@ footer a:hover {
 
   .product-photo {
     min-height: 280px;
-
     padding: 15px;
   }
 
@@ -1173,10 +912,7 @@ footer a:hover {
 
 <nav class="container">
 
-<a
-  class="brand"
-  href="#home"
->
+<a class="brand" href="#home">
 
 <div class="brand-main">
 <span>N</span>EWSON SPORTEC
@@ -1192,13 +928,9 @@ Motorcycle Performance Parts
 <ul class="nav-links">
 
 <li><a href="#home">Home</a></li>
-
 <li><a href="#handlebar">Handlebar</a></li>
-
 <li><a href="#colors">Colors</a></li>
-
 <li><a href="#performance">Performance</a></li>
-
 <li><a href="#about">About</a></li>
 
 <li>
@@ -1219,10 +951,7 @@ Contact
 
 <!-- HERO -->
 
-<section
-  class="hero"
-  id="home"
->
+<section class="hero" id="home">
 
 <img
   class="hero-bg"
@@ -1250,11 +979,9 @@ Ride
 </h1>
 
 <p class="hero-copy">
-
 Performance-inspired dirt bike handlebars
 designed around motocross style,
 rider control and off-road identity.
-
 </p>
 
 <div class="hero-buttons">
@@ -1356,10 +1083,7 @@ Choose A Color
 
 <!-- PRODUCT -->
 
-<section
-  class="product"
-  id="handlebar"
->
+<section class="product" id="handlebar">
 
 <div class="container product-grid">
 
@@ -1390,12 +1114,10 @@ Built For
 </h2>
 
 <p class="product-description">
-
 A clean and aggressive dirt bike handlebar
 featuring Newson Sportec branding,
 a performance-inspired bend profile
 and five distinctive finishes.
-
 </p>
 
 <div class="color-label">
@@ -1490,24 +1212,20 @@ Selected color:
 <span class="spec-value">Newson Sportec</span>
 </div>
 
-
 <div class="spec">
 <span class="spec-name">Product</span>
 <span class="spec-value">Dirt Bike Handlebar</span>
 </div>
-
 
 <div class="spec">
 <span class="spec-name">Application</span>
 <span class="spec-value">Motocross / Off-Road</span>
 </div>
 
-
 <div class="spec">
 <span class="spec-name">Colors</span>
 <span class="spec-value">5 Finishes</span>
 </div>
-
 
 <div class="spec">
 <span class="spec-name">Design</span>
@@ -1526,10 +1244,7 @@ Selected color:
 
 <!-- COLLECTION -->
 
-<section
-  class="collection"
-  id="colors"
->
+<section class="collection" id="colors">
 
 <div class="container">
 
@@ -1543,11 +1258,9 @@ Choose Your
 </h2>
 
 <p class="section-description">
-
 Choose from black, blue, red,
 orange and titanium finishes
 to complement your dirt bike.
-
 </p>
 
 
@@ -1670,10 +1383,7 @@ to complement your dirt bike.
 
 <!-- PERFORMANCE -->
 
-<section
-  class="action"
-  id="performance"
->
+<section class="action" id="performance">
 
 <img
   class="action-bg"
@@ -1701,13 +1411,11 @@ Control The
 </h2>
 
 <p>
-
 Newson Sportec is built around the
 connection between rider, motorcycle
 and terrain. The handlebar is one
 of the primary control points between
 the rider and the motorcycle.
-
 </p>
 
 </div>
@@ -1719,10 +1427,7 @@ the rider and the motorcycle.
 
 <!-- ABOUT -->
 
-<section
-  class="brand-section"
-  id="about"
->
+<section class="brand-section" id="about">
 
 <div class="container brand-grid">
 
@@ -1762,37 +1467,27 @@ Our Brand
 </div>
 
 <h2>
-
 Designed Around
-
 Dirt Bike
-
 Performance.
-
 </h2>
 
 <p>
-
 Newson Sportec focuses on motorcycle
 performance products, motocross styling
 and off-road design.
-
 </p>
 
 <p>
-
 Our goal is to combine distinctive
 motorsport styling with practical
 products for dirt-bike enthusiasts.
-
 </p>
 
 <p>
-
 The handlebar collection represents
 the beginning of a growing line
 of Newson Sportec motorcycle products.
-
 </p>
 
 </div>
@@ -1804,10 +1499,7 @@ of Newson Sportec motorcycle products.
 
 <!-- CONTACT -->
 
-<section
-  class="cta"
-  id="contact"
->
+<section class="cta" id="contact">
 
 <div class="container">
 
@@ -1817,11 +1509,9 @@ Ride Newson Sportec.
 </h2>
 
 <p>
-
 Product specifications,
 availability and ordering
 information coming soon.
-
 </p>
 
 <a
@@ -1849,11 +1539,9 @@ NEWSON SPORTEC
 </div>
 
 <p class="footer-description">
-
 Motorcycle performance products
 for motocross, dirt bike and
 off-road riders.
-
 </p>
 
 </div>
@@ -1867,11 +1555,23 @@ Products
 
 <ul>
 
-<li><a href="#handlebar">Handlebar</a></li>
+<li>
+<a href="#handlebar">
+Handlebar
+</a>
+</li>
 
-<li><a href="#colors">Color Collection</a></li>
+<li>
+<a href="#colors">
+Color Collection
+</a>
+</li>
 
-<li><a href="#performance">Performance</a></li>
+<li>
+<a href="#performance">
+Performance
+</a>
+</li>
 
 </ul>
 
@@ -1886,18 +1586,36 @@ Newson Sportec
 
 <ul>
 
-<li><a href="#about">About</a></li>
+<li>
 
-<li><a href="#contact">Contact</a></li>
+<a
+  href="https://www.facebook.com/Newsonsportecnews"
+  target="_blank"
+  rel="noopener"
+>
+Facebook
+</a>
+
+</li>
+
 
 <li>
 
 <a
-  href="https://github.com/newsonsportec"
+  href="https://www.youtube.com/@NEWSONSPORTEC/featured"
   target="_blank"
   rel="noopener"
 >
-GitHub
+YouTube
+</a>
+
+</li>
+
+
+<li>
+
+<a href="#contact">
+Contact
 </a>
 
 </li>

@@ -37,15 +37,9 @@ html {
 }
 
 body {
-  font-family:
-  Arial,
-  Helvetica,
-  sans-serif;
-
+  font-family: Arial, Helvetica, sans-serif;
   background: #080808;
-
   color: white;
-
   line-height: 1.6;
 }
 
@@ -78,39 +72,26 @@ button {
 ========================================================= */
 
 header {
-
   position: sticky;
-
   top: 0;
-
   z-index: 1000;
 
-  background:
-  rgba(5,5,5,.96);
+  background: rgba(5,5,5,.96);
 
   border-bottom:
-  1px solid
-  rgba(255,255,255,.08);
+  1px solid rgba(255,255,255,.08);
 
-  backdrop-filter:
-  blur(12px);
-
+  backdrop-filter: blur(12px);
 }
 
-
 nav {
-
   min-height: 82px;
 
   display: flex;
-
   align-items: center;
-
-  justify-content:
-  space-between;
+  justify-content: space-between;
 
   gap: 30px;
-
 }
 
 
@@ -119,53 +100,36 @@ nav {
 ========================================================= */
 
 .brand {
-
   display: flex;
-
   flex-direction: column;
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-weight: 900;
-
   font-style: italic;
 
   line-height: .8;
-
 }
-
 
 .brand-main {
-
   font-size: 2rem;
-
-  letter-spacing:
-  -2px;
-
+  letter-spacing: -2px;
 }
-
 
 .brand-main span {
-
   color: #ef1b26;
-
 }
 
-
 .brand-sub {
-
   margin-top: 8px;
 
   font-size: .7rem;
 
-  letter-spacing:
-  3px;
+  letter-spacing: 3px;
 
   color: #aaa;
 
   font-style: normal;
-
 }
 
 
@@ -174,9 +138,7 @@ nav {
 ========================================================= */
 
 .nav-links {
-
   display: flex;
-
   align-items: center;
 
   gap: 28px;
@@ -184,54 +146,34 @@ nav {
   list-style: none;
 
   font-size: .85rem;
-
   font-weight: 800;
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   letter-spacing: .5px;
-
 }
-
 
 .nav-links a {
-
   transition: .2s;
-
 }
-
 
 .nav-links a:hover {
-
   color: #ef1b26;
-
 }
-
 
 .nav-contact {
+  background: #ef1b26;
 
-  background:
-  #ef1b26;
+  padding: 11px 20px;
 
-  padding:
-  11px 20px;
-
-  border-radius:
-  4px;
+  border-radius: 4px;
 
   color: white;
-
 }
 
-
 .nav-contact:hover {
-
-  background:
-  #ff3540;
-
+  background: #ff3540;
   color: white !important;
-
 }
 
 
@@ -240,7 +182,6 @@ nav {
 ========================================================= */
 
 .hero {
-
   position: relative;
 
   min-height: 760px;
@@ -248,93 +189,61 @@ nav {
   overflow: hidden;
 
   display: flex;
-
   align-items: center;
 
   background: #111;
-
 }
 
-
 .hero-bg {
-
   position: absolute;
 
   inset: 0;
 
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
 
-  object-position:
-  center 35%;
-
+  object-position: center 35%;
 }
 
-
 .hero-overlay {
-
   position: absolute;
 
   inset: 0;
 
   background:
-
   linear-gradient(
-
     90deg,
-
-    rgba(0,0,0,.94)
-    0%,
-
-    rgba(0,0,0,.82)
-    31%,
-
-    rgba(0,0,0,.44)
-    58%,
-
-    rgba(0,0,0,.08)
-    100%
-
+    rgba(0,0,0,.94) 0%,
+    rgba(0,0,0,.82) 31%,
+    rgba(0,0,0,.44) 58%,
+    rgba(0,0,0,.08) 100%
   );
-
 }
 
-
 .hero-content {
-
   position: relative;
 
   z-index: 3;
 
   max-width: 690px;
-
 }
-
 
 .eyebrow {
-
   color: #ef1b26;
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-size: .8rem;
-
   font-weight: 900;
 
-  letter-spacing:
-  5px;
+  letter-spacing: 5px;
 
   margin-bottom: 18px;
-
 }
 
-
 .hero h1 {
-
   font-size:
   clamp(
     4.2rem,
@@ -342,55 +251,39 @@ nav {
     8rem
   );
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-style: italic;
-
   font-weight: 900;
 
-  letter-spacing:
-  -6px;
+  letter-spacing: -6px;
 
   line-height: .8;
 
-  margin-bottom:
-  30px;
-
+  margin-bottom: 30px;
 }
-
 
 .hero h1 span {
-
   display: block;
-
   color: #ef1b26;
-
 }
 
-
 .hero-copy {
-
   max-width: 570px;
 
   color: #ddd;
 
   font-size: 1.12rem;
 
-  margin-bottom:
-  35px;
-
+  margin-bottom: 35px;
 }
 
-
 .hero-buttons {
-
   display: flex;
 
   gap: 14px;
 
   flex-wrap: wrap;
-
 }
 
 
@@ -399,139 +292,90 @@ nav {
 ========================================================= */
 
 .btn {
-
   display: inline-block;
 
-  padding:
-  15px 28px;
+  padding: 15px 28px;
 
-  border:
-  2px solid white;
+  border: 2px solid white;
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-size: .84rem;
-
   font-weight: 900;
 
-  letter-spacing:
-  1px;
+  letter-spacing: 1px;
 
   transition: .25s;
-
 }
-
 
 .btn-red {
-
-  background:
-  #ef1b26;
-
-  border-color:
-  #ef1b26;
-
+  background: #ef1b26;
+  border-color: #ef1b26;
 }
-
 
 .btn-red:hover {
-
-  background:
-  white;
-
-  border-color:
-  white;
-
+  background: white;
+  border-color: white;
   color: #111;
-
 }
 
-
 .btn-outline:hover {
-
-  background:
-  white;
-
+  background: white;
   color: #111;
-
 }
 
 
 /* =========================================================
-   NEW FEATURE IMAGE AREA
+   FEATURE IMAGE AREA
 ========================================================= */
 
 .feature-section {
+  background: #f5f5f5;
 
-  background:
-  #f5f5f5;
+  padding: 28px 0;
 
-  padding:
-  28px 0;
-
-  border-bottom:
-  1px solid #ddd;
-
+  border-bottom: 1px solid #ddd;
 }
 
-
 .feature-image-grid {
-
   display: grid;
 
   grid-template-columns:
   repeat(4, 1fr);
 
   gap: 18px;
-
 }
 
-
 .feature-image-card {
-
   overflow: hidden;
 
-  background:
-  white;
+  background: white;
 
-  border-radius:
-  10px;
+  border-radius: 10px;
 
-  border:
-  1px solid #e3e3e3;
+  border: 1px solid #e3e3e3;
 
   box-shadow:
-  0 6px 22px
-  rgba(0,0,0,.08);
+  0 6px 22px rgba(0,0,0,.08);
 
   transition:
   transform .25s ease,
   box-shadow .25s ease;
-
 }
-
 
 .feature-image-card:hover {
-
-  transform:
-  translateY(-5px);
+  transform: translateY(-5px);
 
   box-shadow:
-  0 14px 30px
-  rgba(0,0,0,.13);
-
+  0 14px 30px rgba(0,0,0,.13);
 }
 
-
 .feature-image-card img {
-
   width: 100%;
 
-  aspect-ratio:
-  1 / 1;
+  aspect-ratio: 1 / 1;
 
   object-fit: cover;
-
 }
 
 
@@ -540,20 +384,14 @@ nav {
 ========================================================= */
 
 .product {
+  padding: 105px 0;
 
-  padding:
-  105px 0;
-
-  background:
-  #f4f4f4;
+  background: #f4f4f4;
 
   color: #111;
-
 }
 
-
 .product-grid {
-
   display: grid;
 
   grid-template-columns:
@@ -562,18 +400,13 @@ nav {
   gap: 70px;
 
   align-items: center;
-
 }
 
-
 .product-photo {
-
   min-height: 490px;
 
   display: flex;
-
   align-items: center;
-
   justify-content: center;
 
   padding: 40px;
@@ -583,36 +416,22 @@ nav {
   border-radius: 16px;
 
   box-shadow:
-
-  0 25px 65px
-  rgba(0,0,0,.11);
-
+  0 25px 65px rgba(0,0,0,.11);
 }
 
-
 .product-photo img {
-
   width: 100%;
 
   transition:
-
   opacity .2s ease,
-
   transform .25s ease;
-
 }
-
 
 .product-photo:hover img {
-
-  transform:
-  scale(1.02);
-
+  transform: scale(1.02);
 }
 
-
 .product-info h2 {
-
   font-size:
   clamp(
     3rem,
@@ -620,31 +439,24 @@ nav {
     5rem
   );
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-weight: 900;
-
   font-style: italic;
 
-  letter-spacing:
-  -4px;
+  letter-spacing: -4px;
 
   line-height: .87;
 
   margin-bottom: 24px;
-
 }
 
-
 .product-description {
-
   color: #555;
 
   margin-bottom: 32px;
 
   font-size: 1.04rem;
-
 }
 
 
@@ -653,137 +465,84 @@ nav {
 ========================================================= */
 
 .color-label {
-
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-size: .8rem;
-
   font-weight: 900;
 
-  letter-spacing:
-  1.5px;
+  letter-spacing: 1.5px;
 
   margin-bottom: 14px;
-
 }
 
-
 .colors {
-
   display: flex;
 
   gap: 13px;
 
   flex-wrap: wrap;
 
-  margin-bottom:
-  20px;
-
+  margin-bottom: 20px;
 }
 
-
 .color-button {
-
   width: 46px;
-
   height: 46px;
 
-  border-radius:
-  50%;
+  border-radius: 50%;
 
-  border:
-  4px solid
-  transparent;
+  border: 4px solid transparent;
 
   cursor: pointer;
 
   transition: .2s;
 
   box-shadow:
-  0 0 0 1px
-  rgba(0,0,0,.18);
-
+  0 0 0 1px rgba(0,0,0,.18);
 }
-
 
 .color-button:hover {
-
-  transform:
-  scale(1.12);
-
+  transform: scale(1.12);
 }
-
 
 .color-button.active {
-
-  border-color:
-  white;
+  border-color: white;
 
   box-shadow:
-  0 0 0 3px
-  #111;
-
+  0 0 0 3px #111;
 }
-
 
 .black-button {
-
-  background:
-  #111;
-
+  background: #111;
 }
-
 
 .blue-button {
-
-  background:
-  #005ccf;
-
+  background: #005ccf;
 }
-
 
 .red-button {
-
-  background:
-  #d90017;
-
+  background: #d90017;
 }
-
 
 .orange-button {
-
-  background:
-  #ed5800;
-
+  background: #ed5800;
 }
-
 
 .titanium-button {
-
   background:
-
   linear-gradient(
-
     135deg,
-
     #333,
-
     #999
-
   );
-
 }
 
-
 .selected-color {
-
   margin-bottom: 30px;
 
   font-size: .92rem;
 
   font-weight: 800;
-
 }
 
 
@@ -792,44 +551,29 @@ nav {
 ========================================================= */
 
 .spec-table {
-
-  border-top:
-  1px solid #ddd;
-
+  border-top: 1px solid #ddd;
 }
 
-
 .spec {
-
   display: flex;
 
-  justify-content:
-  space-between;
+  justify-content: space-between;
 
   gap: 20px;
 
-  padding:
-  14px 0;
+  padding: 14px 0;
 
-  border-bottom:
-  1px solid #ddd;
-
+  border-bottom: 1px solid #ddd;
 }
-
 
 .spec-name {
-
   color: #777;
-
 }
 
-
 .spec-value {
-
   text-align: right;
 
   font-weight: 800;
-
 }
 
 
@@ -838,45 +582,32 @@ nav {
 ========================================================= */
 
 .collection {
+  padding: 105px 0;
 
-  padding:
-  105px 0;
-
-  background:
-  #080808;
-
+  background: #080808;
 }
 
-
 .section-title {
-
   font-size:
-
   clamp(
     2.8rem,
     6vw,
     5.3rem
   );
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-weight: 900;
-
   font-style: italic;
 
-  letter-spacing:
-  -4px;
+  letter-spacing: -4px;
 
   line-height: .9;
 
   margin-bottom: 20px;
-
 }
 
-
 .section-description {
-
   max-width: 680px;
 
   color: #888;
@@ -884,24 +615,18 @@ nav {
   margin-bottom: 50px;
 
   font-size: 1.03rem;
-
 }
 
-
 .product-cards {
-
   display: grid;
 
   grid-template-columns:
   repeat(2, 1fr);
 
   gap: 24px;
-
 }
 
-
 .product-card {
-
   overflow: hidden;
 
   background: white;
@@ -911,64 +636,41 @@ nav {
   border-radius: 10px;
 
   transition: .25s;
-
 }
-
 
 .product-card:hover {
-
-  transform:
-  translateY(-6px);
-
+  transform: translateY(-6px);
 }
-
 
 .product-card img {
-
   width: 100%;
 
-  aspect-ratio:
-  16 / 9;
+  aspect-ratio: 16 / 9;
 
   object-fit: cover;
-
 }
 
-
 .card-bottom {
-
-  padding:
-  20px 24px;
+  padding: 20px 24px;
 
   display: flex;
 
   align-items: center;
 
-  justify-content:
-  space-between;
-
+  justify-content: space-between;
 }
-
 
 .card-bottom h3 {
-
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-size: 1.2rem;
-
 }
 
-
 .color-dot {
-
   width: 20px;
-
   height: 20px;
 
-  border-radius:
-  50%;
-
+  border-radius: 50%;
 }
 
 
@@ -977,139 +679,101 @@ nav {
 ========================================================= */
 
 .action {
-
   position: relative;
 
   min-height: 720px;
 
   display: flex;
-
   align-items: center;
 
   overflow: hidden;
 
   background: #111;
-
 }
 
-
 .action-bg {
-
   position: absolute;
 
   inset: 0;
 
   width: 100%;
-
   height: 100%;
 
   object-fit: cover;
 
-  object-position:
-  center;
-
+  object-position: center;
 }
 
-
 .action-overlay {
-
   position: absolute;
 
   inset: 0;
 
   background:
-
   linear-gradient(
-
     90deg,
-
     rgba(0,0,0,.91),
-
     rgba(0,0,0,.62),
-
     rgba(0,0,0,.15)
-
   );
-
 }
 
-
 .action-copy {
-
   position: relative;
 
   z-index: 3;
 
   max-width: 650px;
-
 }
 
-
 .action h2 {
-
   font-size:
-
   clamp(
     3.5rem,
     7vw,
     6.5rem
   );
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-weight: 900;
-
   font-style: italic;
 
-  letter-spacing:
-  -5px;
+  letter-spacing: -5px;
 
   line-height: .83;
 
   margin-bottom: 25px;
-
 }
 
-
 .action h2 span {
-
   display: block;
 
   color: #ef1b26;
-
 }
 
-
 .action-copy p {
-
   max-width: 580px;
 
   color: #ddd;
 
   font-size: 1.08rem;
-
 }
 
 
 /* =========================================================
-   BRAND
+   ABOUT
 ========================================================= */
 
 .brand-section {
-
-  padding:
-  105px 0;
+  padding: 105px 0;
 
   background: white;
 
   color: #111;
-
 }
 
-
 .brand-grid {
-
   display: grid;
 
   grid-template-columns:
@@ -1118,103 +782,112 @@ nav {
   gap: 70px;
 
   align-items: center;
-
 }
 
 
-.brand-box {
+/* NEW RIDER IMAGE */
 
-  min-height: 430px;
+.about-rider-box {
+  position: relative;
 
-  display: flex;
+  min-height: 560px;
 
-  flex-direction: column;
+  overflow: hidden;
 
-  justify-content: center;
+  background: #111;
 
-  padding: 55px;
+  border-radius: 12px;
+
+  box-shadow:
+  0 25px 60px rgba(0,0,0,.16);
+}
+
+.about-rider-box img {
+  width: 100%;
+  height: 100%;
+
+  position: absolute;
+
+  inset: 0;
+
+  object-fit: cover;
+
+  object-position: center;
+}
+
+.about-rider-overlay {
+  position: absolute;
+
+  inset: 0;
 
   background:
-  #080808;
-
-  color: white;
-
+  linear-gradient(
+    180deg,
+    rgba(0,0,0,.02),
+    rgba(0,0,0,.08) 55%,
+    rgba(0,0,0,.65)
+  );
 }
 
+.about-rider-label {
+  position: absolute;
 
-.brand-box-main {
+  left: 30px;
+  bottom: 28px;
 
-  font-size:
+  z-index: 2;
 
-  clamp(
-    3.2rem,
-    7vw,
-    6.5rem
-  );
+  color: white;
+}
 
-  text-transform:
-  uppercase;
+.about-rider-label strong {
+  display: block;
+
+  font-size: 2rem;
 
   font-weight: 900;
 
   font-style: italic;
 
-  line-height: .75;
+  text-transform: uppercase;
 
-  letter-spacing:
-  -5px;
-
+  letter-spacing: -1px;
 }
 
+.about-rider-label span {
+  color: #ff5a1f;
 
-.brand-box-sub {
-
-  margin-top: 24px;
-
-  color: #ef1b26;
-
-  font-size: 1.1rem;
-
-  text-transform:
-  uppercase;
+  font-size: .85rem;
 
   font-weight: 900;
 
-  letter-spacing:
-  5px;
+  text-transform: uppercase;
 
+  letter-spacing: 3px;
 }
 
 
 .brand-copy h2 {
-
   font-size:
-
   clamp(
     2.8rem,
     5vw,
     4.5rem
   );
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   line-height: .88;
 
-  letter-spacing:
-  -3px;
+  letter-spacing: -3px;
 
   margin-bottom: 25px;
-
 }
 
-
 .brand-copy p {
-
   color: #555;
 
   margin-bottom: 18px;
-
 }
 
 
@@ -1223,72 +896,48 @@ nav {
 ========================================================= */
 
 .cta {
+  padding: 85px 0;
 
-  padding:
-  85px 0;
+  text-align: center;
 
-  text-align:
-  center;
-
-  background:
-  #ef1b26;
-
+  background: #ef1b26;
 }
 
-
 .cta h2 {
-
   font-size:
-
   clamp(
     2.5rem,
     6vw,
     4.8rem
   );
 
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-weight: 900;
 
   line-height: .9;
 
-  letter-spacing:
-  -3px;
+  letter-spacing: -3px;
 
   margin-bottom: 18px;
-
 }
-
 
 .cta p {
-
   margin-bottom: 30px;
-
 }
-
 
 .cta .btn {
+  background: #080808;
 
-  background:
-  #080808;
-
-  border-color:
-  #080808;
-
+  border-color: #080808;
 }
 
-
 .cta .btn:hover {
+  background: white;
 
-  background:
-  white;
-
-  border-color:
-  white;
+  border-color: white;
 
   color: #111;
-
 }
 
 
@@ -1297,18 +946,12 @@ nav {
 ========================================================= */
 
 footer {
+  background: #050505;
 
-  background:
-  #050505;
-
-  padding:
-  60px 0 25px;
-
+  padding: 60px 0 25px;
 }
 
-
 .footer-grid {
-
   display: grid;
 
   grid-template-columns:
@@ -1317,91 +960,59 @@ footer {
   gap: 50px;
 
   padding-bottom: 45px;
-
 }
 
-
 .footer-logo {
-
-  text-transform:
-  uppercase;
+  text-transform: uppercase;
 
   font-size: 1.8rem;
 
   font-weight: 900;
-
   font-style: italic;
 
   margin-bottom: 15px;
-
 }
 
-
 .footer-description {
-
   max-width: 430px;
 
   color: #777;
-
 }
-
 
 footer h4 {
+  text-transform: uppercase;
 
-  text-transform:
-  uppercase;
-
-  margin-bottom:
-  14px;
-
+  margin-bottom: 14px;
 }
-
 
 footer ul {
-
   list-style: none;
-
 }
-
 
 footer li {
-
-  margin-bottom:
-  8px;
-
+  margin-bottom: 8px;
 }
 
-
 footer a {
-
   color: #888;
 
   transition: .2s;
-
 }
-
 
 footer a:hover {
-
   color: #ef1b26;
-
 }
 
-
 .copyright {
+  padding-top: 25px;
 
-  padding-top:
-  25px;
-
-  border-top:
-  1px solid #222;
+  border-top: 1px solid #222;
 
   text-align: center;
 
   color: #555;
 
   font-size: .83rem;
-
 }
 
 
@@ -1412,10 +1023,8 @@ footer a:hover {
 @media(max-width: 1000px) {
 
   .feature-image-grid {
-
     grid-template-columns:
     repeat(2, 1fr);
-
   }
 
 }
@@ -1424,56 +1033,36 @@ footer a:hover {
 @media(max-width: 900px) {
 
   .nav-links {
-
     display: none;
-
   }
-
 
   .hero {
-
     min-height: 690px;
-
   }
-
 
   .hero-overlay {
-
     background:
     rgba(0,0,0,.66);
-
   }
-
 
   .product-grid {
-
-    grid-template-columns:
-    1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .product-cards {
-
-    grid-template-columns:
-    1fr;
-
+    grid-template-columns: 1fr;
   }
-
 
   .brand-grid {
-
-    grid-template-columns:
-    1fr;
-
+    grid-template-columns: 1fr;
   }
 
+  .about-rider-box {
+    min-height: 650px;
+  }
 
   .footer-grid {
-
-    grid-template-columns:
-    1fr;
-
+    grid-template-columns: 1fr;
   }
 
 }
@@ -1482,120 +1071,72 @@ footer a:hover {
 @media(max-width: 600px) {
 
   nav {
-
     min-height: 70px;
-
   }
-
 
   .brand-main {
-
     font-size: 1.5rem;
-
   }
-
 
   .brand-sub {
-
     font-size: .6rem;
-
   }
-
 
   .hero {
-
     min-height: 650px;
-
   }
-
 
   .hero h1 {
-
-    letter-spacing:
-    -3px;
-
+    letter-spacing: -3px;
   }
 
-
   .feature-image-grid {
-
     grid-template-columns:
     repeat(2, 1fr);
 
     gap: 8px;
-
   }
-
 
   .feature-section {
-
-    padding:
-    10px 0;
-
+    padding: 10px 0;
   }
-
 
   .product {
-
-    padding:
-    70px 0;
-
+    padding: 70px 0;
   }
 
-
   .product-photo {
-
     min-height: 280px;
 
     padding: 15px;
-
   }
-
 
   .product-info h2 {
-
-    letter-spacing:
-    -2px;
-
+    letter-spacing: -2px;
   }
-
 
   .collection {
-
-    padding:
-    75px 0;
-
+    padding: 75px 0;
   }
-
 
   .section-title {
-
-    letter-spacing:
-    -2px;
-
+    letter-spacing: -2px;
   }
-
 
   .action {
-
     min-height: 620px;
-
   }
-
 
   .action h2 {
-
-    letter-spacing:
-    -3px;
-
+    letter-spacing: -3px;
   }
 
-
   .brand-section {
+    padding: 75px 0;
+  }
 
-    padding:
-    75px 0;
-
+  .about-rider-box {
+    min-height: 520px;
   }
 
 }
@@ -1697,9 +1238,9 @@ Contact
   id="home"
 >
 
-
 <img
   class="hero-bg"
+
   src="images/hero-action.png"
 
   onerror="
@@ -1710,15 +1251,12 @@ Contact
   alt="Newson Sportec motocross rider"
 >
 
-
 <div class="hero-overlay">
 </div>
-
 
 <div class="container">
 
 <div class="hero-content">
-
 
 <div class="eyebrow">
 
@@ -1726,19 +1264,15 @@ Newson Sportec
 
 </div>
 
-
 <h1>
 
 Ride
 
 <span>
-
 Further.
-
 </span>
 
 </h1>
-
 
 <p class="hero-copy">
 
@@ -1748,9 +1282,7 @@ rider control and off-road identity.
 
 </p>
 
-
 <div class="hero-buttons">
-
 
 <a
   href="#handlebar"
@@ -1761,7 +1293,6 @@ Explore Handlebar
 
 </a>
 
-
 <a
   href="#colors"
   class="btn btn-outline"
@@ -1770,7 +1301,6 @@ Explore Handlebar
 Choose A Color
 
 </a>
-
 
 </div>
 
@@ -1782,7 +1312,7 @@ Choose A Color
 
 
 <!-- =========================================================
-     NEW FOUR FEATURE IMAGES
+     FOUR FEATURE IMAGES
 ========================================================= -->
 
 <section class="feature-section">
@@ -1791,8 +1321,6 @@ Choose A Color
 
 <div class="feature-image-grid">
 
-
-<!-- LIGHTWEIGHT -->
 
 <div class="feature-image-card">
 
@@ -1812,8 +1340,6 @@ Choose A Color
 </div>
 
 
-<!-- HIGH STRENGTH -->
-
 <div class="feature-image-card">
 
 <img
@@ -1832,8 +1358,6 @@ Choose A Color
 </div>
 
 
-<!-- PRECISION CONTROL -->
-
 <div class="feature-image-card">
 
 <img
@@ -1851,8 +1375,6 @@ Choose A Color
 
 </div>
 
-
-<!-- MX ENDURO -->
 
 <div class="feature-image-card">
 
@@ -1888,12 +1410,9 @@ Choose A Color
   id="handlebar"
 >
 
-
 <div class="container product-grid">
 
-
 <div class="product-photo">
-
 
 <img
 
@@ -1910,19 +1429,16 @@ Choose A Color
 
 >
 
-
 </div>
 
 
 <div class="product-info">
-
 
 <div class="eyebrow">
 
 Newson Sportec Handlebar
 
 </div>
-
 
 <h2>
 
@@ -1936,7 +1452,6 @@ Dirt.
 
 </h2>
 
-
 <p class="product-description">
 
 A clean and aggressive dirt bike handlebar
@@ -1945,7 +1460,6 @@ a performance-inspired bend profile
 and five distinctive finishes.
 
 </p>
-
 
 <div class="color-label">
 
@@ -1969,9 +1483,9 @@ Select Handlebar Color
 
   onclick="
     selectHandlebar(
-    'handlebar-black.png',
-    'Black',
-    this
+      'handlebar-black.png',
+      'Black',
+      this
     )
   "
 
@@ -1990,9 +1504,9 @@ Select Handlebar Color
 
   onclick="
     selectHandlebar(
-    'handlebar-blue.png',
-    'Blue',
-    this
+      'handlebar-blue.png',
+      'Blue',
+      this
     )
   "
 
@@ -2011,9 +1525,9 @@ Select Handlebar Color
 
   onclick="
     selectHandlebar(
-    'handlebar-red.png',
-    'Red',
-    this
+      'handlebar-red.png',
+      'Red',
+      this
     )
   "
 
@@ -2032,9 +1546,9 @@ Select Handlebar Color
 
   onclick="
     selectHandlebar(
-    'handlebar-orange.png',
-    'Orange',
-    this
+      'handlebar-orange.png',
+      'Orange',
+      this
     )
   "
 
@@ -2053,9 +1567,9 @@ Select Handlebar Color
 
   onclick="
     selectHandlebar(
-    'handlebar-titanium.png',
-    'Titanium',
-    this
+      'handlebar-titanium.png',
+      'Titanium',
+      this
     )
   "
 
@@ -2151,7 +1665,6 @@ Performance Bend
 
 </div>
 
-
 </div>
 
 </section>
@@ -2166,16 +1679,13 @@ Performance Bend
   id="colors"
 >
 
-
 <div class="container">
-
 
 <div class="eyebrow">
 
 Handlebar Collection
 
 </div>
-
 
 <h2 class="section-title">
 
@@ -2189,7 +1699,6 @@ Race Style.
 
 </h2>
 
-
 <p class="section-description">
 
 Choose from black, blue, red,
@@ -2201,8 +1710,6 @@ to complement your dirt bike.
 
 <div class="product-cards">
 
-
-<!-- BLACK -->
 
 <article class="product-card">
 
@@ -2234,8 +1741,6 @@ to complement your dirt bike.
 </article>
 
 
-<!-- BLUE -->
-
 <article class="product-card">
 
 <img
@@ -2265,8 +1770,6 @@ to complement your dirt bike.
 
 </article>
 
-
-<!-- RED -->
 
 <article class="product-card">
 
@@ -2298,8 +1801,6 @@ to complement your dirt bike.
 </article>
 
 
-<!-- ORANGE -->
-
 <article class="product-card">
 
 <img
@@ -2330,8 +1831,6 @@ to complement your dirt bike.
 </article>
 
 
-<!-- TITANIUM -->
-
 <article class="product-card">
 
 <img
@@ -2358,9 +1857,9 @@ to complement your dirt bike.
   style="
   background:
   linear-gradient(
-  135deg,
-  #333,
-  #999
+    135deg,
+    #333,
+    #999
   );
   "
 
@@ -2388,7 +1887,6 @@ to complement your dirt bike.
   id="performance"
 >
 
-
 <img
 
   class="action-bg"
@@ -2404,23 +1902,18 @@ to complement your dirt bike.
 
 >
 
-
 <div class="action-overlay">
 </div>
 
-
 <div class="container">
 
-
 <div class="action-copy">
-
 
 <div class="eyebrow">
 
 Performance On Dirt
 
 </div>
-
 
 <h2>
 
@@ -2434,7 +1927,6 @@ Ride.
 
 </h2>
 
-
 <p>
 
 Newson Sportec is built around the
@@ -2444,7 +1936,6 @@ of the primary control points between
 the rider and the motorcycle.
 
 </p>
-
 
 </div>
 
@@ -2462,39 +1953,51 @@ the rider and the motorcycle.
   id="about"
 >
 
-
 <div class="container brand-grid">
 
 
-<div class="brand-box">
+<!-- RIDER IMAGE REPLACES BLACK LOGO BOX -->
 
+<div class="about-rider-box">
 
-<div class="brand-box-main">
+<img
 
-NEWSON
+  src="images/about-rider.png"
 
+  onerror="
+    this.onerror=null;
+    this.src='about-rider.png';
+  "
+
+  alt="Newson Sportec freestyle motocross rider performing in front of a crowd"
+
+>
+
+<div class="about-rider-overlay">
 </div>
 
+<div class="about-rider-label">
 
-<div class="brand-box-sub">
+<strong>
+Newson Sportec
+</strong>
 
-Sportec
+<span>
+Built For Performance
+</span>
 
 </div>
-
 
 </div>
 
 
 <div class="brand-copy">
 
-
 <div class="eyebrow">
 
 Our Brand
 
 </div>
-
 
 <h2>
 
@@ -2506,7 +2009,6 @@ Performance.
 
 </h2>
 
-
 <p>
 
 Newson Sportec focuses on motorcycle
@@ -2514,7 +2016,6 @@ performance products, motocross styling
 and off-road design.
 
 </p>
-
 
 <p>
 
@@ -2524,7 +2025,6 @@ products for dirt-bike enthusiasts.
 
 </p>
 
-
 <p>
 
 The handlebar collection represents
@@ -2532,7 +2032,6 @@ the beginning of a growing line
 of Newson Sportec motorcycle products.
 
 </p>
-
 
 </div>
 
@@ -2550,9 +2049,7 @@ of Newson Sportec motorcycle products.
   id="contact"
 >
 
-
 <div class="container">
-
 
 <h2>
 
@@ -2562,7 +2059,6 @@ Ride Newson Sportec.
 
 </h2>
 
-
 <p>
 
 Product specifications,
@@ -2570,7 +2066,6 @@ availability and ordering
 information coming soon.
 
 </p>
-
 
 <a
 
@@ -2584,7 +2079,6 @@ Contact Newson Sportec
 
 </a>
 
-
 </div>
 
 </section>
@@ -2596,19 +2090,15 @@ Contact Newson Sportec
 
 <footer>
 
-
 <div class="container footer-grid">
 
-
 <div>
-
 
 <div class="footer-logo">
 
 NEWSON SPORTEC
 
 </div>
-
 
 <p class="footer-description">
 
@@ -2618,19 +2108,16 @@ off-road riders.
 
 </p>
 
-
 </div>
 
 
 <div>
-
 
 <h4>
 
 Products
 
 </h4>
-
 
 <ul>
 
@@ -2654,19 +2141,16 @@ Performance
 
 </ul>
 
-
 </div>
 
 
 <div>
-
 
 <h4>
 
 Newson Sportec
 
 </h4>
-
 
 <ul>
 
@@ -2698,9 +2182,7 @@ GitHub
 
 </ul>
 
-
 </div>
-
 
 </div>
 
@@ -2718,7 +2200,6 @@ All rights reserved.
 
 </div>
 
-
 </footer>
 
 
@@ -2728,65 +2209,51 @@ All rights reserved.
 
 <script>
 
-
 function selectHandlebar(
   fileName,
   colorName,
   button
 ) {
 
-
   const image =
   document.getElementById(
     "mainHandlebar"
   );
-
 
   const colorLabel =
   document.getElementById(
     "selectedColor"
   );
 
-
   image.style.opacity =
   "0";
 
-
   setTimeout(function() {
-
 
     image.onerror =
     function() {
 
-
       image.onerror =
       null;
-
 
       image.src =
       fileName;
 
-
     };
-
 
     image.src =
     "images/" +
     fileName;
 
-
     image.alt =
     colorName +
     " Newson Sportec dirt bike handlebar";
 
-
     colorLabel.textContent =
     colorName;
 
-
     image.style.opacity =
     "1";
-
 
   }, 150);
 
@@ -2797,11 +2264,9 @@ function selectHandlebar(
   )
   .forEach(function(btn) {
 
-
     btn.classList.remove(
       "active"
     );
-
 
   });
 
@@ -2809,7 +2274,6 @@ function selectHandlebar(
   button.classList.add(
     "active"
   );
-
 
 }
 
@@ -2821,7 +2285,6 @@ document
 .textContent =
 new Date()
 .getFullYear();
-
 
 </script>
 

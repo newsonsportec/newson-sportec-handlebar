@@ -785,12 +785,12 @@ nav {
 }
 
 
-/* NEW RIDER IMAGE */
+/* FIXED RIDER IMAGE AREA */
 
 .about-rider-box {
   position: relative;
 
-  min-height: 560px;
+  min-height: 720px;
 
   overflow: hidden;
 
@@ -800,6 +800,13 @@ nav {
 
   box-shadow:
   0 25px 60px rgba(0,0,0,.16);
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 0;
 }
 
 .about-rider-box img {
@@ -810,9 +817,11 @@ nav {
 
   inset: 0;
 
-  object-fit: cover;
+  object-fit: contain;
 
-  object-position: center;
+  object-position: center top;
+
+  background: #111;
 }
 
 .about-rider-overlay {
@@ -823,9 +832,9 @@ nav {
   background:
   linear-gradient(
     180deg,
-    rgba(0,0,0,.02),
-    rgba(0,0,0,.08) 55%,
-    rgba(0,0,0,.65)
+    rgba(0,0,0,0),
+    rgba(0,0,0,.04) 65%,
+    rgba(0,0,0,.60)
   );
 }
 
@@ -1058,7 +1067,7 @@ footer a:hover {
   }
 
   .about-rider-box {
-    min-height: 650px;
+    min-height: 800px;
   }
 
   .footer-grid {
@@ -1136,7 +1145,16 @@ footer a:hover {
   }
 
   .about-rider-box {
-    min-height: 520px;
+    min-height: 650px;
+  }
+
+  .about-rider-label {
+    left: 20px;
+    bottom: 20px;
+  }
+
+  .about-rider-label strong {
+    font-size: 1.5rem;
   }
 
 }
@@ -1149,9 +1167,7 @@ footer a:hover {
 <body>
 
 
-<!-- =========================================================
-     HEADER
-========================================================= -->
+<!-- HEADER -->
 
 <header>
 
@@ -1163,15 +1179,11 @@ footer a:hover {
 >
 
 <div class="brand-main">
-
 <span>N</span>EWSON SPORTEC
-
 </div>
 
 <div class="brand-sub">
-
 Motorcycle Performance Parts
-
 </div>
 
 </a>
@@ -1179,47 +1191,23 @@ Motorcycle Performance Parts
 
 <ul class="nav-links">
 
-<li>
-<a href="#home">
-Home
-</a>
-</li>
+<li><a href="#home">Home</a></li>
+
+<li><a href="#handlebar">Handlebar</a></li>
+
+<li><a href="#colors">Colors</a></li>
+
+<li><a href="#performance">Performance</a></li>
+
+<li><a href="#about">About</a></li>
 
 <li>
-<a href="#handlebar">
-Handlebar
-</a>
-</li>
-
-<li>
-<a href="#colors">
-Colors
-</a>
-</li>
-
-<li>
-<a href="#performance">
-Performance
-</a>
-</li>
-
-<li>
-<a href="#about">
-About
-</a>
-</li>
-
-<li>
-
 <a
   href="#contact"
   class="nav-contact"
 >
-
 Contact
-
 </a>
-
 </li>
 
 </ul>
@@ -1229,9 +1217,7 @@ Contact
 </header>
 
 
-<!-- =========================================================
-     HERO
-========================================================= -->
+<!-- HERO -->
 
 <section
   class="hero"
@@ -1240,38 +1226,27 @@ Contact
 
 <img
   class="hero-bg"
-
   src="images/hero-action.png"
-
   onerror="
     this.onerror=null;
     this.src='hero-action.png';
   "
-
   alt="Newson Sportec motocross rider"
 >
 
-<div class="hero-overlay">
-</div>
+<div class="hero-overlay"></div>
 
 <div class="container">
 
 <div class="hero-content">
 
 <div class="eyebrow">
-
 Newson Sportec
-
 </div>
 
 <h1>
-
 Ride
-
-<span>
-Further.
-</span>
-
+<span>Further.</span>
 </h1>
 
 <p class="hero-copy">
@@ -1288,18 +1263,14 @@ rider control and off-road identity.
   href="#handlebar"
   class="btn btn-red"
 >
-
 Explore Handlebar
-
 </a>
 
 <a
   href="#colors"
   class="btn btn-outline"
 >
-
 Choose A Color
-
 </a>
 
 </div>
@@ -1311,9 +1282,7 @@ Choose A Color
 </section>
 
 
-<!-- =========================================================
-     FOUR FEATURE IMAGES
-========================================================= -->
+<!-- FEATURE IMAGES -->
 
 <section class="feature-section">
 
@@ -1325,16 +1294,12 @@ Choose A Color
 <div class="feature-image-card">
 
 <img
-
   src="images/lightweight_aluminum_feather_badge.png"
-
   onerror="
     this.onerror=null;
     this.src='lightweight_aluminum_feather_badge.png';
   "
-
   alt="Lightweight 7075-T6 Aluminum"
-
 >
 
 </div>
@@ -1343,16 +1308,12 @@ Choose A Color
 <div class="feature-image-card">
 
 <img
-
   src="images/high_strength_race_proven_badge.png"
-
   onerror="
     this.onerror=null;
     this.src='high_strength_race_proven_badge.png';
   "
-
   alt="High Strength Race Proven"
-
 >
 
 </div>
@@ -1361,16 +1322,12 @@ Choose A Color
 <div class="feature-image-card">
 
 <img
-
   src="images/precision_control_badge.png"
-
   onerror="
     this.onerror=null;
     this.src='precision_control_badge.png';
   "
-
   alt="Precision Control Optimal Bend Design"
-
 >
 
 </div>
@@ -1379,16 +1336,12 @@ Choose A Color
 <div class="feature-image-card">
 
 <img
-
   src="images/trail_mx_enduro_ready_badge.png"
-
   onerror="
     this.onerror=null;
     this.src='trail_mx_enduro_ready_badge.png';
   "
-
   alt="Trail MX Enduro Ready"
-
 >
 
 </div>
@@ -1401,9 +1354,7 @@ Choose A Color
 </section>
 
 
-<!-- =========================================================
-     PRODUCT
-========================================================= -->
+<!-- PRODUCT -->
 
 <section
   class="product"
@@ -1415,18 +1366,13 @@ Choose A Color
 <div class="product-photo">
 
 <img
-
   id="mainHandlebar"
-
   src="images/handlebar-black.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-black.png';
   "
-
   alt="Black Newson Sportec dirt bike handlebar"
-
 >
 
 </div>
@@ -1435,21 +1381,12 @@ Choose A Color
 <div class="product-info">
 
 <div class="eyebrow">
-
 Newson Sportec Handlebar
-
 </div>
 
 <h2>
-
 Built For
-
-<span class="red">
-
-Dirt.
-
-</span>
-
+<span class="red">Dirt.</span>
 </h2>
 
 <p class="product-description">
@@ -1462,9 +1399,7 @@ and five distinctive finishes.
 </p>
 
 <div class="color-label">
-
 Select Handlebar Color
-
 </div>
 
 
@@ -1472,15 +1407,8 @@ Select Handlebar Color
 
 
 <button
-
-  class="
-  color-button
-  black-button
-  active
-  "
-
+  class="color-button black-button active"
   aria-label="Black"
-
   onclick="
     selectHandlebar(
       'handlebar-black.png',
@@ -1488,20 +1416,12 @@ Select Handlebar Color
       this
     )
   "
-
->
-</button>
+></button>
 
 
 <button
-
-  class="
-  color-button
-  blue-button
-  "
-
+  class="color-button blue-button"
   aria-label="Blue"
-
   onclick="
     selectHandlebar(
       'handlebar-blue.png',
@@ -1509,20 +1429,12 @@ Select Handlebar Color
       this
     )
   "
-
->
-</button>
+></button>
 
 
 <button
-
-  class="
-  color-button
-  red-button
-  "
-
+  class="color-button red-button"
   aria-label="Red"
-
   onclick="
     selectHandlebar(
       'handlebar-red.png',
@@ -1530,20 +1442,12 @@ Select Handlebar Color
       this
     )
   "
-
->
-</button>
+></button>
 
 
 <button
-
-  class="
-  color-button
-  orange-button
-  "
-
+  class="color-button orange-button"
   aria-label="Orange"
-
   onclick="
     selectHandlebar(
       'handlebar-orange.png',
@@ -1551,20 +1455,12 @@ Select Handlebar Color
       this
     )
   "
-
->
-</button>
+></button>
 
 
 <button
-
-  class="
-  color-button
-  titanium-button
-  "
-
+  class="color-button titanium-button"
   aria-label="Titanium"
-
   onclick="
     selectHandlebar(
       'handlebar-titanium.png',
@@ -1572,9 +1468,7 @@ Select Handlebar Color
       this
     )
   "
-
->
-</button>
+></button>
 
 
 </div>
@@ -1583,12 +1477,7 @@ Select Handlebar Color
 <div class="selected-color">
 
 Selected color:
-
-<strong id="selectedColor">
-
-Black
-
-</strong>
+<strong id="selectedColor">Black</strong>
 
 </div>
 
@@ -1597,67 +1486,32 @@ Black
 
 
 <div class="spec">
-
-<span class="spec-name">
-Brand
-</span>
-
-<span class="spec-value">
-Newson Sportec
-</span>
-
+<span class="spec-name">Brand</span>
+<span class="spec-value">Newson Sportec</span>
 </div>
 
 
 <div class="spec">
-
-<span class="spec-name">
-Product
-</span>
-
-<span class="spec-value">
-Dirt Bike Handlebar
-</span>
-
+<span class="spec-name">Product</span>
+<span class="spec-value">Dirt Bike Handlebar</span>
 </div>
 
 
 <div class="spec">
-
-<span class="spec-name">
-Application
-</span>
-
-<span class="spec-value">
-Motocross / Off-Road
-</span>
-
+<span class="spec-name">Application</span>
+<span class="spec-value">Motocross / Off-Road</span>
 </div>
 
 
 <div class="spec">
-
-<span class="spec-name">
-Colors
-</span>
-
-<span class="spec-value">
-5 Finishes
-</span>
-
+<span class="spec-name">Colors</span>
+<span class="spec-value">5 Finishes</span>
 </div>
 
 
 <div class="spec">
-
-<span class="spec-name">
-Design
-</span>
-
-<span class="spec-value">
-Performance Bend
-</span>
-
+<span class="spec-name">Design</span>
+<span class="spec-value">Performance Bend</span>
 </div>
 
 
@@ -1670,9 +1524,7 @@ Performance Bend
 </section>
 
 
-<!-- =========================================================
-     COLOR COLLECTION
-========================================================= -->
+<!-- COLLECTION -->
 
 <section
   class="collection"
@@ -1682,21 +1534,12 @@ Performance Bend
 <div class="container">
 
 <div class="eyebrow">
-
 Handlebar Collection
-
 </div>
 
 <h2 class="section-title">
-
 Choose Your
-
-<span class="red">
-
-Race Style.
-
-</span>
-
+<span class="red">Race Style.</span>
 </h2>
 
 <p class="section-description">
@@ -1714,28 +1557,17 @@ to complement your dirt bike.
 <article class="product-card">
 
 <img
-
   src="images/handlebar-black.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-black.png';
   "
-
   alt="Black Newson Sportec handlebar"
-
 >
 
 <div class="card-bottom">
-
 <h3>Black</h3>
-
-<div
-  class="color-dot"
-  style="background:#111;"
->
-</div>
-
+<div class="color-dot" style="background:#111;"></div>
 </div>
 
 </article>
@@ -1744,28 +1576,17 @@ to complement your dirt bike.
 <article class="product-card">
 
 <img
-
   src="images/handlebar-blue.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-blue.png';
   "
-
   alt="Blue Newson Sportec handlebar"
-
 >
 
 <div class="card-bottom">
-
 <h3>Blue</h3>
-
-<div
-  class="color-dot"
-  style="background:#005ccf;"
->
-</div>
-
+<div class="color-dot" style="background:#005ccf;"></div>
 </div>
 
 </article>
@@ -1774,28 +1595,17 @@ to complement your dirt bike.
 <article class="product-card">
 
 <img
-
   src="images/handlebar-red.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-red.png';
   "
-
   alt="Red Newson Sportec handlebar"
-
 >
 
 <div class="card-bottom">
-
 <h3>Red</h3>
-
-<div
-  class="color-dot"
-  style="background:#d90017;"
->
-</div>
-
+<div class="color-dot" style="background:#d90017;"></div>
 </div>
 
 </article>
@@ -1804,28 +1614,17 @@ to complement your dirt bike.
 <article class="product-card">
 
 <img
-
   src="images/handlebar-orange.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-orange.png';
   "
-
   alt="Orange Newson Sportec handlebar"
-
 >
 
 <div class="card-bottom">
-
 <h3>Orange</h3>
-
-<div
-  class="color-dot"
-  style="background:#ed5800;"
->
-</div>
-
+<div class="color-dot" style="background:#ed5800;"></div>
 </div>
 
 </article>
@@ -1834,26 +1633,19 @@ to complement your dirt bike.
 <article class="product-card">
 
 <img
-
   src="images/handlebar-titanium.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-titanium.png';
   "
-
   alt="Titanium Newson Sportec handlebar"
-
 >
 
 <div class="card-bottom">
-
 <h3>Titanium</h3>
 
 <div
-
   class="color-dot"
-
   style="
   background:
   linear-gradient(
@@ -1862,9 +1654,7 @@ to complement your dirt bike.
     #999
   );
   "
-
->
-</div>
+></div>
 
 </div>
 
@@ -1878,9 +1668,7 @@ to complement your dirt bike.
 </section>
 
 
-<!-- =========================================================
-     PERFORMANCE
-========================================================= -->
+<!-- PERFORMANCE -->
 
 <section
   class="action"
@@ -1888,43 +1676,28 @@ to complement your dirt bike.
 >
 
 <img
-
   class="action-bg"
-
   src="images/hero-action.png"
-
   onerror="
     this.onerror=null;
     this.src='hero-action.png';
   "
-
   alt="Newson Sportec motocross rider"
-
 >
 
-<div class="action-overlay">
-</div>
+<div class="action-overlay"></div>
 
 <div class="container">
 
 <div class="action-copy">
 
 <div class="eyebrow">
-
 Performance On Dirt
-
 </div>
 
 <h2>
-
 Control The
-
-<span>
-
-Ride.
-
-</span>
-
+<span>Ride.</span>
 </h2>
 
 <p>
@@ -1944,9 +1717,7 @@ the rider and the motorcycle.
 </section>
 
 
-<!-- =========================================================
-     ABOUT
-========================================================= -->
+<!-- ABOUT -->
 
 <section
   class="brand-section"
@@ -1956,25 +1727,18 @@ the rider and the motorcycle.
 <div class="container brand-grid">
 
 
-<!-- RIDER IMAGE REPLACES BLACK LOGO BOX -->
-
 <div class="about-rider-box">
 
 <img
-
   src="images/about-rider.png"
-
   onerror="
     this.onerror=null;
     this.src='about-rider.png';
   "
-
-  alt="Newson Sportec freestyle motocross rider performing in front of a crowd"
-
+  alt="Newson Sportec freestyle motocross rider"
 >
 
-<div class="about-rider-overlay">
-</div>
+<div class="about-rider-overlay"></div>
 
 <div class="about-rider-label">
 
@@ -1994,9 +1758,7 @@ Built For Performance
 <div class="brand-copy">
 
 <div class="eyebrow">
-
 Our Brand
-
 </div>
 
 <h2>
@@ -2040,9 +1802,7 @@ of Newson Sportec motorcycle products.
 </section>
 
 
-<!-- =========================================================
-     CONTACT
-========================================================= -->
+<!-- CONTACT -->
 
 <section
   class="cta"
@@ -2052,11 +1812,8 @@ of Newson Sportec motorcycle products.
 <div class="container">
 
 <h2>
-
 Ride Further.
-
 Ride Newson Sportec.
-
 </h2>
 
 <p>
@@ -2068,15 +1825,10 @@ information coming soon.
 </p>
 
 <a
-
   class="btn"
-
   href="mailto:your-email@example.com"
-
 >
-
 Contact Newson Sportec
-
 </a>
 
 </div>
@@ -2084,9 +1836,7 @@ Contact Newson Sportec
 </section>
 
 
-<!-- =========================================================
-     FOOTER
-========================================================= -->
+<!-- FOOTER -->
 
 <footer>
 
@@ -2095,9 +1845,7 @@ Contact Newson Sportec
 <div>
 
 <div class="footer-logo">
-
 NEWSON SPORTEC
-
 </div>
 
 <p class="footer-description">
@@ -2114,30 +1862,16 @@ off-road riders.
 <div>
 
 <h4>
-
 Products
-
 </h4>
 
 <ul>
 
-<li>
-<a href="#handlebar">
-Handlebar
-</a>
-</li>
+<li><a href="#handlebar">Handlebar</a></li>
 
-<li>
-<a href="#colors">
-Color Collection
-</a>
-</li>
+<li><a href="#colors">Color Collection</a></li>
 
-<li>
-<a href="#performance">
-Performance
-</a>
-</li>
+<li><a href="#performance">Performance</a></li>
 
 </ul>
 
@@ -2147,24 +1881,14 @@ Performance
 <div>
 
 <h4>
-
 Newson Sportec
-
 </h4>
 
 <ul>
 
-<li>
-<a href="#about">
-About
-</a>
-</li>
+<li><a href="#about">About</a></li>
 
-<li>
-<a href="#contact">
-Contact
-</a>
-</li>
+<li><a href="#contact">Contact</a></li>
 
 <li>
 
@@ -2173,9 +1897,7 @@ Contact
   target="_blank"
   rel="noopener"
 >
-
 GitHub
-
 </a>
 
 </li>
@@ -2189,13 +1911,8 @@ GitHub
 
 <div class="container copyright">
 
-©
-
-<span id="year">
-</span>
-
+© <span id="year"></span>
 Newson Sportec.
-
 All rights reserved.
 
 </div>
@@ -2203,9 +1920,7 @@ All rights reserved.
 </footer>
 
 
-<!-- =========================================================
-     JAVASCRIPT
-========================================================= -->
+<!-- JAVASCRIPT -->
 
 <script>
 
@@ -2225,25 +1940,20 @@ function selectHandlebar(
     "selectedColor"
   );
 
-  image.style.opacity =
-  "0";
+  image.style.opacity = "0";
 
   setTimeout(function() {
 
-    image.onerror =
-    function() {
+    image.onerror = function() {
 
-      image.onerror =
-      null;
+      image.onerror = null;
 
-      image.src =
-      fileName;
+      image.src = fileName;
 
     };
 
     image.src =
-    "images/" +
-    fileName;
+    "images/" + fileName;
 
     image.alt =
     colorName +

@@ -37,9 +37,15 @@ html {
 }
 
 body {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family:
+  Arial,
+  Helvetica,
+  sans-serif;
+
   background: #080808;
-  color: #ffffff;
+
+  color: white;
+
   line-height: 1.6;
 }
 
@@ -72,26 +78,39 @@ button {
 ========================================================= */
 
 header {
+
   position: sticky;
+
   top: 0;
+
   z-index: 1000;
 
-  background: rgba(5,5,5,.96);
+  background:
+  rgba(5,5,5,.96);
 
   border-bottom:
-  1px solid rgba(255,255,255,.08);
+  1px solid
+  rgba(255,255,255,.08);
 
-  backdrop-filter: blur(12px);
+  backdrop-filter:
+  blur(12px);
+
 }
 
+
 nav {
+
   min-height: 82px;
 
   display: flex;
+
   align-items: center;
-  justify-content: space-between;
+
+  justify-content:
+  space-between;
 
   gap: 30px;
+
 }
 
 
@@ -100,36 +119,53 @@ nav {
 ========================================================= */
 
 .brand {
+
   display: flex;
+
   flex-direction: column;
 
-  text-transform: uppercase;
+  text-transform:
+  uppercase;
 
   font-weight: 900;
+
   font-style: italic;
 
   line-height: .8;
+
 }
+
 
 .brand-main {
+
   font-size: 2rem;
-  letter-spacing: -2px;
+
+  letter-spacing:
+  -2px;
+
 }
+
 
 .brand-main span {
+
   color: #ef1b26;
+
 }
 
+
 .brand-sub {
+
   margin-top: 8px;
 
-  font-size: .72rem;
+  font-size: .7rem;
 
-  letter-spacing: 3px;
+  letter-spacing:
+  3px;
 
   color: #aaa;
 
   font-style: normal;
+
 }
 
 
@@ -138,7 +174,9 @@ nav {
 ========================================================= */
 
 .nav-links {
+
   display: flex;
+
   align-items: center;
 
   gap: 28px;
@@ -146,34 +184,54 @@ nav {
   list-style: none;
 
   font-size: .85rem;
+
   font-weight: 800;
 
-  text-transform: uppercase;
+  text-transform:
+  uppercase;
 
-  letter-spacing: .6px;
+  letter-spacing: .5px;
+
 }
+
 
 .nav-links a {
+
   transition: .2s;
+
 }
+
 
 .nav-links a:hover {
+
   color: #ef1b26;
+
 }
+
 
 .nav-contact {
-  background: #ef1b26;
 
-  padding: 11px 20px;
+  background:
+  #ef1b26;
 
-  border-radius: 4px;
+  padding:
+  11px 20px;
+
+  border-radius:
+  4px;
 
   color: white;
+
 }
 
+
 .nav-contact:hover {
-  background: #ff3540;
+
+  background:
+  #ff3540;
+
   color: white !important;
+
 }
 
 
@@ -182,6 +240,7 @@ nav {
 ========================================================= */
 
 .hero {
+
   position: relative;
 
   min-height: 760px;
@@ -189,98 +248,149 @@ nav {
   overflow: hidden;
 
   display: flex;
+
   align-items: center;
 
   background: #111;
+
 }
 
+
 .hero-bg {
+
   position: absolute;
 
   inset: 0;
 
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
 
-  object-position: center 35%;
+  object-position:
+  center 35%;
+
 }
 
+
 .hero-overlay {
+
   position: absolute;
 
   inset: 0;
 
   background:
+
   linear-gradient(
+
     90deg,
-    rgba(0,0,0,.94) 0%,
-    rgba(0,0,0,.80) 32%,
-    rgba(0,0,0,.45) 57%,
-    rgba(0,0,0,.10) 100%
+
+    rgba(0,0,0,.94)
+    0%,
+
+    rgba(0,0,0,.82)
+    31%,
+
+    rgba(0,0,0,.44)
+    58%,
+
+    rgba(0,0,0,.08)
+    100%
+
   );
+
 }
 
+
 .hero-content {
+
   position: relative;
 
   z-index: 3;
 
-  max-width: 680px;
+  max-width: 690px;
+
 }
+
 
 .eyebrow {
+
   color: #ef1b26;
 
-  text-transform: uppercase;
+  text-transform:
+  uppercase;
 
   font-size: .8rem;
+
   font-weight: 900;
 
-  letter-spacing: 5px;
+  letter-spacing:
+  5px;
 
   margin-bottom: 18px;
+
 }
 
-.hero h1 {
-  font-size:
-  clamp(4.2rem, 9vw, 8rem);
 
-  text-transform: uppercase;
+.hero h1 {
+
+  font-size:
+  clamp(
+    4.2rem,
+    9vw,
+    8rem
+  );
+
+  text-transform:
+  uppercase;
 
   font-style: italic;
+
   font-weight: 900;
 
-  letter-spacing: -6px;
+  letter-spacing:
+  -6px;
 
   line-height: .8;
 
-  margin-bottom: 30px;
+  margin-bottom:
+  30px;
+
 }
 
+
 .hero h1 span {
+
   display: block;
 
   color: #ef1b26;
+
 }
 
+
 .hero-copy {
+
   max-width: 570px;
 
   color: #ddd;
 
   font-size: 1.12rem;
 
-  margin-bottom: 35px;
+  margin-bottom:
+  35px;
+
 }
 
+
 .hero-buttons {
+
   display: flex;
 
   gap: 14px;
 
   flex-wrap: wrap;
+
 }
 
 
@@ -289,129 +399,161 @@ nav {
 ========================================================= */
 
 .btn {
+
   display: inline-block;
 
-  padding: 15px 28px;
+  padding:
+  15px 28px;
 
-  border: 2px solid #fff;
+  border:
+  2px solid white;
 
-  text-transform: uppercase;
+  text-transform:
+  uppercase;
 
   font-size: .84rem;
+
   font-weight: 900;
 
-  letter-spacing: 1px;
+  letter-spacing:
+  1px;
 
   transition: .25s;
+
 }
+
 
 .btn-red {
-  background: #ef1b26;
 
-  border-color: #ef1b26;
+  background:
+  #ef1b26;
+
+  border-color:
+  #ef1b26;
+
 }
+
 
 .btn-red:hover {
-  background: #fff;
 
-  border-color: #fff;
+  background:
+  white;
+
+  border-color:
+  white;
 
   color: #111;
+
 }
 
+
 .btn-outline:hover {
-  background: #fff;
+
+  background:
+  white;
 
   color: #111;
+
 }
 
 
 /* =========================================================
-   FEATURES
+   NEW FEATURE IMAGE AREA
 ========================================================= */
 
-.feature-strip {
-  background: #0d0d0d;
+.feature-section {
 
-  border-top: 1px solid #222;
-  border-bottom: 1px solid #222;
+  background:
+  #f5f5f5;
+
+  padding:
+  28px 0;
+
+  border-bottom:
+  1px solid #ddd;
+
 }
 
-.feature-grid {
+
+.feature-image-grid {
+
   display: grid;
 
   grid-template-columns:
   repeat(4, 1fr);
+
+  gap: 18px;
+
 }
 
-.feature {
-  min-height: 150px;
 
-  display: flex;
-  flex-direction: column;
+.feature-image-card {
 
-  align-items: center;
-  justify-content: center;
+  overflow: hidden;
 
-  text-align: center;
+  background:
+  white;
 
-  padding: 25px;
+  border-radius:
+  10px;
 
-  border-right:
-  1px solid #292929;
+  border:
+  1px solid #e3e3e3;
+
+  box-shadow:
+  0 6px 22px
+  rgba(0,0,0,.08);
+
+  transition:
+  transform .25s ease,
+  box-shadow .25s ease;
+
 }
 
-.feature:last-child {
-  border-right: none;
+
+.feature-image-card:hover {
+
+  transform:
+  translateY(-5px);
+
+  box-shadow:
+  0 14px 30px
+  rgba(0,0,0,.13);
+
 }
 
-.feature-icon {
-  width: 48px;
-  height: 48px;
 
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.feature-image-card img {
 
-  border: 2px solid #fff;
+  width: 100%;
 
-  border-radius: 50%;
+  aspect-ratio:
+  1 / 1;
 
-  margin-bottom: 13px;
+  object-fit: cover;
 
-  font-size: 1.25rem;
-}
-
-.feature h3 {
-  text-transform: uppercase;
-
-  font-size: .9rem;
-
-  letter-spacing: .7px;
-}
-
-.feature p {
-  margin-top: 4px;
-
-  color: #777;
-
-  font-size: .82rem;
 }
 
 
 /* =========================================================
-   MAIN PRODUCT
+   PRODUCT
 ========================================================= */
 
 .product {
-  padding: 105px 0;
 
-  background: #f4f4f4;
+  padding:
+  105px 0;
+
+  background:
+  #f4f4f4;
 
   color: #111;
+
 }
 
+
 .product-grid {
+
   display: grid;
 
   grid-template-columns:
@@ -420,95 +562,139 @@ nav {
   gap: 70px;
 
   align-items: center;
+
 }
 
+
 .product-photo {
+
   min-height: 490px;
 
   display: flex;
+
   align-items: center;
+
   justify-content: center;
 
   padding: 40px;
 
-  background: #fff;
+  background: white;
 
   border-radius: 16px;
 
   box-shadow:
+
   0 25px 65px
   rgba(0,0,0,.11);
+
 }
 
+
 .product-photo img {
+
   width: 100%;
 
   transition:
+
   opacity .2s ease,
+
   transform .25s ease;
+
 }
+
 
 .product-photo:hover img {
-  transform: scale(1.02);
+
+  transform:
+  scale(1.02);
+
 }
 
-.product-info h2 {
-  font-size:
-  clamp(3rem, 5vw, 5rem);
 
-  text-transform: uppercase;
+.product-info h2 {
+
+  font-size:
+  clamp(
+    3rem,
+    5vw,
+    5rem
+  );
+
+  text-transform:
+  uppercase;
 
   font-weight: 900;
+
   font-style: italic;
 
-  letter-spacing: -4px;
+  letter-spacing:
+  -4px;
 
   line-height: .87;
 
   margin-bottom: 24px;
+
 }
 
+
 .product-description {
+
   color: #555;
 
   margin-bottom: 32px;
 
   font-size: 1.04rem;
+
 }
 
 
 /* =========================================================
-   COLOR BUTTONS
+   COLOR SELECTOR
 ========================================================= */
 
 .color-label {
-  text-transform: uppercase;
+
+  text-transform:
+  uppercase;
 
   font-size: .8rem;
+
   font-weight: 900;
 
-  letter-spacing: 1.5px;
+  letter-spacing:
+  1.5px;
 
   margin-bottom: 14px;
+
 }
 
+
 .colors {
+
   display: flex;
 
   gap: 13px;
 
   flex-wrap: wrap;
 
-  margin-bottom: 20px;
+  margin-bottom:
+  20px;
+
 }
 
+
 .color-button {
+
   width: 46px;
+
   height: 46px;
 
-  border-radius: 50%;
+  border-radius:
+  50%;
 
-  border: 4px solid transparent;
+  border:
+  4px solid
+  transparent;
 
   cursor: pointer;
 
@@ -517,113 +703,180 @@ nav {
   box-shadow:
   0 0 0 1px
   rgba(0,0,0,.18);
+
 }
+
 
 .color-button:hover {
-  transform: scale(1.12);
+
+  transform:
+  scale(1.12);
+
 }
+
 
 .color-button.active {
-  border-color: #fff;
+
+  border-color:
+  white;
 
   box-shadow:
-  0 0 0 3px #111;
+  0 0 0 3px
+  #111;
+
 }
+
 
 .black-button {
-  background: #111;
+
+  background:
+  #111;
+
 }
+
 
 .blue-button {
-  background: #005ccf;
+
+  background:
+  #005ccf;
+
 }
+
 
 .red-button {
-  background: #d90017;
+
+  background:
+  #d90017;
+
 }
+
 
 .orange-button {
-  background: #ed5800;
+
+  background:
+  #ed5800;
+
 }
+
 
 .titanium-button {
+
   background:
+
   linear-gradient(
+
     135deg,
+
     #333,
-    #8c8c8c
+
+    #999
+
   );
+
 }
 
+
 .selected-color {
+
   margin-bottom: 30px;
 
   font-size: .92rem;
 
   font-weight: 800;
+
 }
 
 
 /* =========================================================
-   SPECS
+   SPECIFICATIONS
 ========================================================= */
 
 .spec-table {
+
   border-top:
   1px solid #ddd;
+
 }
 
+
 .spec {
+
   display: flex;
 
-  justify-content: space-between;
+  justify-content:
+  space-between;
 
   gap: 20px;
 
-  padding: 14px 0;
+  padding:
+  14px 0;
 
   border-bottom:
   1px solid #ddd;
+
 }
+
 
 .spec-name {
+
   color: #777;
+
 }
 
+
 .spec-value {
+
   text-align: right;
 
   font-weight: 800;
+
 }
 
 
 /* =========================================================
-   COLOR COLLECTION
+   COLLECTION
 ========================================================= */
 
 .collection {
-  padding: 105px 0;
 
-  background: #080808;
+  padding:
+  105px 0;
+
+  background:
+  #080808;
+
 }
 
-.section-title {
-  font-size:
-  clamp(2.8rem, 6vw, 5.3rem);
 
-  text-transform: uppercase;
+.section-title {
+
+  font-size:
+
+  clamp(
+    2.8rem,
+    6vw,
+    5.3rem
+  );
+
+  text-transform:
+  uppercase;
 
   font-weight: 900;
+
   font-style: italic;
 
-  letter-spacing: -4px;
+  letter-spacing:
+  -4px;
 
   line-height: .9;
 
   margin-bottom: 20px;
+
 }
 
+
 .section-description {
+
   max-width: 680px;
 
   color: #888;
@@ -631,61 +884,91 @@ nav {
   margin-bottom: 50px;
 
   font-size: 1.03rem;
+
 }
 
+
 .product-cards {
+
   display: grid;
 
   grid-template-columns:
   repeat(2, 1fr);
 
   gap: 24px;
+
 }
 
+
 .product-card {
+
   overflow: hidden;
 
-  background: #fff;
+  background: white;
 
   color: #111;
 
   border-radius: 10px;
 
   transition: .25s;
+
 }
+
 
 .product-card:hover {
-  transform: translateY(-6px);
+
+  transform:
+  translateY(-6px);
+
 }
+
 
 .product-card img {
+
   width: 100%;
 
-  aspect-ratio: 16 / 9;
+  aspect-ratio:
+  16 / 9;
 
   object-fit: cover;
+
 }
 
+
 .card-bottom {
-  padding: 20px 24px;
+
+  padding:
+  20px 24px;
 
   display: flex;
 
   align-items: center;
-  justify-content: space-between;
+
+  justify-content:
+  space-between;
+
 }
+
 
 .card-bottom h3 {
-  text-transform: uppercase;
+
+  text-transform:
+  uppercase;
 
   font-size: 1.2rem;
+
 }
 
+
 .color-dot {
+
   width: 20px;
+
   height: 20px;
 
-  border-radius: 50%;
+  border-radius:
+  50%;
+
 }
 
 
@@ -694,97 +977,139 @@ nav {
 ========================================================= */
 
 .action {
+
   position: relative;
 
   min-height: 720px;
 
   display: flex;
+
   align-items: center;
 
   overflow: hidden;
 
   background: #111;
+
 }
 
+
 .action-bg {
+
   position: absolute;
 
   inset: 0;
 
   width: 100%;
+
   height: 100%;
 
   object-fit: cover;
 
-  object-position: center;
+  object-position:
+  center;
+
 }
 
+
 .action-overlay {
+
   position: absolute;
 
   inset: 0;
 
   background:
+
   linear-gradient(
+
     90deg,
+
     rgba(0,0,0,.91),
+
     rgba(0,0,0,.62),
+
     rgba(0,0,0,.15)
+
   );
+
 }
 
+
 .action-copy {
+
   position: relative;
 
   z-index: 3;
 
   max-width: 650px;
+
 }
 
-.action h2 {
-  font-size:
-  clamp(3.5rem, 7vw, 6.5rem);
 
-  text-transform: uppercase;
+.action h2 {
+
+  font-size:
+
+  clamp(
+    3.5rem,
+    7vw,
+    6.5rem
+  );
+
+  text-transform:
+  uppercase;
 
   font-weight: 900;
+
   font-style: italic;
 
-  letter-spacing: -5px;
+  letter-spacing:
+  -5px;
 
   line-height: .83;
 
   margin-bottom: 25px;
+
 }
 
+
 .action h2 span {
+
   display: block;
 
   color: #ef1b26;
+
 }
 
+
 .action-copy p {
+
   max-width: 580px;
 
   color: #ddd;
 
   font-size: 1.08rem;
+
 }
 
 
 /* =========================================================
-   ABOUT
+   BRAND
 ========================================================= */
 
 .brand-section {
-  padding: 105px 0;
 
-  background: #fff;
+  padding:
+  105px 0;
+
+  background: white;
 
   color: #111;
+
 }
 
+
 .brand-grid {
+
   display: grid;
 
   grid-template-columns:
@@ -793,68 +1118,103 @@ nav {
   gap: 70px;
 
   align-items: center;
+
 }
 
+
 .brand-box {
+
   min-height: 430px;
 
   display: flex;
+
   flex-direction: column;
 
   justify-content: center;
 
   padding: 55px;
 
-  background: #080808;
+  background:
+  #080808;
 
   color: white;
+
 }
 
-.brand-box-main {
-  font-size:
-  clamp(3.2rem, 7vw, 6.5rem);
 
-  text-transform: uppercase;
+.brand-box-main {
+
+  font-size:
+
+  clamp(
+    3.2rem,
+    7vw,
+    6.5rem
+  );
+
+  text-transform:
+  uppercase;
 
   font-weight: 900;
+
   font-style: italic;
 
   line-height: .75;
 
-  letter-spacing: -5px;
+  letter-spacing:
+  -5px;
+
 }
 
+
 .brand-box-sub {
+
   margin-top: 24px;
 
   color: #ef1b26;
 
   font-size: 1.1rem;
 
-  text-transform: uppercase;
+  text-transform:
+  uppercase;
 
   font-weight: 900;
 
-  letter-spacing: 5px;
+  letter-spacing:
+  5px;
+
 }
 
-.brand-copy h2 {
-  font-size:
-  clamp(2.8rem, 5vw, 4.5rem);
 
-  text-transform: uppercase;
+.brand-copy h2 {
+
+  font-size:
+
+  clamp(
+    2.8rem,
+    5vw,
+    4.5rem
+  );
+
+  text-transform:
+  uppercase;
 
   line-height: .88;
 
-  letter-spacing: -3px;
+  letter-spacing:
+  -3px;
 
   margin-bottom: 25px;
+
 }
 
+
 .brand-copy p {
+
   color: #555;
 
   margin-bottom: 18px;
+
 }
 
 
@@ -863,44 +1223,72 @@ nav {
 ========================================================= */
 
 .cta {
-  padding: 85px 0;
 
-  text-align: center;
+  padding:
+  85px 0;
 
-  background: #ef1b26;
+  text-align:
+  center;
+
+  background:
+  #ef1b26;
+
 }
 
-.cta h2 {
-  font-size:
-  clamp(2.5rem, 6vw, 4.8rem);
 
-  text-transform: uppercase;
+.cta h2 {
+
+  font-size:
+
+  clamp(
+    2.5rem,
+    6vw,
+    4.8rem
+  );
+
+  text-transform:
+  uppercase;
 
   font-weight: 900;
 
   line-height: .9;
 
-  letter-spacing: -3px;
+  letter-spacing:
+  -3px;
 
   margin-bottom: 18px;
+
 }
+
 
 .cta p {
+
   margin-bottom: 30px;
+
 }
+
 
 .cta .btn {
-  background: #080808;
 
-  border-color: #080808;
+  background:
+  #080808;
+
+  border-color:
+  #080808;
+
 }
 
+
 .cta .btn:hover {
+
+  background:
+  white;
+
+  border-color:
+  white;
+
   color: #111;
 
-  background: #fff;
-
-  border-color: #fff;
 }
 
 
@@ -909,12 +1297,18 @@ nav {
 ========================================================= */
 
 footer {
-  background: #050505;
 
-  padding: 60px 0 25px;
+  background:
+  #050505;
+
+  padding:
+  60px 0 25px;
+
 }
 
+
 .footer-grid {
+
   display: grid;
 
   grid-template-columns:
@@ -923,51 +1317,81 @@ footer {
   gap: 50px;
 
   padding-bottom: 45px;
+
 }
 
+
 .footer-logo {
-  text-transform: uppercase;
+
+  text-transform:
+  uppercase;
 
   font-size: 1.8rem;
 
   font-weight: 900;
+
   font-style: italic;
 
   margin-bottom: 15px;
+
 }
 
+
 .footer-description {
+
   max-width: 430px;
 
   color: #777;
+
 }
+
 
 footer h4 {
-  text-transform: uppercase;
 
-  margin-bottom: 14px;
+  text-transform:
+  uppercase;
+
+  margin-bottom:
+  14px;
+
 }
+
 
 footer ul {
+
   list-style: none;
+
 }
+
 
 footer li {
-  margin-bottom: 8px;
+
+  margin-bottom:
+  8px;
+
 }
 
+
 footer a {
+
   color: #888;
 
   transition: .2s;
+
 }
+
 
 footer a:hover {
+
   color: #ef1b26;
+
 }
 
+
 .copyright {
-  padding-top: 25px;
+
+  padding-top:
+  25px;
 
   border-top:
   1px solid #222;
@@ -977,6 +1401,7 @@ footer a:hover {
   color: #555;
 
   font-size: .83rem;
+
 }
 
 
@@ -984,44 +1409,71 @@ footer a:hover {
    RESPONSIVE
 ========================================================= */
 
+@media(max-width: 1000px) {
+
+  .feature-image-grid {
+
+    grid-template-columns:
+    repeat(2, 1fr);
+
+  }
+
+}
+
+
 @media(max-width: 900px) {
 
   .nav-links {
+
     display: none;
+
   }
+
 
   .hero {
+
     min-height: 690px;
+
   }
+
 
   .hero-overlay {
+
     background:
-    rgba(0,0,0,.65);
+    rgba(0,0,0,.66);
+
   }
 
-  .feature-grid {
-    grid-template-columns:
-    repeat(2, 1fr);
-  }
 
   .product-grid {
+
     grid-template-columns:
     1fr;
+
   }
+
 
   .product-cards {
+
     grid-template-columns:
     1fr;
+
   }
+
 
   .brand-grid {
+
     grid-template-columns:
     1fr;
+
   }
 
+
   .footer-grid {
+
     grid-template-columns:
     1fr;
+
   }
 
 }
@@ -1030,66 +1482,120 @@ footer a:hover {
 @media(max-width: 600px) {
 
   nav {
+
     min-height: 70px;
+
   }
+
 
   .brand-main {
+
     font-size: 1.5rem;
+
   }
+
 
   .brand-sub {
-    font-size: .62rem;
+
+    font-size: .6rem;
+
   }
+
 
   .hero {
+
     min-height: 650px;
+
   }
+
 
   .hero h1 {
-    letter-spacing: -3px;
+
+    letter-spacing:
+    -3px;
+
   }
 
-  .feature-grid {
+
+  .feature-image-grid {
+
     grid-template-columns:
-    1fr 1fr;
+    repeat(2, 1fr);
+
+    gap: 8px;
+
   }
 
-  .feature {
-    padding: 18px 10px;
+
+  .feature-section {
+
+    padding:
+    10px 0;
+
   }
+
 
   .product {
-    padding: 70px 0;
+
+    padding:
+    70px 0;
+
   }
 
+
   .product-photo {
+
     min-height: 280px;
 
     padding: 15px;
+
   }
+
 
   .product-info h2 {
-    letter-spacing: -2px;
+
+    letter-spacing:
+    -2px;
+
   }
+
 
   .collection {
-    padding: 75px 0;
+
+    padding:
+    75px 0;
+
   }
+
 
   .section-title {
-    letter-spacing: -2px;
+
+    letter-spacing:
+    -2px;
+
   }
+
 
   .action {
+
     min-height: 620px;
+
   }
+
 
   .action h2 {
-    letter-spacing: -3px;
+
+    letter-spacing:
+    -3px;
+
   }
 
+
   .brand-section {
-    padding: 75px 0;
+
+    padding:
+    75px 0;
+
   }
 
 }
@@ -1109,7 +1615,6 @@ footer a:hover {
 <header>
 
 <nav class="container">
-
 
 <a
   class="brand"
@@ -1178,7 +1683,6 @@ Contact
 
 </ul>
 
-
 </nav>
 
 </header>
@@ -1195,9 +1699,7 @@ Contact
 
 
 <img
-
   class="hero-bg"
-
   src="images/hero-action.png"
 
   onerror="
@@ -1206,7 +1708,6 @@ Contact
   "
 
   alt="Newson Sportec motocross rider"
-
 >
 
 
@@ -1231,7 +1732,9 @@ Newson Sportec
 Ride
 
 <span>
+
 Further.
+
 </span>
 
 </h1>
@@ -1240,7 +1743,7 @@ Further.
 <p class="hero-copy">
 
 Performance-inspired dirt bike handlebars
-developed around motocross style,
+designed around motocross style,
 rider control and off-road identity.
 
 </p>
@@ -1275,86 +1778,101 @@ Choose A Color
 
 </div>
 
-
 </section>
 
 
 <!-- =========================================================
-     FEATURES
+     NEW FOUR FEATURE IMAGES
 ========================================================= -->
 
-<section class="feature-strip">
+<section class="feature-section">
 
-<div class="container feature-grid">
+<div class="container">
 
-
-<div class="feature">
-
-<div class="feature-icon">
-◇
-</div>
-
-<h3>
-Lightweight Design
-</h3>
-
-<p>
-Performance-focused construction
-</p>
-
-</div>
+<div class="feature-image-grid">
 
 
-<div class="feature">
+<!-- LIGHTWEIGHT -->
 
-<div class="feature-icon">
-◆
-</div>
+<div class="feature-image-card">
 
-<h3>
-Rider Control
-</h3>
+<img
 
-<p>
-Designed for confident handling
-</p>
+  src="images/lightweight_aluminum_feather_badge.png"
+
+  onerror="
+    this.onerror=null;
+    this.src='lightweight_aluminum_feather_badge.png';
+  "
+
+  alt="Lightweight 7075-T6 Aluminum"
+
+>
 
 </div>
 
 
-<div class="feature">
+<!-- HIGH STRENGTH -->
 
-<div class="feature-icon">
-◎
-</div>
+<div class="feature-image-card">
 
-<h3>
-Performance Bend
-</h3>
+<img
 
-<p>
-Off-road focused geometry
-</p>
+  src="images/high_strength_race_proven_badge.png"
 
-</div>
+  onerror="
+    this.onerror=null;
+    this.src='high_strength_race_proven_badge.png';
+  "
 
+  alt="High Strength Race Proven"
 
-<div class="feature">
-
-<div class="feature-icon">
-▲
-</div>
-
-<h3>
-MX / Enduro
-</h3>
-
-<p>
-Made for dirt-bike style
-</p>
+>
 
 </div>
 
+
+<!-- PRECISION CONTROL -->
+
+<div class="feature-image-card">
+
+<img
+
+  src="images/precision_control_badge.png"
+
+  onerror="
+    this.onerror=null;
+    this.src='precision_control_badge.png';
+  "
+
+  alt="Precision Control Optimal Bend Design"
+
+>
+
+</div>
+
+
+<!-- MX ENDURO -->
+
+<div class="feature-image-card">
+
+<img
+
+  src="images/trail_mx_enduro_ready_badge.png"
+
+  onerror="
+    this.onerror=null;
+    this.src='trail_mx_enduro_ready_badge.png';
+  "
+
+  alt="Trail MX Enduro Ready"
+
+>
+
+</div>
+
+
+</div>
 
 </div>
 
@@ -1362,7 +1880,7 @@ Made for dirt-bike style
 
 
 <!-- =========================================================
-     MAIN HANDLEBAR
+     PRODUCT
 ========================================================= -->
 
 <section
@@ -1422,9 +1940,9 @@ Dirt.
 <p class="product-description">
 
 A clean and aggressive dirt bike handlebar
-concept featuring Newson Sportec branding,
-a performance-inspired bend profile and
-five distinctive finishes.
+featuring Newson Sportec branding,
+a performance-inspired bend profile
+and five distinctive finishes.
 
 </p>
 
@@ -1450,11 +1968,11 @@ Select Handlebar Color
   aria-label="Black"
 
   onclick="
-  selectHandlebar(
+    selectHandlebar(
     'handlebar-black.png',
     'Black',
     this
-  )
+    )
   "
 
 >
@@ -1471,11 +1989,11 @@ Select Handlebar Color
   aria-label="Blue"
 
   onclick="
-  selectHandlebar(
+    selectHandlebar(
     'handlebar-blue.png',
     'Blue',
     this
-  )
+    )
   "
 
 >
@@ -1492,11 +2010,11 @@ Select Handlebar Color
   aria-label="Red"
 
   onclick="
-  selectHandlebar(
+    selectHandlebar(
     'handlebar-red.png',
     'Red',
     this
-  )
+    )
   "
 
 >
@@ -1513,11 +2031,11 @@ Select Handlebar Color
   aria-label="Orange"
 
   onclick="
-  selectHandlebar(
+    selectHandlebar(
     'handlebar-orange.png',
     'Orange',
     this
-  )
+    )
   "
 
 >
@@ -1534,7 +2052,11 @@ Select Handlebar Color
   aria-label="Titanium"
 
   onclick="
-  selectTitanium(this)
+    selectHandlebar(
+    'handlebar-titanium.png',
+    'Titanium',
+    this
+    )
   "
 
 >
@@ -1563,15 +2085,11 @@ Black
 <div class="spec">
 
 <span class="spec-name">
-
 Brand
-
 </span>
 
 <span class="spec-value">
-
 Newson Sportec
-
 </span>
 
 </div>
@@ -1580,15 +2098,11 @@ Newson Sportec
 <div class="spec">
 
 <span class="spec-name">
-
 Product
-
 </span>
 
 <span class="spec-value">
-
 Dirt Bike Handlebar
-
 </span>
 
 </div>
@@ -1597,15 +2111,11 @@ Dirt Bike Handlebar
 <div class="spec">
 
 <span class="spec-name">
-
 Application
-
 </span>
 
 <span class="spec-value">
-
 Motocross / Off-Road
-
 </span>
 
 </div>
@@ -1614,15 +2124,11 @@ Motocross / Off-Road
 <div class="spec">
 
 <span class="spec-name">
-
-Available Colors
-
+Colors
 </span>
 
 <span class="spec-value">
-
 5 Finishes
-
 </span>
 
 </div>
@@ -1631,15 +2137,11 @@ Available Colors
 <div class="spec">
 
 <span class="spec-name">
-
 Design
-
 </span>
 
 <span class="spec-value">
-
 Performance Bend
-
 </span>
 
 </div>
@@ -1656,7 +2158,7 @@ Performance Bend
 
 
 <!-- =========================================================
-     COLLECTION
+     COLOR COLLECTION
 ========================================================= -->
 
 <section
@@ -1690,10 +2192,9 @@ Race Style.
 
 <p class="section-description">
 
-Black, blue, red, orange and titanium
-finishes give riders multiple options
-for matching the Newson Sportec handlebar
-to their dirt bike.
+Choose from black, blue, red,
+orange and titanium finishes
+to complement your dirt bike.
 
 </p>
 
@@ -1704,7 +2205,6 @@ to their dirt bike.
 <!-- BLACK -->
 
 <article class="product-card">
-
 
 <img
 
@@ -1717,18 +2217,11 @@ to their dirt bike.
 
   alt="Black Newson Sportec handlebar"
 
-  loading="lazy"
-
 >
-
 
 <div class="card-bottom">
 
-<h3>
-
-Black
-
-</h3>
+<h3>Black</h3>
 
 <div
   class="color-dot"
@@ -1738,14 +2231,12 @@ Black
 
 </div>
 
-
 </article>
 
 
 <!-- BLUE -->
 
 <article class="product-card">
-
 
 <img
 
@@ -1758,18 +2249,11 @@ Black
 
   alt="Blue Newson Sportec handlebar"
 
-  loading="lazy"
-
 >
-
 
 <div class="card-bottom">
 
-<h3>
-
-Blue
-
-</h3>
+<h3>Blue</h3>
 
 <div
   class="color-dot"
@@ -1779,14 +2263,12 @@ Blue
 
 </div>
 
-
 </article>
 
 
 <!-- RED -->
 
 <article class="product-card">
-
 
 <img
 
@@ -1799,18 +2281,11 @@ Blue
 
   alt="Red Newson Sportec handlebar"
 
-  loading="lazy"
-
 >
-
 
 <div class="card-bottom">
 
-<h3>
-
-Red
-
-</h3>
+<h3>Red</h3>
 
 <div
   class="color-dot"
@@ -1820,14 +2295,12 @@ Red
 
 </div>
 
-
 </article>
 
 
 <!-- ORANGE -->
 
 <article class="product-card">
-
 
 <img
 
@@ -1840,18 +2313,11 @@ Red
 
   alt="Orange Newson Sportec handlebar"
 
-  loading="lazy"
-
 >
-
 
 <div class="card-bottom">
 
-<h3>
-
-Orange
-
-</h3>
+<h3>Orange</h3>
 
 <div
   class="color-dot"
@@ -1861,7 +2327,6 @@ Orange
 
 </div>
 
-
 </article>
 
 
@@ -1869,29 +2334,25 @@ Orange
 
 <article class="product-card">
 
-
 <img
 
-  id="titaniumCollectionImage"
+  src="images/handlebar-titanium.png"
 
-  src="images/handlebar-titanium(1).png"
+  onerror="
+    this.onerror=null;
+    this.src='handlebar-titanium.png';
+  "
 
   alt="Titanium Newson Sportec handlebar"
 
-  loading="lazy"
-
 >
-
 
 <div class="card-bottom">
 
-<h3>
-
-Titanium
-
-</h3>
+<h3>Titanium</h3>
 
 <div
+
   class="color-dot"
 
   style="
@@ -1907,7 +2368,6 @@ Titanium
 </div>
 
 </div>
-
 
 </article>
 
@@ -1980,8 +2440,8 @@ Ride.
 Newson Sportec is built around the
 connection between rider, motorcycle
 and terrain. The handlebar is one
-of the most important control points
-between rider and machine.
+of the primary control points between
+the rider and the motorcycle.
 
 </p>
 
@@ -2049,9 +2509,9 @@ Performance.
 
 <p>
 
-Newson Sportec is focused on
-motorcycle performance products,
-motocross styling and off-road design.
+Newson Sportec focuses on motorcycle
+performance products, motocross styling
+and off-road design.
 
 </p>
 
@@ -2060,18 +2520,16 @@ motocross styling and off-road design.
 
 Our goal is to combine distinctive
 motorsport styling with practical
-products for riders who want their
-motorcycle to look as serious as
-their riding.
+products for dirt-bike enthusiasts.
 
 </p>
 
 
 <p>
 
-The Newson Sportec handlebar collection
-is part of a growing line of dirt-bike
-performance products.
+The handlebar collection represents
+the beginning of a growing line
+of Newson Sportec motorcycle products.
 
 </p>
 
@@ -2108,8 +2566,8 @@ Ride Newson Sportec.
 <p>
 
 Product specifications,
-availability and ordering information
-coming soon.
+availability and ordering
+information coming soon.
 
 </p>
 
@@ -2177,33 +2635,21 @@ Products
 <ul>
 
 <li>
-
 <a href="#handlebar">
-
 Handlebar
-
 </a>
-
 </li>
 
 <li>
-
 <a href="#colors">
-
 Color Collection
-
 </a>
-
 </li>
 
 <li>
-
 <a href="#performance">
-
 Performance
-
 </a>
-
 </li>
 
 </ul>
@@ -2225,42 +2671,28 @@ Newson Sportec
 <ul>
 
 <li>
-
 <a href="#about">
-
 About
-
 </a>
-
 </li>
 
 <li>
-
 <a href="#contact">
-
 Contact
-
 </a>
-
 </li>
 
 <li>
-
 
 <a
-
   href="https://github.com/newsonsportec"
-
   target="_blank"
-
   rel="noopener"
-
 >
 
 GitHub
 
 </a>
-
 
 </li>
 
@@ -2275,7 +2707,6 @@ GitHub
 
 <div class="container copyright">
 
-
 ©
 
 <span id="year">
@@ -2284,7 +2715,6 @@ GitHub
 Newson Sportec.
 
 All rights reserved.
-
 
 </div>
 
@@ -2299,10 +2729,6 @@ All rights reserved.
 <script>
 
 
-/* =========================================================
-   NORMAL HANDLEBAR IMAGE SELECTOR
-========================================================= */
-
 function selectHandlebar(
   fileName,
   colorName,
@@ -2316,22 +2742,25 @@ function selectHandlebar(
   );
 
 
-  const label =
+  const colorLabel =
   document.getElementById(
     "selectedColor"
   );
 
 
-  image.style.opacity = "0";
+  image.style.opacity =
+  "0";
 
 
   setTimeout(function() {
 
 
-    image.onerror = function() {
+    image.onerror =
+    function() {
 
 
-      image.onerror = null;
+      image.onerror =
+      null;
 
 
       image.src =
@@ -2351,7 +2780,7 @@ function selectHandlebar(
     " Newson Sportec dirt bike handlebar";
 
 
-    label.textContent =
+    colorLabel.textContent =
     colorName;
 
 
@@ -2385,169 +2814,13 @@ function selectHandlebar(
 }
 
 
-/* =========================================================
-   TITANIUM SELECTOR
-
-   GitHub may currently contain:
-   handlebar-titanium(1).png
-
-   This tries multiple possible locations/names.
-========================================================= */
-
-function selectTitanium(button) {
-
-
-  const image =
-  document.getElementById(
-    "mainHandlebar"
-  );
-
-
-  const label =
-  document.getElementById(
-    "selectedColor"
-  );
-
-
-  const titaniumPaths = [
-
-    "images/handlebar-titanium(1).png",
-
-    "handlebar-titanium(1).png",
-
-    "images/handlebar-titanium.png",
-
-    "handlebar-titanium.png"
-
-  ];
-
-
-  image.style.opacity =
-  "0";
-
-
-  loadImageFromList(
-    image,
-    titaniumPaths,
-    0
-  );
-
-
-  label.textContent =
-  "Titanium";
-
-
-  setTimeout(function() {
-
-    image.style.opacity =
-    "1";
-
-  }, 150);
-
-
-  document
-  .querySelectorAll(
-    ".color-button"
-  )
-  .forEach(function(btn) {
-
-
-    btn.classList.remove(
-      "active"
-    );
-
-
-  });
-
-
-  button.classList.add(
-    "active"
-  );
-
-
-}
-
-
-/* =========================================================
-   TRY MULTIPLE IMAGE PATHS
-========================================================= */
-
-function loadImageFromList(
-  imageElement,
-  paths,
-  index
-) {
-
-
-  if (
-    index >=
-    paths.length
-  ) {
-
-    return;
-
-  }
-
-
-  imageElement.onerror =
-  function() {
-
-
-    loadImageFromList(
-      imageElement,
-      paths,
-      index + 1
-    );
-
-
-  };
-
-
-  imageElement.src =
-  paths[index];
-
-
-}
-
-
-/* =========================================================
-   TITANIUM COLLECTION CARD FALLBACK
-========================================================= */
-
-const titaniumCard =
-document.getElementById(
-  "titaniumCollectionImage"
-);
-
-
-const titaniumCardPaths = [
-
-  "images/handlebar-titanium(1).png",
-
-  "handlebar-titanium(1).png",
-
-  "images/handlebar-titanium.png",
-
-  "handlebar-titanium.png"
-
-];
-
-
-loadImageFromList(
-  titaniumCard,
-  titaniumCardPaths,
-  0
-);
-
-
-/* =========================================================
-   COPYRIGHT YEAR
-========================================================= */
-
 document
-.getElementById("year")
+.getElementById(
+  "year"
+)
 .textContent =
-new Date().getFullYear();
+new Date()
+.getFullYear();
 
 
 </script>

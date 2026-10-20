@@ -1,0 +1,1652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <meta name="description"
+          content="Newson Sportec performance dirt bike handlebars engineered for motocross, enduro and off-road riding.">
+
+    <title>Newson Sportec | Performance Dirt Bike Handlebars</title>
+
+    <style>
+
+        /* ==================================================
+           NEWSON SPORTEC WEBSITE
+           ================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+        }
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+
+        /* ==================================================
+           NAVIGATION
+           ================================================== */
+
+        header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 1000;
+
+            background: rgba(5,5,5,0.95);
+            backdrop-filter: blur(12px);
+
+            border-bottom: 1px solid rgba(255,255,255,0.08);
+        }
+
+        .navbar {
+            max-width: 1400px;
+            margin: auto;
+
+            min-height: 82px;
+
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            padding: 0 30px;
+        }
+
+        .logo {
+            font-size: 30px;
+            font-weight: 900;
+            font-style: italic;
+            line-height: .8;
+
+            letter-spacing: -1px;
+        }
+
+        .logo-main {
+            color: #ffffff;
+        }
+
+        .logo-sportec {
+            color: #ffffff;
+            font-size: 21px;
+            margin-left: 40px;
+        }
+
+        .logo span {
+            color: #ee171f;
+        }
+
+        nav {
+            display: flex;
+            gap: 38px;
+        }
+
+        nav a {
+            color: #e8e8e8;
+            font-size: 14px;
+            font-weight: 800;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+
+            position: relative;
+
+            transition: .25s;
+        }
+
+        nav a::after {
+            content: "";
+            width: 0;
+            height: 3px;
+
+            background: #ed1c24;
+
+            position: absolute;
+            bottom: -9px;
+            left: 0;
+
+            transition: width .25s;
+        }
+
+        nav a:hover {
+            color: white;
+        }
+
+        nav a:hover::after {
+            width: 100%;
+        }
+
+
+        /* ==================================================
+           HERO SECTION
+           ================================================== */
+
+        .hero {
+            min-height: 100vh;
+
+            display: grid;
+            grid-template-columns: 1.05fr .95fr;
+
+            padding-top: 82px;
+
+            background:
+                radial-gradient(
+                    circle at 65% 35%,
+                    rgba(237,28,36,.12),
+                    transparent 30%
+                ),
+                #080808;
+        }
+
+        .hero-image {
+            min-height: 720px;
+
+            background-image:
+                linear-gradient(
+                    90deg,
+                    transparent 60%,
+                    #080808 100%
+                ),
+                url("images/hero-action.png");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .hero-content {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            padding: 70px 8% 70px 4%;
+        }
+
+        .eyebrow {
+            color: #ed1c24;
+
+            font-size: 15px;
+            font-weight: 900;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+
+            margin-bottom: 20px;
+        }
+
+        .hero h1 {
+            font-size: clamp(65px, 8vw, 130px);
+            line-height: .82;
+
+            font-weight: 1000;
+            font-style: italic;
+
+            text-transform: uppercase;
+            letter-spacing: -7px;
+
+            margin-bottom: 26px;
+        }
+
+        .hero h1 span {
+            color: #ed1c24;
+        }
+
+        .hero-tagline {
+            font-size: 21px;
+            font-weight: 700;
+            letter-spacing: 7px;
+
+            text-transform: uppercase;
+
+            margin-bottom: 28px;
+        }
+
+        .hero-description {
+            color: #c5c5c5;
+
+            max-width: 580px;
+
+            line-height: 1.8;
+            font-size: 17px;
+
+            margin-bottom: 38px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-block;
+
+            padding: 17px 30px;
+
+            font-weight: 900;
+            letter-spacing: 1px;
+            text-transform: uppercase;
+
+            border: 2px solid #ed1c24;
+
+            transition: .3s;
+        }
+
+        .btn-primary {
+            background: #ed1c24;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: white;
+            color: black;
+            border-color: white;
+        }
+
+        .btn-outline {
+            color: white;
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: black;
+            border-color: white;
+        }
+
+
+        /* ==================================================
+           SECTION GENERAL
+           ================================================== */
+
+        section {
+            padding: 100px 25px;
+        }
+
+        .container {
+            max-width: 1350px;
+            margin: auto;
+        }
+
+        .section-title {
+            text-align: center;
+            margin-bottom: 60px;
+        }
+
+        .section-title .small {
+            color: #ed1c24;
+
+            text-transform: uppercase;
+            letter-spacing: 5px;
+
+            font-weight: 900;
+            font-size: 14px;
+        }
+
+        .section-title h2 {
+            font-size: clamp(42px, 6vw, 75px);
+
+            font-weight: 1000;
+            font-style: italic;
+
+            text-transform: uppercase;
+            letter-spacing: -3px;
+
+            margin-top: 8px;
+        }
+
+        .section-title p {
+            margin: 18px auto 0;
+
+            color: #aaa;
+
+            line-height: 1.7;
+
+            max-width: 700px;
+        }
+
+
+        /* ==================================================
+           PRODUCT CONFIGURATOR
+           ================================================== */
+
+        #handlebars {
+            background: #f4f4f4;
+            color: #111;
+        }
+
+        #handlebars .section-title p {
+            color: #555;
+        }
+
+        .product-viewer {
+            background: white;
+
+            border-radius: 6px;
+
+            padding: 50px;
+
+            box-shadow:
+                0 20px 60px rgba(0,0,0,.08);
+
+            margin-bottom: 35px;
+        }
+
+        .main-product-image {
+            width: 100%;
+            height: 430px;
+
+            object-fit: contain;
+
+            transition:
+                opacity .25s ease,
+                transform .3s ease;
+        }
+
+        .main-product-image:hover {
+            transform: scale(1.025);
+        }
+
+        .selected-info {
+            text-align: center;
+            margin-top: 25px;
+        }
+
+        .selected-info h3 {
+            font-size: 27px;
+            text-transform: uppercase;
+            font-style: italic;
+        }
+
+        .selected-info span {
+            color: #ed1c24;
+        }
+
+
+        /* COLORS */
+
+        .color-selector {
+            display: grid;
+            grid-template-columns: repeat(5,1fr);
+
+            gap: 15px;
+        }
+
+        .color-card {
+            background: white;
+
+            cursor: pointer;
+
+            padding: 20px 15px;
+
+            border: 3px solid transparent;
+            border-radius: 5px;
+
+            text-align: center;
+
+            transition: .25s;
+
+            box-shadow:
+                0 7px 25px rgba(0,0,0,.06);
+        }
+
+        .color-card:hover {
+            transform: translateY(-7px);
+            border-color: #ed1c24;
+        }
+
+        .color-card.active {
+            border-color: #ed1c24;
+        }
+
+        .color-card img {
+            height: 105px;
+            width: 100%;
+            object-fit: contain;
+
+            margin-bottom: 15px;
+        }
+
+        .color-card strong {
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+
+        /* ==================================================
+           PERFORMANCE SECTION
+           ================================================== */
+
+        #performance {
+            background:
+                linear-gradient(
+                    135deg,
+                    #050505,
+                    #151515
+                );
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(4,1fr);
+            gap: 25px;
+        }
+
+        .feature {
+            border: 1px solid #292929;
+
+            padding: 35px 27px;
+
+            transition: .3s;
+
+            background:
+                linear-gradient(
+                    145deg,
+                    #141414,
+                    #090909
+                );
+        }
+
+        .feature:hover {
+            transform: translateY(-8px);
+            border-color: #ed1c24;
+        }
+
+        .feature-number {
+            font-size: 42px;
+            color: #ed1c24;
+            font-weight: 1000;
+            font-style: italic;
+
+            margin-bottom: 22px;
+        }
+
+        .feature h3 {
+            font-size: 21px;
+            text-transform: uppercase;
+            margin-bottom: 12px;
+        }
+
+        .feature p {
+            color: #999;
+            line-height: 1.7;
+        }
+
+
+        /* ==================================================
+           ACTION SECTION
+           ================================================== */
+
+        .action-section {
+            padding: 0;
+
+            min-height: 650px;
+
+            position: relative;
+
+            background-image:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,.88) 0%,
+                    rgba(0,0,0,.52) 45%,
+                    rgba(0,0,0,.12) 100%
+                ),
+                url("images/hero-action.png");
+
+            background-size: cover;
+            background-position: center;
+        }
+
+        .action-inner {
+            max-width: 1350px;
+            margin: auto;
+
+            min-height: 650px;
+
+            display: flex;
+            align-items: center;
+
+            padding: 60px 30px;
+        }
+
+        .action-copy {
+            max-width: 670px;
+        }
+
+        .action-copy h2 {
+            font-size: clamp(50px,7vw,92px);
+
+            font-style: italic;
+            font-weight: 1000;
+
+            text-transform: uppercase;
+
+            line-height: .9;
+            letter-spacing: -4px;
+
+            margin-bottom: 25px;
+        }
+
+        .action-copy h2 span {
+            color: #ed1c24;
+        }
+
+        .action-copy p {
+            max-width: 570px;
+
+            color: #ddd;
+
+            line-height: 1.8;
+            font-size: 18px;
+
+            margin-bottom: 32px;
+        }
+
+
+        /* ==================================================
+           PRODUCT SPECS
+           ================================================== */
+
+        #specifications {
+            background: white;
+            color: #111;
+        }
+
+        #specifications .section-title p {
+            color: #555;
+        }
+
+        .spec-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+
+            border-top: 1px solid #ddd;
+        }
+
+        .spec-row {
+            display: flex;
+            justify-content: space-between;
+
+            padding: 22px 10px;
+
+            border-bottom: 1px solid #ddd;
+        }
+
+        .spec-row:nth-child(odd) {
+            margin-right: 30px;
+        }
+
+        .spec-row strong {
+            text-transform: uppercase;
+        }
+
+        .spec-row span {
+            color: #666;
+            text-align: right;
+        }
+
+
+        /* ==================================================
+           BRAND SECTION
+           ================================================== */
+
+        .brand {
+            text-align: center;
+
+            padding: 120px 25px;
+
+            background:
+                radial-gradient(
+                    circle,
+                    #242424,
+                    #050505 65%
+                );
+        }
+
+        .brand h2 {
+            font-size: clamp(55px,9vw,130px);
+
+            font-weight: 1000;
+            font-style: italic;
+
+            letter-spacing: -7px;
+
+            text-transform: uppercase;
+        }
+
+        .brand h2 span {
+            color: #ed1c24;
+        }
+
+        .brand p {
+            margin-top: 25px;
+
+            font-size: 18px;
+            letter-spacing: 6px;
+
+            text-transform: uppercase;
+
+            color: #aaa;
+        }
+
+
+        /* ==================================================
+           FOOTER
+           ================================================== */
+
+        footer {
+            background: #000;
+
+            border-top: 1px solid #222;
+
+            padding: 60px 25px 30px;
+        }
+
+        .footer-grid {
+            max-width: 1350px;
+            margin: auto;
+
+            display: grid;
+            grid-template-columns: 2fr 1fr 1fr;
+
+            gap: 60px;
+        }
+
+        .footer-title {
+            font-size: 28px;
+            font-weight: 1000;
+            font-style: italic;
+
+            margin-bottom: 15px;
+        }
+
+        .footer-title span {
+            color: #ed1c24;
+        }
+
+        footer p,
+        footer a {
+            color: #888;
+
+            line-height: 1.9;
+        }
+
+        footer a:hover {
+            color: #ed1c24;
+        }
+
+        .footer-column h4 {
+            margin-bottom: 18px;
+
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+
+        .copyright {
+            max-width: 1350px;
+            margin: 45px auto 0;
+
+            border-top: 1px solid #222;
+
+            padding-top: 25px;
+
+            color: #555;
+
+            font-size: 13px;
+
+            display: flex;
+            justify-content: space-between;
+
+            gap: 20px;
+        }
+
+
+        /* ==================================================
+           MOBILE
+           ================================================== */
+
+        @media (max-width: 1000px) {
+
+            nav {
+                display: none;
+            }
+
+            .hero {
+                grid-template-columns: 1fr;
+            }
+
+            .hero-image {
+                min-height: 530px;
+            }
+
+            .hero-content {
+                padding: 60px 30px 90px;
+            }
+
+            .features {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .color-selector {
+                grid-template-columns: repeat(2,1fr);
+            }
+
+            .spec-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .spec-row:nth-child(odd) {
+                margin-right: 0;
+            }
+
+            .footer-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+
+
+        @media (max-width: 650px) {
+
+            .navbar {
+                padding: 0 18px;
+            }
+
+            .logo {
+                font-size: 25px;
+            }
+
+            .logo-sportec {
+                font-size: 17px;
+            }
+
+            .hero-image {
+                min-height: 430px;
+            }
+
+            .hero h1 {
+                letter-spacing: -4px;
+            }
+
+            .hero-tagline {
+                font-size: 14px;
+                letter-spacing: 4px;
+            }
+
+            section {
+                padding: 75px 18px;
+            }
+
+            .product-viewer {
+                padding: 20px 10px;
+            }
+
+            .main-product-image {
+                height: 270px;
+            }
+
+            .color-selector {
+                grid-template-columns: 1fr;
+            }
+
+            .features {
+                grid-template-columns: 1fr;
+            }
+
+            .action-inner {
+                min-height: 550px;
+            }
+
+            .footer-grid {
+                gap: 30px;
+            }
+
+            .copyright {
+                flex-direction: column;
+            }
+        }
+
+    </style>
+</head>
+
+
+
+<body>
+
+
+<!-- ==================================================
+     NAVIGATION
+     ================================================== -->
+
+<header>
+
+    <div class="navbar">
+
+        <a href="#home" class="logo">
+            <div class="logo-main">
+                <span>N</span>ewson
+            </div>
+
+            <div class="logo-sportec">
+                Sportec
+            </div>
+        </a>
+
+
+        <nav>
+
+            <a href="#home">Home</a>
+
+            <a href="#handlebars">Handlebars</a>
+
+            <a href="#performance">Performance</a>
+
+            <a href="#specifications">Specifications</a>
+
+            <a href="#about">About</a>
+
+        </nav>
+
+    </div>
+
+</header>
+
+
+
+<!-- ==================================================
+     HERO
+     ================================================== -->
+
+<section class="hero" id="home">
+
+
+    <div class="hero-image"></div>
+
+
+    <div class="hero-content">
+
+        <div class="eyebrow">
+            Motorcycle Performance Parts
+        </div>
+
+
+        <h1>
+            HANDLE<span>BAR</span>
+        </h1>
+
+
+        <div class="hero-tagline">
+            Ride Further. Stronger. Higher.
+        </div>
+
+
+        <p class="hero-description">
+
+            Newson Sportec dirt bike handlebars are designed
+            for riders who demand responsive control,
+            durable construction and aggressive off-road
+            performance.
+
+        </p>
+
+
+        <div class="hero-buttons">
+
+            <a href="#handlebars"
+               class="btn btn-primary">
+
+                Explore Handlebars
+
+            </a>
+
+
+            <a href="#performance"
+               class="btn btn-outline">
+
+                Performance
+
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     HANDLEBAR COLOR COLLECTION
+     ================================================== -->
+
+<section id="handlebars">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <div class="small">
+                Newson Sportec Collection
+            </div>
+
+            <h2>
+                Choose Your Color
+            </h2>
+
+            <p>
+
+                Select a finish below to preview your
+                Newson Sportec dirt bike handlebar.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="product-viewer">
+
+
+            <img
+                id="mainProduct"
+                class="main-product-image"
+                src="images/handlebar-black.png"
+                alt="Black Newson Sportec Dirt Bike Handlebar"
+            >
+
+
+            <div class="selected-info">
+
+                <h3>
+                    Newson Sportec —
+                    <span id="selectedColor">
+                        Black
+                    </span>
+                </h3>
+
+            </div>
+
+
+        </div>
+
+
+
+        <div class="color-selector">
+
+
+            <!-- BLACK -->
+
+            <div
+                class="color-card active"
+                onclick="changeHandlebar(
+                    'images/handlebar-black.png',
+                    'Black',
+                    this
+                )"
+            >
+
+                <img
+                    src="images/handlebar-black.png"
+                    alt="Black handlebar"
+                >
+
+                <strong>Black</strong>
+
+            </div>
+
+
+
+            <!-- ORANGE -->
+
+            <div
+                class="color-card"
+                onclick="changeHandlebar(
+                    'images/handlebar-orange.png',
+                    'Orange',
+                    this
+                )"
+            >
+
+                <img
+                    src="images/handlebar-orange.png"
+                    alt="Orange handlebar"
+                >
+
+                <strong>Orange</strong>
+
+            </div>
+
+
+
+            <!-- RED -->
+
+            <div
+                class="color-card"
+                onclick="changeHandlebar(
+                    'images/handlebar-red.png',
+                    'Red',
+                    this
+                )"
+            >
+
+                <img
+                    src="images/handlebar-red.png"
+                    alt="Red handlebar"
+                >
+
+                <strong>Red</strong>
+
+            </div>
+
+
+
+            <!-- BLUE -->
+
+            <div
+                class="color-card"
+                onclick="changeHandlebar(
+                    'images/handlebar-blue.png',
+                    'Blue',
+                    this
+                )"
+            >
+
+                <img
+                    src="images/handlebar-blue.png"
+                    alt="Blue handlebar"
+                >
+
+                <strong>Blue</strong>
+
+            </div>
+
+
+
+            <!-- TITANIUM -->
+
+            <div
+                class="color-card"
+                onclick="changeHandlebar(
+                    'images/handlebar-titanium.png',
+                    'Titanium',
+                    this
+                )"
+            >
+
+                <img
+                    src="images/handlebar-titanium.png"
+                    alt="Titanium handlebar"
+                >
+
+                <strong>Titanium</strong>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     PERFORMANCE FEATURES
+     ================================================== -->
+
+<section id="performance">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <div class="small">
+                Engineered For The Ride
+            </div>
+
+            <h2>
+                Performance Matters
+            </h2>
+
+            <p>
+
+                Purpose-driven design for motocross,
+                trail and enduro riders.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="features">
+
+
+            <div class="feature">
+
+                <div class="feature-number">
+                    01
+                </div>
+
+                <h3>
+                    Lightweight Construction
+                </h3>
+
+                <p>
+
+                    Designed to balance strength,
+                    responsive handling and reduced
+                    unnecessary weight.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature">
+
+                <div class="feature-number">
+                    02
+                </div>
+
+                <h3>
+                    Precision Control
+                </h3>
+
+                <p>
+
+                    Carefully designed handlebar geometry
+                    supports confident steering and rider
+                    control.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature">
+
+                <div class="feature-number">
+                    03
+                </div>
+
+                <h3>
+                    Clamp Grip
+                </h3>
+
+                <p>
+
+                    Textured center clamping area helps
+                    provide a secure interface between
+                    handlebar and mounting hardware.
+
+                </p>
+
+            </div>
+
+
+
+            <div class="feature">
+
+                <div class="feature-number">
+                    04
+                </div>
+
+                <h3>
+                    Premium Finish
+                </h3>
+
+                <p>
+
+                    Available in multiple finishes to
+                    complement your dirt bike and
+                    individual riding style.
+
+                </p>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     ACTION
+     ================================================== -->
+
+<section class="action-section">
+
+
+    <div class="action-inner">
+
+
+        <div class="action-copy">
+
+
+            <div class="eyebrow">
+                Newson Sportec
+            </div>
+
+
+            <h2>
+
+                Ride With
+                <span>Control.</span>
+
+            </h2>
+
+
+            <p>
+
+                From motocross tracks to technical
+                off-road terrain, Newson Sportec
+                performance components are developed
+                around the connection between rider,
+                motorcycle and terrain.
+
+            </p>
+
+
+            <a
+                href="#handlebars"
+                class="btn btn-primary"
+            >
+
+                View Collection
+
+            </a>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     SPECIFICATIONS
+     ================================================== -->
+
+<section id="specifications">
+
+
+    <div class="container">
+
+
+        <div class="section-title">
+
+            <div class="small">
+                Product Information
+            </div>
+
+            <h2>
+                Handlebar Specifications
+            </h2>
+
+            <p>
+
+                Replace the sample specifications below
+                with your final production measurements
+                before accepting customer orders.
+
+            </p>
+
+        </div>
+
+
+        <div class="spec-grid">
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Product
+                </strong>
+
+                <span>
+                    Dirt Bike Handlebar
+                </span>
+
+            </div>
+
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Brand
+                </strong>
+
+                <span>
+                    Newson Sportec
+                </span>
+
+            </div>
+
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Application
+                </strong>
+
+                <span>
+                    Motocross / Enduro / Off-Road
+                </span>
+
+            </div>
+
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Finish
+                </strong>
+
+                <span>
+                    Anodized Style Finish
+                </span>
+
+            </div>
+
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Colors
+                </strong>
+
+                <span>
+                    Black / Orange / Red / Blue / Titanium
+                </span>
+
+            </div>
+
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Material
+                </strong>
+
+                <span>
+                    Add Verified Production Material
+                </span>
+
+            </div>
+
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Width
+                </strong>
+
+                <span>
+                    Add Final Measurement
+                </span>
+
+            </div>
+
+
+
+            <div class="spec-row">
+
+                <strong>
+                    Clamp Diameter
+                </strong>
+
+                <span>
+                    Add Final Measurement
+                </span>
+
+            </div>
+
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ==================================================
+     BRAND
+     ================================================== -->
+
+<section class="brand" id="about">
+
+
+    <h2>
+
+        NEWSON
+        <span>
+            SPORTEC
+        </span>
+
+    </h2>
+
+
+    <p>
+
+        Motorcycle Performance Parts
+
+    </p>
+
+
+</section>
+
+
+
+<!-- ==================================================
+     FOOTER
+     ================================================== -->
+
+<footer>
+
+
+    <div class="footer-grid">
+
+
+        <div>
+
+            <div class="footer-title">
+
+                NEWSON
+                <span>
+                    SPORTEC
+                </span>
+
+            </div>
+
+
+            <p>
+
+                Performance parts developed for
+                motocross, enduro and off-road
+                motorcycle enthusiasts.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Products
+            </h4>
+
+            <p>
+                <a href="#handlebars">
+                    Handlebars
+                </a>
+            </p>
+
+            <p>
+                <a href="#performance">
+                    Performance
+                </a>
+            </p>
+
+            <p>
+                <a href="#specifications">
+                    Specifications
+                </a>
+            </p>
+
+        </div>
+
+
+
+        <div class="footer-column">
+
+            <h4>
+                Newson Sportec
+            </h4>
+
+            <p>
+                <a href="#about">
+                    About
+                </a>
+            </p>
+
+            <p>
+                <a href="#home">
+                    Home
+                </a>
+            </p>
+
+        </div>
+
+
+    </div>
+
+
+
+    <div class="copyright">
+
+        <div>
+
+            © 2026 Newson Sportec.
+            All rights reserved.
+
+        </div>
+
+
+        <div>
+
+            Motorcycle Performance Parts
+
+        </div>
+
+    </div>
+
+
+</footer>
+
+
+
+<!-- ==================================================
+     JAVASCRIPT
+     ================================================== -->
+
+<script>
+
+    function changeHandlebar(image, color, element) {
+
+        const mainProduct =
+            document.getElementById("mainProduct");
+
+        const selectedColor =
+            document.getElementById("selectedColor");
+
+
+        /* FADE OUT */
+
+        mainProduct.style.opacity = "0";
+
+
+        setTimeout(function () {
+
+            mainProduct.src = image;
+
+            mainProduct.alt =
+                color +
+                " Newson Sportec Dirt Bike Handlebar";
+
+            selectedColor.innerText = color;
+
+            mainProduct.style.opacity = "1";
+
+        }, 180);
+
+
+
+        /* REMOVE ACTIVE COLOR */
+
+        const cards =
+            document.querySelectorAll(".color-card");
+
+        cards.forEach(function(card) {
+
+            card.classList.remove("active");
+
+        });
+
+
+
+        /* ACTIVATE SELECTED COLOR */
+
+        element.classList.add("active");
+
+    }
+
+</script>
+
+
+</body>
+
+</html>

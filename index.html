@@ -141,11 +141,11 @@ nav {
   display: flex;
   align-items: center;
 
-  gap: 28px;
+  gap: 18px;
 
   list-style: none;
 
-  font-size: .85rem;
+  font-size: .76rem;
   font-weight: 800;
 
   text-transform: uppercase;
@@ -750,15 +750,105 @@ nav {
   border-radius: 50%;
 }
 
-
-/* Make final card centered on desktop */
-
 .product-card:last-child:nth-child(odd) {
   grid-column: 1 / -1;
 
   width: calc(50% - 12px);
 
   justify-self: center;
+}
+
+
+/* =========================================================
+   NEW DESIGN SERIES
+========================================================= */
+
+.series-section {
+  padding: 105px 0;
+  background: #0d0d0d;
+}
+
+.series-section.alt {
+  background: #f4f4f4;
+  color: #111;
+}
+
+.series-section.alt .section-description {
+  color: #666;
+}
+
+.series-section.alt .eyebrow {
+  color: #ef1b26;
+}
+
+.series-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 24px;
+}
+
+.series-card {
+  overflow: hidden;
+  background: white;
+  color: #111;
+  border-radius: 14px;
+  box-shadow: 0 12px 34px rgba(0,0,0,.22);
+  transition: transform .25s ease, box-shadow .25s ease;
+}
+
+.series-card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 18px 42px rgba(0,0,0,.28);
+}
+
+.series-card img {
+  width: 100%;
+  aspect-ratio: 16 / 9;
+  object-fit: cover;
+  background: #fff;
+}
+
+.series-card-content {
+  padding: 22px 24px 26px;
+}
+
+.series-card-top {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 16px;
+  margin-bottom: 8px;
+}
+
+.series-card h3 {
+  text-transform: uppercase;
+  font-size: 1.22rem;
+}
+
+.series-tag {
+  flex: 0 0 auto;
+  padding: 6px 10px;
+  border-radius: 999px;
+  background: #111;
+  color: white;
+  font-size: .68rem;
+  font-weight: 900;
+  text-transform: uppercase;
+  letter-spacing: .8px;
+}
+
+.series-card p {
+  color: #666;
+  font-size: .92rem;
+  line-height: 1.55;
+}
+
+.series-card.featured {
+  grid-column: 1 / -1;
+}
+
+.series-card.featured img {
+  aspect-ratio: 21 / 9;
 }
 
 
@@ -1110,7 +1200,6 @@ footer a:hover {
 
 }
 
-
 @media(max-width: 900px) {
 
   .nav-links {
@@ -1139,6 +1228,18 @@ footer a:hover {
     width: 100%;
   }
 
+  .series-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .series-card.featured {
+    grid-column: auto;
+  }
+
+  .series-card.featured img {
+    aspect-ratio: 16 / 9;
+  }
+
   .brand-grid {
     grid-template-columns: 1fr;
   }
@@ -1152,7 +1253,6 @@ footer a:hover {
   }
 
 }
-
 
 @media(max-width: 600px) {
 
@@ -1202,6 +1302,10 @@ footer a:hover {
   }
 
   .collection {
+    padding: 75px 0;
+  }
+
+  .series-section {
     padding: 75px 0;
   }
 
@@ -1279,6 +1383,8 @@ Motorcycle Performance Parts
 <li><a href="#home">Home</a></li>
 <li><a href="#handlebar">Handlebar</a></li>
 <li><a href="#colors">Colors</a></li>
+<li><a href="#carbon-series">Carbon</a></li>
+<li><a href="#mascot-series">Mascots</a></li>
 <li><a href="#performance">Performance</a></li>
 <li><a href="#about">About</a></li>
 
@@ -1373,7 +1479,6 @@ Choose A Color
 
 <div class="feature-image-grid">
 
-
 <div class="feature-image-card">
 
 <img
@@ -1437,7 +1542,6 @@ Choose A Color
 
 </div>
 
-
 </div>
 
 </div>
@@ -1498,16 +1602,10 @@ Select Handlebar Color
 
 <div class="colors">
 
-
-<!-- BLACK -->
-
 <button
   class="color-button black-button active"
-
   aria-label="Black"
-
   title="Black"
-
   onclick="
     selectHandlebar(
       'handlebar-black.png',
@@ -1517,16 +1615,10 @@ Select Handlebar Color
   "
 ></button>
 
-
-<!-- BLUE -->
-
 <button
   class="color-button blue-button"
-
   aria-label="Blue"
-
   title="Blue"
-
   onclick="
     selectHandlebar(
       'handlebar-blue.png',
@@ -1536,16 +1628,10 @@ Select Handlebar Color
   "
 ></button>
 
-
-<!-- RED -->
-
 <button
   class="color-button red-button"
-
   aria-label="Red"
-
   title="Red"
-
   onclick="
     selectHandlebar(
       'handlebar-red.png',
@@ -1555,16 +1641,10 @@ Select Handlebar Color
   "
 ></button>
 
-
-<!-- ORANGE -->
-
 <button
   class="color-button orange-button"
-
   aria-label="Orange"
-
   title="Orange"
-
   onclick="
     selectHandlebar(
       'handlebar-orange.png',
@@ -1574,16 +1654,10 @@ Select Handlebar Color
   "
 ></button>
 
-
-<!-- TITANIUM -->
-
 <button
   class="color-button titanium-button"
-
   aria-label="Titanium"
-
   title="Titanium"
-
   onclick="
     selectHandlebar(
       'handlebar-titanium.png',
@@ -1593,16 +1667,10 @@ Select Handlebar Color
   "
 ></button>
 
-
-<!-- GOLD -->
-
 <button
   class="color-button gold-button"
-
   aria-label="Gold"
-
   title="Gold"
-
   onclick="
     selectHandlebar(
       'handlebar-gold.png',
@@ -1612,16 +1680,10 @@ Select Handlebar Color
   "
 ></button>
 
-
-<!-- DARK GREEN -->
-
 <button
   class="color-button green-button"
-
   aria-label="Dark Green"
-
   title="Dark Green"
-
   onclick="
     selectHandlebar(
       'handlebar-dark-green.png',
@@ -1630,7 +1692,6 @@ Select Handlebar Color
     )
   "
 ></button>
-
 
 </div>
 
@@ -1759,61 +1820,41 @@ graphics and individual riding style.
 </p>
 
 
-<!-- COLOR SUMMARY -->
-
 <div class="color-summary">
 
-
 <div class="color-summary-item">
-
 <span
   class="summary-dot"
   style="background:#111;"
 ></span>
-
 Black
-
 </div>
 
-
 <div class="color-summary-item">
-
 <span
   class="summary-dot"
   style="background:#005ccf;"
 ></span>
-
 Blue
-
 </div>
 
-
 <div class="color-summary-item">
-
 <span
   class="summary-dot"
   style="background:#d90017;"
 ></span>
-
 Red
-
 </div>
 
-
 <div class="color-summary-item">
-
 <span
   class="summary-dot"
   style="background:#ed5800;"
 ></span>
-
 Orange
-
 </div>
 
-
 <div class="color-summary-item">
-
 <span
   class="summary-dot"
   style="
@@ -1825,14 +1866,10 @@ Orange
   );
   "
 ></span>
-
 Titanium
-
 </div>
 
-
 <div class="color-summary-item">
-
 <span
   class="summary-dot"
   style="
@@ -1844,23 +1881,16 @@ Titanium
   );
   "
 ></span>
-
 Gold
-
 </div>
 
-
 <div class="color-summary-item">
-
 <span
   class="summary-dot"
   style="background:#0b4425;"
 ></span>
-
 Dark Green
-
 </div>
-
 
 </div>
 
@@ -1868,29 +1898,19 @@ Dark Green
 <div class="product-cards">
 
 
-<!-- =====================================================
-     BLACK
-===================================================== -->
-
 <article class="product-card">
 
 <img
-
   src="images/handlebar-black.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-black.png';
   "
-
   alt="Black Newson Sportec dirt bike handlebar"
-
   loading="lazy"
-
 >
 
 <div class="card-bottom">
-
 
 <div class="card-heading">
 
@@ -1905,7 +1925,6 @@ Black
 
 </div>
 
-
 <p class="card-description">
 
 A clean and understated performance finish
@@ -1913,35 +1932,24 @@ that works with nearly any motorcycle color scheme.
 
 </p>
 
-
 </div>
 
 </article>
 
 
-<!-- =====================================================
-     BLUE
-===================================================== -->
-
 <article class="product-card">
 
 <img
-
   src="images/handlebar-blue.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-blue.png';
   "
-
   alt="Blue Newson Sportec dirt bike handlebar"
-
   loading="lazy"
-
 >
 
 <div class="card-bottom">
-
 
 <div class="card-heading">
 
@@ -1956,7 +1964,6 @@ Blue
 
 </div>
 
-
 <p class="card-description">
 
 A vivid metallic-style finish designed to bring
@@ -1964,35 +1971,24 @@ a strong race-inspired accent to your dirt bike.
 
 </p>
 
-
 </div>
 
 </article>
 
 
-<!-- =====================================================
-     RED
-===================================================== -->
-
 <article class="product-card">
 
 <img
-
   src="images/handlebar-red.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-red.png';
   "
-
   alt="Red Newson Sportec dirt bike handlebar"
-
   loading="lazy"
-
 >
 
 <div class="card-bottom">
-
 
 <div class="card-heading">
 
@@ -2007,7 +2003,6 @@ Red
 
 </div>
 
-
 <p class="card-description">
 
 A bold competition-inspired color that gives
@@ -2015,35 +2010,24 @@ the cockpit an aggressive motorsport appearance.
 
 </p>
 
-
 </div>
 
 </article>
 
 
-<!-- =====================================================
-     ORANGE
-===================================================== -->
-
 <article class="product-card">
 
 <img
-
   src="images/handlebar-orange.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-orange.png';
   "
-
   alt="Orange Newson Sportec dirt bike handlebar"
-
   loading="lazy"
-
 >
 
 <div class="card-bottom">
-
 
 <div class="card-heading">
 
@@ -2058,7 +2042,6 @@ Orange
 
 </div>
 
-
 <p class="card-description">
 
 A distinctive off-road finish with excellent
@@ -2066,35 +2049,24 @@ visual presence and a strong motocross character.
 
 </p>
 
-
 </div>
 
 </article>
 
 
-<!-- =====================================================
-     TITANIUM
-===================================================== -->
-
 <article class="product-card">
 
 <img
-
   src="images/handlebar-titanium.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-titanium.png';
   "
-
   alt="Titanium Newson Sportec dirt bike handlebar"
-
   loading="lazy"
-
 >
 
 <div class="card-bottom">
-
 
 <div class="card-heading">
 
@@ -2104,7 +2076,6 @@ Titanium
 
 <div
   class="color-dot"
-
   style="
   background:
   linear-gradient(
@@ -2117,7 +2088,6 @@ Titanium
 
 </div>
 
-
 <p class="card-description">
 
 A technical metallic appearance for riders who prefer
@@ -2125,35 +2095,24 @@ a refined, premium and performance-oriented look.
 
 </p>
 
-
 </div>
 
 </article>
 
 
-<!-- =====================================================
-     GOLD
-===================================================== -->
-
 <article class="product-card">
 
 <img
-
   src="images/handlebar-gold.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-gold.png';
   "
-
   alt="Gold Newson Sportec dirt bike handlebar"
-
   loading="lazy"
-
 >
 
 <div class="card-bottom">
-
 
 <div class="card-heading">
 
@@ -2163,7 +2122,6 @@ Gold
 
 <div
   class="color-dot"
-
   style="
   background:
   linear-gradient(
@@ -2176,7 +2134,6 @@ Gold
 
 </div>
 
-
 <p class="card-description">
 
 A premium gold finish created for riders who want
@@ -2185,35 +2142,24 @@ competition-inspired appearance.
 
 </p>
 
-
 </div>
 
 </article>
 
 
-<!-- =====================================================
-     DARK GREEN
-===================================================== -->
-
 <article class="product-card">
 
 <img
-
   src="images/handlebar-dark-green.png"
-
   onerror="
     this.onerror=null;
     this.src='handlebar-dark-green.png';
   "
-
   alt="Dark Green Newson Sportec dirt bike handlebar"
-
   loading="lazy"
-
 >
 
 <div class="card-bottom">
-
 
 <div class="card-heading">
 
@@ -2228,7 +2174,6 @@ Dark Green
 
 </div>
 
-
 <p class="card-description">
 
 A deep dark-green finish with a rugged trail-inspired
@@ -2237,6 +2182,361 @@ purposeful off-road look.
 
 </p>
 
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     CARBON & GRAPHIC SERIES
+========================================================= -->
+
+<section class="series-section" id="carbon-series">
+
+<div class="container">
+
+<div class="eyebrow">
+Newson Sportec Special Finish Collection
+</div>
+
+<h2 class="section-title">
+Carbon &
+<span class="red">Graphic Series.</span>
+</h2>
+
+<p class="section-description">
+A more technical side of the Newson Sportec handlebar collection.
+These concepts combine carbon-inspired finishes, precision graphics
+and distinctive surface treatments for riders who want a more
+custom-built appearance.
+</p>
+
+<div class="series-grid">
+
+
+<article class="series-card">
+
+<img
+  src="images/forged-carbon.png"
+  alt="Newson Sportec forged carbon handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Forged Carbon
+</h3>
+
+<span class="series-tag">
+Carbon
+</span>
+
+</div>
+
+<p>
+A dark forged-carbon appearance with fragmented graphite texture,
+subtle metallic depth and clean Newson Sportec branding.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="series-card">
+
+<img
+  src="images/carbon-racing-red.png"
+  alt="Newson Sportec carbon racing red handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Carbon Racing Red
+</h3>
+
+<span class="series-tag">
+Carbon
+</span>
+
+</div>
+
+<p>
+Traditional woven carbon styling combined with sharp red racing
+accents for a technical, competition-focused look.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="series-card featured">
+
+<img
+  src="images/emerald-totem.png"
+  alt="Newson Sportec emerald totem graphic handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Emerald Totem
+</h3>
+
+<span class="series-tag">
+Graphic
+</span>
+
+</div>
+
+<p>
+Deep emerald metallic color with black totem-inspired linework and
+precision center markings for a distinctive off-road identity.
+</p>
+
+</div>
+
+</article>
+
+
+</div>
+
+</div>
+
+</section>
+
+
+<!-- =========================================================
+     MASCOT SERIES
+========================================================= -->
+
+<section class="series-section alt" id="mascot-series">
+
+<div class="container">
+
+<div class="eyebrow">
+Newson Sportec Mascot Collection
+</div>
+
+<h2 class="section-title">
+Choose Your
+<span class="red">Character.</span>
+</h2>
+
+<p class="section-description">
+The Mascot Series pairs Newson Sportec performance styling with
+bold animal identities. Each concept uses its own color palette,
+graphic personality and mirrored mascot artwork.
+</p>
+
+
+<div class="series-grid">
+
+
+<article class="series-card">
+
+<img
+  src="images/hawk-orange.png"
+  alt="Newson Sportec orange hawk mascot handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Hawk Orange
+</h3>
+
+<span class="series-tag">
+Mascot
+</span>
+
+</div>
+
+<p>
+Satin black with high-energy orange accents and a sharp hawk graphic
+for a fast, aggressive motocross appearance.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="series-card">
+
+<img
+  src="images/panther-teal.png"
+  alt="Newson Sportec teal panther mascot handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Panther Teal
+</h3>
+
+<span class="series-tag">
+Mascot
+</span>
+
+</div>
+
+<p>
+Metallic teal and black graphics built around a stealthy panther
+identity with modern angular performance lines.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="series-card">
+
+<img
+  src="images/lion-gold.png"
+  alt="Newson Sportec gold lion mascot handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Lion Gold
+</h3>
+
+<span class="series-tag">
+Mascot
+</span>
+
+</div>
+
+<p>
+Premium gold-and-black styling with a strong lion emblem for a
+confident, high-end race-inspired appearance.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="series-card">
+
+<img
+  src="images/dragon-purple.png"
+  alt="Newson Sportec purple dragon mascot handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Dragon Purple
+</h3>
+
+<span class="series-tag">
+Mascot
+</span>
+
+</div>
+
+<p>
+Metallic purple, black and silver graphics paired with a detailed
+dragon design for a dramatic custom-build aesthetic.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="series-card">
+
+<img
+  src="images/wolf-red.png"
+  alt="Newson Sportec red wolf mascot handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Wolf Red
+</h3>
+
+<span class="series-tag">
+Mascot
+</span>
+
+</div>
+
+<p>
+Deep crimson red and black with a fierce wolf graphic, designed for
+an aggressive competition-inspired cockpit.
+</p>
+
+</div>
+
+</article>
+
+
+<article class="series-card">
+
+<img
+  src="images/falcon-blue.png"
+  alt="Newson Sportec blue falcon mascot handlebar"
+  loading="lazy"
+>
+
+<div class="series-card-content">
+
+<div class="series-card-top">
+
+<h3>
+Falcon Blue
+</h3>
+
+<span class="series-tag">
+Mascot
+</span>
+
+</div>
+
+<p>
+Electric blue and black with a precision falcon graphic for a fast,
+clean and high-visibility Newson Sportec design.
+</p>
 
 </div>
 
@@ -2257,7 +2557,6 @@ purposeful off-road look.
 <section class="action" id="performance">
 
 <img
-
   class="action-bg"
 
   src="images/hero-action.png"
@@ -2268,7 +2567,6 @@ purposeful off-road look.
   "
 
   alt="Newson Sportec motocross rider"
-
 >
 
 <div class="action-overlay"></div>
@@ -2319,7 +2617,6 @@ and the motorcycle.
 <div class="about-rider-box">
 
 <img
-
   src="images/about-rider.png"
 
   onerror="
@@ -2328,7 +2625,6 @@ and the motorcycle.
   "
 
   alt="Newson Sportec freestyle motocross rider"
-
 >
 
 <div class="about-rider-overlay"></div>
@@ -2480,6 +2776,18 @@ Handlebar
 <li>
 <a href="#colors">
 Color Collection
+</a>
+</li>
+
+<li>
+<a href="#carbon-series">
+Carbon Series
+</a>
+</li>
+
+<li>
+<a href="#mascot-series">
+Mascot Series
 </a>
 </li>
 
